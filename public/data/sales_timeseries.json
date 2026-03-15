@@ -1,1304 +1,1568 @@
 [
   {
-    "date": "2024-01-09",
-    "gross_amount": 21.9,
-    "fee_amount": 0.37,
-    "net_amount": 21.53,
-    "events": 1
-  },
-  {
-    "date": "2024-01-16",
-    "gross_amount": 10.0,
-    "fee_amount": 0.16,
-    "net_amount": 9.84,
-    "events": 1
-  },
-  {
-    "date": "2024-01-23",
-    "gross_amount": 75.0,
-    "fee_amount": 1.25,
-    "net_amount": 73.75,
-    "events": 1
-  },
-  {
-    "date": "2024-01-30",
-    "gross_amount": 44.0,
-    "fee_amount": 0.71,
-    "net_amount": 43.29,
-    "events": 1
-  },
-  {
-    "date": "2024-02-06",
-    "gross_amount": 78.0,
-    "fee_amount": 1.29,
-    "net_amount": 76.71,
-    "events": 1
-  },
-  {
-    "date": "2024-02-13",
-    "gross_amount": 61.0,
-    "fee_amount": 1.01,
-    "net_amount": 59.99,
-    "events": 1
-  },
-  {
-    "date": "2024-02-20",
-    "gross_amount": 80.0,
-    "fee_amount": 1.33,
-    "net_amount": 78.67,
-    "events": 1
-  },
-  {
-    "date": "2024-02-27",
-    "gross_amount": 30.0,
-    "fee_amount": 0.51,
-    "net_amount": 29.49,
-    "events": 1
-  },
-  {
-    "date": "2024-03-19",
-    "gross_amount": 10.0,
-    "fee_amount": 0.17,
-    "net_amount": 9.83,
-    "events": 1
-  },
-  {
-    "date": "2024-03-26",
-    "gross_amount": 40.0,
-    "fee_amount": 0.67,
-    "net_amount": 39.33,
-    "events": 1
-  },
-  {
-    "date": "2024-04-02",
-    "gross_amount": 36.0,
-    "fee_amount": 0.59,
-    "net_amount": 35.41,
-    "events": 1
-  },
-  {
-    "date": "2024-04-16",
-    "gross_amount": 37.22,
-    "fee_amount": 0.62,
-    "net_amount": 36.6,
-    "events": 1
-  },
-  {
-    "date": "2024-04-30",
-    "gross_amount": 44.0,
-    "fee_amount": 0.74,
-    "net_amount": 43.26,
-    "events": 1
-  },
-  {
-    "date": "2024-05-07",
-    "gross_amount": 40.0,
-    "fee_amount": 0.67,
-    "net_amount": 39.33,
-    "events": 1
-  },
-  {
-    "date": "2024-05-11",
-    "gross_amount": 148.5,
-    "fee_amount": 2.52,
-    "net_amount": 145.98,
-    "events": 1
-  },
-  {
-    "date": "2024-05-14",
-    "gross_amount": 26.0,
-    "fee_amount": 0.43,
-    "net_amount": 25.57,
-    "events": 1
-  },
-  {
-    "date": "2024-05-21",
-    "gross_amount": 11.0,
-    "fee_amount": 0.18,
-    "net_amount": 10.82,
-    "events": 1
-  },
-  {
-    "date": "2024-05-28",
-    "gross_amount": 30.0,
-    "fee_amount": 0.51,
-    "net_amount": 29.49,
-    "events": 1
-  },
-  {
-    "date": "2024-06-04",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
-    "events": 1
-  },
-  {
-    "date": "2024-06-11",
-    "gross_amount": 15.0,
-    "fee_amount": 0.25,
-    "net_amount": 14.75,
-    "events": 1
-  },
-  {
-    "date": "2024-06-18",
-    "gross_amount": 85.0,
-    "fee_amount": 1.44,
-    "net_amount": 83.56,
-    "events": 1
-  },
-  {
-    "date": "2024-06-25",
-    "gross_amount": 33.0,
-    "fee_amount": 0.56,
-    "net_amount": 32.44,
-    "events": 1
-  },
-  {
-    "date": "2024-06-27",
-    "gross_amount": 90.0,
-    "fee_amount": 1.51,
-    "net_amount": 88.49,
-    "events": 1
-  },
-  {
-    "date": "2024-07-02",
-    "gross_amount": 50.0,
-    "fee_amount": 0.85,
-    "net_amount": 49.15,
-    "events": 1
-  },
-  {
-    "date": "2024-07-09",
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
-    "events": 1
-  },
-  {
-    "date": "2024-07-16",
-    "gross_amount": 4.0,
-    "fee_amount": 0.07,
-    "net_amount": 3.93,
-    "events": 1
-  },
-  {
-    "date": "2024-07-23",
-    "gross_amount": 25.0,
-    "fee_amount": 0.42,
-    "net_amount": 24.58,
-    "events": 1
-  },
-  {
-    "date": "2024-07-25",
-    "gross_amount": 296.0,
-    "fee_amount": 5.0,
-    "net_amount": 291.0,
-    "events": 1
-  },
-  {
-    "date": "2024-07-30",
-    "gross_amount": 48.0,
-    "fee_amount": 0.8,
-    "net_amount": 47.2,
-    "events": 1
-  },
-  {
-    "date": "2024-08-06",
-    "gross_amount": 21.0,
-    "fee_amount": 0.35,
-    "net_amount": 20.65,
-    "events": 1
-  },
-  {
-    "date": "2024-08-13",
-    "gross_amount": 45.0,
-    "fee_amount": 0.73,
-    "net_amount": 44.27,
-    "events": 1
-  },
-  {
-    "date": "2024-08-20",
-    "gross_amount": 20.0,
-    "fee_amount": 0.32,
-    "net_amount": 19.68,
-    "events": 1
-  },
-  {
-    "date": "2024-08-27",
-    "gross_amount": 110.0,
-    "fee_amount": 1.87,
-    "net_amount": 108.13,
-    "events": 1
-  },
-  {
-    "date": "2024-08-29",
-    "gross_amount": 42.0,
-    "fee_amount": 0.68,
-    "net_amount": 41.32,
-    "events": 1
-  },
-  {
-    "date": "2024-09-03",
-    "gross_amount": 40.0,
-    "fee_amount": 0.67,
-    "net_amount": 39.33,
-    "events": 1
-  },
-  {
-    "date": "2024-09-10",
-    "gross_amount": 50.0,
-    "fee_amount": 0.85,
-    "net_amount": 49.15,
-    "events": 1
-  },
-  {
-    "date": "2024-09-12",
-    "gross_amount": 60.0,
-    "fee_amount": 1.01,
-    "net_amount": 58.99,
-    "events": 1
-  },
-  {
-    "date": "2024-09-16",
-    "gross_amount": 48.0,
-    "fee_amount": 0.8,
-    "net_amount": 47.2,
-    "events": 1
-  },
-  {
-    "date": "2024-09-17",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
-    "events": 1
-  },
-  {
-    "date": "2024-09-21",
-    "gross_amount": 80.0,
-    "fee_amount": 1.33,
-    "net_amount": 78.67,
-    "events": 1
-  },
-  {
-    "date": "2024-09-24",
-    "gross_amount": 15.0,
-    "fee_amount": 0.24,
-    "net_amount": 14.76,
-    "events": 1
-  },
-  {
-    "date": "2024-09-26",
-    "gross_amount": 134.99,
-    "fee_amount": 2.27,
-    "net_amount": 132.72,
-    "events": 1
-  },
-  {
-    "date": "2024-10-01",
-    "gross_amount": 30.0,
-    "fee_amount": 0.5,
-    "net_amount": 29.5,
-    "events": 1
-  },
-  {
-    "date": "2024-10-08",
-    "gross_amount": 40.0,
-    "fee_amount": 0.65,
-    "net_amount": 39.35,
-    "events": 1
-  },
-  {
-    "date": "2024-10-11",
-    "gross_amount": 45.0,
-    "fee_amount": 0.76,
-    "net_amount": 44.24,
-    "events": 1
-  },
-  {
-    "date": "2024-10-15",
-    "gross_amount": 74.0,
-    "fee_amount": 1.25,
-    "net_amount": 72.75,
-    "events": 1
-  },
-  {
-    "date": "2024-10-19",
-    "gross_amount": 127.99,
-    "fee_amount": 2.12,
-    "net_amount": 125.87,
-    "events": 1
-  },
-  {
-    "date": "2024-10-20",
-    "gross_amount": 30.0,
-    "fee_amount": 0.49,
-    "net_amount": 29.51,
-    "events": 1
-  },
-  {
-    "date": "2024-10-22",
-    "gross_amount": 55.0,
-    "fee_amount": 0.91,
-    "net_amount": 54.09,
-    "events": 1
-  },
-  {
-    "date": "2024-10-26",
-    "gross_amount": 114.0,
-    "fee_amount": 1.91,
-    "net_amount": 112.09,
-    "events": 1
-  },
-  {
-    "date": "2024-10-28",
-    "gross_amount": 35.0,
-    "fee_amount": 0.59,
-    "net_amount": 34.41,
-    "events": 1
-  },
-  {
-    "date": "2024-10-29",
-    "gross_amount": 29.0,
-    "fee_amount": 0.47,
-    "net_amount": 28.53,
-    "events": 1
-  },
-  {
-    "date": "2024-11-20",
-    "gross_amount": 50.0,
-    "fee_amount": 0.84,
-    "net_amount": 49.16,
-    "events": 1
-  },
-  {
-    "date": "2024-11-22",
-    "gross_amount": 41.0,
-    "fee_amount": 0.69,
-    "net_amount": 40.31,
-    "events": 1
-  },
-  {
-    "date": "2024-11-25",
-    "gross_amount": 51.0,
-    "fee_amount": 0.83,
-    "net_amount": 50.17,
-    "events": 1
-  },
-  {
-    "date": "2024-11-26",
-    "gross_amount": 29.0,
-    "fee_amount": 0.49,
-    "net_amount": 28.51,
-    "events": 1
-  },
-  {
-    "date": "2024-12-03",
-    "gross_amount": 40.0,
-    "fee_amount": 0.68,
-    "net_amount": 39.32,
-    "events": 1
-  },
-  {
-    "date": "2024-12-10",
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
-    "events": 1
-  },
-  {
-    "date": "2024-12-13",
-    "gross_amount": 35.0,
-    "fee_amount": 0.58,
-    "net_amount": 34.42,
-    "events": 1
-  },
-  {
-    "date": "2024-12-16",
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
-    "events": 1
-  },
-  {
-    "date": "2024-12-17",
-    "gross_amount": 25.0,
-    "fee_amount": 0.42,
-    "net_amount": 24.58,
-    "events": 1
-  },
-  {
     "date": "2025-01-07",
-    "gross_amount": 20.0,
-    "fee_amount": 0.33,
-    "net_amount": 19.67,
+    "sumup_gross_amount": 20.0,
+    "sumup_fee_amount": 0.33,
+    "sumup_net_amount": 19.67,
+    "reservations": 20,
+    "eventbrite_orders": 12,
     "events": 1
   },
   {
     "date": "2025-01-13",
-    "gross_amount": 70.0,
-    "fee_amount": 1.18,
-    "net_amount": 68.82,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.18,
+    "sumup_net_amount": 68.82,
+    "reservations": 43,
+    "eventbrite_orders": 27,
     "events": 1
   },
   {
     "date": "2025-01-14",
-    "gross_amount": 75.0,
-    "fee_amount": 1.25,
-    "net_amount": 73.75,
+    "sumup_gross_amount": 75.0,
+    "sumup_fee_amount": 1.25,
+    "sumup_net_amount": 73.75,
+    "reservations": 66,
+    "eventbrite_orders": 33,
     "events": 1
   },
   {
     "date": "2025-01-21",
-    "gross_amount": 58.0,
-    "fee_amount": 0.97,
-    "net_amount": 57.03,
+    "sumup_gross_amount": 58.0,
+    "sumup_fee_amount": 0.97,
+    "sumup_net_amount": 57.03,
+    "reservations": 54,
+    "eventbrite_orders": 29,
     "events": 1
   },
   {
     "date": "2025-01-24",
-    "gross_amount": 75.0,
-    "fee_amount": 1.25,
-    "net_amount": 73.75,
+    "sumup_gross_amount": 75.0,
+    "sumup_fee_amount": 1.25,
+    "sumup_net_amount": 73.75,
+    "reservations": 117,
+    "eventbrite_orders": 57,
     "events": 1
   },
   {
     "date": "2025-01-27",
-    "gross_amount": 42.0,
-    "fee_amount": 0.69,
-    "net_amount": 41.31,
+    "sumup_gross_amount": 42.0,
+    "sumup_fee_amount": 0.69,
+    "sumup_net_amount": 41.31,
+    "reservations": 65,
+    "eventbrite_orders": 38,
     "events": 1
   },
   {
     "date": "2025-01-28",
-    "gross_amount": 51.0,
-    "fee_amount": 0.86,
-    "net_amount": 50.14,
+    "sumup_gross_amount": 51.0,
+    "sumup_fee_amount": 0.86,
+    "sumup_net_amount": 50.14,
+    "reservations": 89,
+    "eventbrite_orders": 40,
     "events": 1
   },
   {
     "date": "2025-02-04",
-    "gross_amount": 70.0,
-    "fee_amount": 1.16,
-    "net_amount": 68.84,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.16,
+    "sumup_net_amount": 68.84,
+    "reservations": 60,
+    "eventbrite_orders": 28,
     "events": 1
   },
   {
     "date": "2025-02-05",
-    "gross_amount": 75.0,
-    "fee_amount": 1.27,
-    "net_amount": 73.73,
+    "sumup_gross_amount": 75.0,
+    "sumup_fee_amount": 1.27,
+    "sumup_net_amount": 73.73,
+    "reservations": 140,
+    "eventbrite_orders": 65,
     "events": 1
   },
   {
     "date": "2025-02-08",
-    "gross_amount": 120.0,
-    "fee_amount": 2.02,
-    "net_amount": 117.98,
+    "sumup_gross_amount": 120.0,
+    "sumup_fee_amount": 2.02,
+    "sumup_net_amount": 117.98,
+    "reservations": 150,
+    "eventbrite_orders": 78,
     "events": 1
   },
   {
     "date": "2025-02-10",
-    "gross_amount": 37.0,
-    "fee_amount": 0.62,
-    "net_amount": 36.38,
+    "sumup_gross_amount": 37.0,
+    "sumup_fee_amount": 0.62,
+    "sumup_net_amount": 36.38,
+    "reservations": 68,
+    "eventbrite_orders": 39,
     "events": 1
   },
   {
     "date": "2025-02-11",
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
+    "sumup_gross_amount": 5.0,
+    "sumup_fee_amount": 0.08,
+    "sumup_net_amount": 4.92,
+    "reservations": 24,
+    "eventbrite_orders": 13,
     "events": 1
   },
   {
     "date": "2025-02-13",
-    "gross_amount": 14.0,
-    "fee_amount": 0.23,
-    "net_amount": 13.77,
-    "events": 1
+    "sumup_gross_amount": 14.0,
+    "sumup_fee_amount": 0.23,
+    "sumup_net_amount": 13.77,
+    "reservations": 71,
+    "eventbrite_orders": 37,
+    "events": 2
   },
   {
     "date": "2025-02-14",
-    "gross_amount": 85.0,
-    "fee_amount": 1.43,
-    "net_amount": 83.57,
-    "events": 1
+    "sumup_gross_amount": 85.0,
+    "sumup_fee_amount": 1.43,
+    "sumup_net_amount": 83.57,
+    "reservations": 142,
+    "eventbrite_orders": 75,
+    "events": 2
   },
   {
     "date": "2025-02-18",
-    "gross_amount": 110.0,
-    "fee_amount": 1.82,
-    "net_amount": 108.18,
+    "sumup_gross_amount": 110.0,
+    "sumup_fee_amount": 1.82,
+    "sumup_net_amount": 108.18,
+    "reservations": 47,
+    "eventbrite_orders": 25,
     "events": 1
   },
   {
     "date": "2025-02-24",
-    "gross_amount": 173.0,
-    "fee_amount": 2.92,
-    "net_amount": 170.08,
+    "sumup_gross_amount": 173.0,
+    "sumup_fee_amount": 2.92,
+    "sumup_net_amount": 170.08,
+    "reservations": 95,
+    "eventbrite_orders": 55,
     "events": 1
   },
   {
     "date": "2025-02-25",
-    "gross_amount": 55.0,
-    "fee_amount": 0.9,
-    "net_amount": 54.1,
+    "sumup_gross_amount": 55.0,
+    "sumup_fee_amount": 0.9,
+    "sumup_net_amount": 54.1,
+    "reservations": 38,
+    "eventbrite_orders": 18,
     "events": 1
   },
   {
     "date": "2025-03-01",
-    "gross_amount": 215.0,
-    "fee_amount": 3.61,
-    "net_amount": 211.39,
+    "sumup_gross_amount": 215.0,
+    "sumup_fee_amount": 3.61,
+    "sumup_net_amount": 211.39,
+    "reservations": 170,
+    "eventbrite_orders": 88,
     "events": 1
   },
   {
     "date": "2025-03-04",
-    "gross_amount": 20.0,
-    "fee_amount": 0.33,
-    "net_amount": 19.67,
+    "sumup_gross_amount": 20.0,
+    "sumup_fee_amount": 0.33,
+    "sumup_net_amount": 19.67,
+    "reservations": 54,
+    "eventbrite_orders": 31,
     "events": 1
   },
   {
     "date": "2025-03-05",
-    "gross_amount": 50.0,
-    "fee_amount": 0.85,
-    "net_amount": 49.15,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.85,
+    "sumup_net_amount": 49.15,
+    "reservations": 78,
+    "eventbrite_orders": 41,
     "events": 1
   },
   {
     "date": "2025-03-10",
-    "gross_amount": 82.0,
-    "fee_amount": 1.37,
-    "net_amount": 80.63,
+    "sumup_gross_amount": 82.0,
+    "sumup_fee_amount": 1.37,
+    "sumup_net_amount": 80.63,
+    "reservations": 43,
+    "eventbrite_orders": 24,
     "events": 1
   },
   {
     "date": "2025-03-11",
-    "gross_amount": 35.0,
-    "fee_amount": 0.58,
-    "net_amount": 34.42,
+    "sumup_gross_amount": 35.0,
+    "sumup_fee_amount": 0.58,
+    "sumup_net_amount": 34.42,
+    "reservations": 70,
+    "eventbrite_orders": 36,
     "events": 1
   },
   {
     "date": "2025-03-14",
-    "gross_amount": 175.0,
-    "fee_amount": 2.93,
-    "net_amount": 172.07,
+    "sumup_gross_amount": 175.0,
+    "sumup_fee_amount": 2.93,
+    "sumup_net_amount": 172.07,
+    "reservations": 110,
+    "eventbrite_orders": 57,
     "events": 1
   },
   {
     "date": "2025-03-18",
-    "gross_amount": 45.0,
-    "fee_amount": 0.75,
-    "net_amount": 44.25,
+    "sumup_gross_amount": 45.0,
+    "sumup_fee_amount": 0.75,
+    "sumup_net_amount": 44.25,
+    "reservations": 53,
+    "eventbrite_orders": 26,
     "events": 1
   },
   {
     "date": "2025-03-24",
-    "gross_amount": 56.0,
-    "fee_amount": 0.93,
-    "net_amount": 55.07,
+    "sumup_gross_amount": 56.0,
+    "sumup_fee_amount": 0.93,
+    "sumup_net_amount": 55.07,
+    "reservations": 45,
+    "eventbrite_orders": 28,
     "events": 1
   },
   {
     "date": "2025-03-25",
-    "gross_amount": 65.0,
-    "fee_amount": 1.08,
-    "net_amount": 63.92,
+    "sumup_gross_amount": 65.0,
+    "sumup_fee_amount": 1.08,
+    "sumup_net_amount": 63.92,
+    "reservations": 46,
+    "eventbrite_orders": 21,
     "events": 1
   },
   {
     "date": "2025-03-29",
-    "gross_amount": 85.0,
-    "fee_amount": 1.43,
-    "net_amount": 83.57,
+    "sumup_gross_amount": 85.0,
+    "sumup_fee_amount": 1.43,
+    "sumup_net_amount": 83.57,
+    "reservations": 179,
+    "eventbrite_orders": 96,
     "events": 1
   },
   {
     "date": "2025-04-01",
-    "gross_amount": 75.0,
-    "fee_amount": 1.27,
-    "net_amount": 73.73,
+    "sumup_gross_amount": 75.0,
+    "sumup_fee_amount": 1.27,
+    "sumup_net_amount": 73.73,
+    "reservations": 45,
+    "eventbrite_orders": 26,
     "events": 1
   },
   {
     "date": "2025-04-05",
-    "gross_amount": 115.0,
-    "fee_amount": 1.91,
-    "net_amount": 113.09,
-    "events": 1
+    "sumup_gross_amount": 115.0,
+    "sumup_fee_amount": 1.91,
+    "sumup_net_amount": 113.09,
+    "reservations": 119,
+    "eventbrite_orders": 59,
+    "events": 2
   },
   {
     "date": "2025-04-07",
-    "gross_amount": 135.0,
-    "fee_amount": 2.28,
-    "net_amount": 132.72,
+    "sumup_gross_amount": 135.0,
+    "sumup_fee_amount": 2.28,
+    "sumup_net_amount": 132.72,
+    "reservations": 60,
+    "eventbrite_orders": 42,
     "events": 1
   },
   {
     "date": "2025-04-08",
-    "gross_amount": 20.0,
-    "fee_amount": 0.33,
-    "net_amount": 19.67,
+    "sumup_gross_amount": 20.0,
+    "sumup_fee_amount": 0.33,
+    "sumup_net_amount": 19.67,
+    "reservations": 25,
+    "eventbrite_orders": 15,
     "events": 1
   },
   {
     "date": "2025-04-13",
-    "gross_amount": 95.0,
-    "fee_amount": 1.61,
-    "net_amount": 93.39,
+    "sumup_gross_amount": 95.0,
+    "sumup_fee_amount": 1.61,
+    "sumup_net_amount": 93.39,
+    "reservations": 101,
+    "eventbrite_orders": 50,
     "events": 1
   },
   {
     "date": "2025-04-15",
-    "gross_amount": 45.0,
-    "fee_amount": 0.76,
-    "net_amount": 44.24,
+    "sumup_gross_amount": 45.0,
+    "sumup_fee_amount": 0.76,
+    "sumup_net_amount": 44.24,
+    "reservations": 62,
+    "eventbrite_orders": 38,
     "events": 1
   },
   {
     "date": "2025-04-21",
-    "gross_amount": 115.0,
-    "fee_amount": 1.94,
-    "net_amount": 113.06,
+    "sumup_gross_amount": 115.0,
+    "sumup_fee_amount": 1.94,
+    "sumup_net_amount": 113.06,
+    "reservations": 74,
+    "eventbrite_orders": 45,
+    "events": 1
+  },
+  {
+    "date": "2025-04-22",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 8,
+    "eventbrite_orders": 5,
     "events": 1
   },
   {
     "date": "2025-04-24",
-    "gross_amount": 42.0,
-    "fee_amount": 0.7,
-    "net_amount": 41.3,
+    "sumup_gross_amount": 42.0,
+    "sumup_fee_amount": 0.7,
+    "sumup_net_amount": 41.3,
+    "reservations": 60,
+    "eventbrite_orders": 31,
     "events": 1
   },
   {
     "date": "2025-04-28",
-    "gross_amount": 77.0,
-    "fee_amount": 1.3,
-    "net_amount": 75.7,
+    "sumup_gross_amount": 77.0,
+    "sumup_fee_amount": 1.3,
+    "sumup_net_amount": 75.7,
+    "reservations": 180,
+    "eventbrite_orders": 106,
+    "events": 1
+  },
+  {
+    "date": "2025-04-29",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 58,
+    "eventbrite_orders": 44,
     "events": 1
   },
   {
     "date": "2025-04-30",
-    "gross_amount": 180.0,
-    "fee_amount": 3.02,
-    "net_amount": 176.98,
+    "sumup_gross_amount": 180.0,
+    "sumup_fee_amount": 3.02,
+    "sumup_net_amount": 176.98,
+    "reservations": 125,
+    "eventbrite_orders": 75,
     "events": 1
   },
   {
     "date": "2025-05-05",
-    "gross_amount": 120.0,
-    "fee_amount": 2.03,
-    "net_amount": 117.97,
+    "sumup_gross_amount": 120.0,
+    "sumup_fee_amount": 2.03,
+    "sumup_net_amount": 117.97,
+    "reservations": 66,
+    "eventbrite_orders": 38,
+    "events": 1
+  },
+  {
+    "date": "2025-05-06",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 38,
+    "eventbrite_orders": 21,
     "events": 1
   },
   {
     "date": "2025-05-12",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.83,
+    "sumup_net_amount": 49.17,
+    "reservations": 17,
+    "eventbrite_orders": 11,
+    "events": 1
+  },
+  {
+    "date": "2025-05-13",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 32,
+    "eventbrite_orders": 20,
     "events": 1
   },
   {
     "date": "2025-05-14",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.83,
+    "sumup_net_amount": 49.17,
+    "reservations": 88,
+    "eventbrite_orders": 47,
+    "events": 1
+  },
+  {
+    "date": "2025-05-17",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 59,
+    "eventbrite_orders": 34,
     "events": 1
   },
   {
     "date": "2025-05-19",
-    "gross_amount": 25.0,
-    "fee_amount": 0.41,
-    "net_amount": 24.59,
+    "sumup_gross_amount": 25.0,
+    "sumup_fee_amount": 0.41,
+    "sumup_net_amount": 24.59,
+    "reservations": 22,
+    "eventbrite_orders": 15,
     "events": 1
   },
   {
     "date": "2025-05-26",
-    "gross_amount": 42.0,
-    "fee_amount": 0.68,
-    "net_amount": 41.32,
+    "sumup_gross_amount": 42.0,
+    "sumup_fee_amount": 0.68,
+    "sumup_net_amount": 41.32,
+    "reservations": 69,
+    "eventbrite_orders": 39,
     "events": 1
   },
   {
     "date": "2025-05-28",
-    "gross_amount": 60.01,
-    "fee_amount": 0.98,
-    "net_amount": 59.03,
+    "sumup_gross_amount": 60.01,
+    "sumup_fee_amount": 0.98,
+    "sumup_net_amount": 59.03,
+    "reservations": 125,
+    "eventbrite_orders": 74,
     "events": 1
   },
   {
     "date": "2025-05-29",
-    "gross_amount": 85.0,
-    "fee_amount": 1.42,
-    "net_amount": 83.58,
+    "sumup_gross_amount": 85.0,
+    "sumup_fee_amount": 1.42,
+    "sumup_net_amount": 83.58,
+    "reservations": 80,
+    "eventbrite_orders": 43,
     "events": 1
   },
   {
     "date": "2025-06-02",
-    "gross_amount": 90.0,
-    "fee_amount": 1.5,
-    "net_amount": 88.5,
+    "sumup_gross_amount": 90.0,
+    "sumup_fee_amount": 1.5,
+    "sumup_net_amount": 88.5,
+    "reservations": 53,
+    "eventbrite_orders": 35,
     "events": 1
   },
   {
     "date": "2025-06-09",
-    "gross_amount": 25.0,
-    "fee_amount": 0.41,
-    "net_amount": 24.59,
+    "sumup_gross_amount": 25.0,
+    "sumup_fee_amount": 0.41,
+    "sumup_net_amount": 24.59,
+    "reservations": 75,
+    "eventbrite_orders": 48,
+    "events": 1
+  },
+  {
+    "date": "2025-06-13",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 73,
+    "eventbrite_orders": 37,
     "events": 1
   },
   {
     "date": "2025-06-16",
-    "gross_amount": 44.0,
-    "fee_amount": 0.72,
-    "net_amount": 43.28,
+    "sumup_gross_amount": 44.0,
+    "sumup_fee_amount": 0.72,
+    "sumup_net_amount": 43.28,
+    "reservations": 54,
+    "eventbrite_orders": 34,
     "events": 1
   },
   {
     "date": "2025-06-18",
-    "gross_amount": 113.0,
-    "fee_amount": 1.9,
-    "net_amount": 111.1,
+    "sumup_gross_amount": 113.0,
+    "sumup_fee_amount": 1.9,
+    "sumup_net_amount": 111.1,
+    "reservations": 130,
+    "eventbrite_orders": 77,
     "events": 1
   },
   {
     "date": "2025-06-19",
-    "gross_amount": 55.0,
-    "fee_amount": 0.93,
-    "net_amount": 54.07,
+    "sumup_gross_amount": 55.0,
+    "sumup_fee_amount": 0.93,
+    "sumup_net_amount": 54.07,
+    "reservations": 80,
+    "eventbrite_orders": 44,
     "events": 1
   },
   {
     "date": "2025-06-23",
-    "gross_amount": 84.0,
-    "fee_amount": 1.39,
-    "net_amount": 82.61,
+    "sumup_gross_amount": 84.0,
+    "sumup_fee_amount": 1.39,
+    "sumup_net_amount": 82.61,
+    "reservations": 45,
+    "eventbrite_orders": 25,
+    "events": 1
+  },
+  {
+    "date": "2025-06-25",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 44,
+    "eventbrite_orders": 25,
+    "events": 1
+  },
+  {
+    "date": "2025-06-27",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 28,
+    "eventbrite_orders": 17,
     "events": 1
   },
   {
     "date": "2025-06-30",
-    "gross_amount": 70.0,
-    "fee_amount": 1.19,
-    "net_amount": 68.81,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.19,
+    "sumup_net_amount": 68.81,
+    "reservations": 60,
+    "eventbrite_orders": 35,
     "events": 1
   },
   {
     "date": "2025-07-01",
-    "gross_amount": 83.0,
-    "fee_amount": 1.37,
-    "net_amount": 81.63,
+    "sumup_gross_amount": 83.0,
+    "sumup_fee_amount": 1.37,
+    "sumup_net_amount": 81.63,
+    "reservations": 69,
+    "eventbrite_orders": 37,
     "events": 1
   },
   {
     "date": "2025-07-04",
-    "gross_amount": 167.86,
-    "fee_amount": 2.82,
-    "net_amount": 165.04,
+    "sumup_gross_amount": 167.86,
+    "sumup_fee_amount": 2.82,
+    "sumup_net_amount": 165.04,
+    "reservations": 165,
+    "eventbrite_orders": 81,
     "events": 1
   },
   {
     "date": "2025-07-05",
-    "gross_amount": 100.0,
-    "fee_amount": 1.69,
-    "net_amount": 98.31,
+    "sumup_gross_amount": 100.0,
+    "sumup_fee_amount": 1.69,
+    "sumup_net_amount": 98.31,
+    "reservations": 123,
+    "eventbrite_orders": 68,
     "events": 1
   },
   {
     "date": "2025-07-07",
-    "gross_amount": 92.0,
-    "fee_amount": 1.55,
-    "net_amount": 90.45,
+    "sumup_gross_amount": 92.0,
+    "sumup_fee_amount": 1.55,
+    "sumup_net_amount": 90.45,
+    "reservations": 55,
+    "eventbrite_orders": 33,
     "events": 1
   },
   {
     "date": "2025-07-10",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.83,
+    "sumup_net_amount": 49.17,
+    "reservations": 78,
+    "eventbrite_orders": 41,
     "events": 1
   },
   {
     "date": "2025-07-14",
-    "gross_amount": 70.0,
-    "fee_amount": 1.17,
-    "net_amount": 68.83,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.17,
+    "sumup_net_amount": 68.83,
+    "reservations": 52,
+    "eventbrite_orders": 31,
+    "events": 1
+  },
+  {
+    "date": "2025-07-16",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 21,
+    "eventbrite_orders": 10,
     "events": 1
   },
   {
     "date": "2025-07-18",
-    "gross_amount": 115.0,
-    "fee_amount": 1.92,
-    "net_amount": 113.08,
+    "sumup_gross_amount": 115.0,
+    "sumup_fee_amount": 1.92,
+    "sumup_net_amount": 113.08,
+    "reservations": 175,
+    "eventbrite_orders": 100,
+    "events": 1
+  },
+  {
+    "date": "2025-07-21",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 65,
+    "eventbrite_orders": 32,
     "events": 1
   },
   {
     "date": "2025-07-23",
-    "gross_amount": 70.0,
-    "fee_amount": 1.18,
-    "net_amount": 68.82,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.18,
+    "sumup_net_amount": 68.82,
+    "reservations": 242,
+    "eventbrite_orders": 131,
     "events": 1
   },
   {
     "date": "2025-07-24",
-    "gross_amount": 50.0,
-    "fee_amount": 0.84,
-    "net_amount": 49.16,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.84,
+    "sumup_net_amount": 49.16,
+    "reservations": 80,
+    "eventbrite_orders": 46,
     "events": 1
   },
   {
     "date": "2025-07-25",
-    "gross_amount": 170.0,
-    "fee_amount": 2.87,
-    "net_amount": 167.13,
+    "sumup_gross_amount": 170.0,
+    "sumup_fee_amount": 2.87,
+    "sumup_net_amount": 167.13,
+    "reservations": 290,
+    "eventbrite_orders": 144,
     "events": 1
   },
   {
     "date": "2025-07-28",
-    "gross_amount": 50.0,
-    "fee_amount": 0.84,
-    "net_amount": 49.16,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.84,
+    "sumup_net_amount": 49.16,
+    "reservations": 69,
+    "eventbrite_orders": 41,
     "events": 1
   },
   {
     "date": "2025-07-30",
-    "gross_amount": 230.0,
-    "fee_amount": 3.89,
-    "net_amount": 226.11,
+    "sumup_gross_amount": 230.0,
+    "sumup_fee_amount": 3.89,
+    "sumup_net_amount": 226.11,
+    "reservations": 145,
+    "eventbrite_orders": 78,
     "events": 1
   },
   {
     "date": "2025-08-04",
-    "gross_amount": 130.0,
-    "fee_amount": 2.18,
-    "net_amount": 127.82,
+    "sumup_gross_amount": 130.0,
+    "sumup_fee_amount": 2.18,
+    "sumup_net_amount": 127.82,
+    "reservations": 55,
+    "eventbrite_orders": 32,
+    "events": 1
+  },
+  {
+    "date": "2025-08-07",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 90,
+    "eventbrite_orders": 46,
     "events": 1
   },
   {
     "date": "2025-08-08",
-    "gross_amount": 135.0,
-    "fee_amount": 2.28,
-    "net_amount": 132.72,
+    "sumup_gross_amount": 135.0,
+    "sumup_fee_amount": 2.28,
+    "sumup_net_amount": 132.72,
+    "reservations": 344,
+    "eventbrite_orders": 173,
     "events": 1
   },
   {
     "date": "2025-08-09",
-    "gross_amount": 22.5,
-    "fee_amount": 0.36,
-    "net_amount": 22.14,
+    "sumup_gross_amount": 22.5,
+    "sumup_fee_amount": 0.36,
+    "sumup_net_amount": 22.14,
+    "reservations": 181,
+    "eventbrite_orders": 85,
     "events": 1
   },
   {
     "date": "2025-08-11",
-    "gross_amount": 50.0,
-    "fee_amount": 0.84,
-    "net_amount": 49.16,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.84,
+    "sumup_net_amount": 49.16,
+    "reservations": 65,
+    "eventbrite_orders": 36,
+    "events": 1
+  },
+  {
+    "date": "2025-08-18",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 45,
+    "eventbrite_orders": 25,
     "events": 1
   },
   {
     "date": "2025-08-20",
-    "gross_amount": 40.0,
-    "fee_amount": 0.68,
-    "net_amount": 39.32,
+    "sumup_gross_amount": 40.0,
+    "sumup_fee_amount": 0.68,
+    "sumup_net_amount": 39.32,
+    "reservations": 55,
+    "eventbrite_orders": 32,
     "events": 1
   },
   {
     "date": "2025-08-23",
-    "gross_amount": 136.0,
-    "fee_amount": 2.29,
-    "net_amount": 133.71,
+    "sumup_gross_amount": 136.0,
+    "sumup_fee_amount": 2.29,
+    "sumup_net_amount": 133.71,
+    "reservations": 199,
+    "eventbrite_orders": 88,
     "events": 1
   },
   {
     "date": "2025-08-25",
-    "gross_amount": 40.0,
-    "fee_amount": 0.65,
-    "net_amount": 39.35,
+    "sumup_gross_amount": 40.0,
+    "sumup_fee_amount": 0.65,
+    "sumup_net_amount": 39.35,
+    "reservations": 69,
+    "eventbrite_orders": 37,
     "events": 1
   },
   {
     "date": "2025-08-27",
-    "gross_amount": 95.0,
-    "fee_amount": 1.58,
-    "net_amount": 93.42,
+    "sumup_gross_amount": 95.0,
+    "sumup_fee_amount": 1.58,
+    "sumup_net_amount": 93.42,
+    "reservations": 145,
+    "eventbrite_orders": 82,
+    "events": 1
+  },
+  {
+    "date": "2025-08-28",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 89,
+    "eventbrite_orders": 50,
     "events": 1
   },
   {
     "date": "2025-09-08",
-    "gross_amount": 30.0,
-    "fee_amount": 0.49,
-    "net_amount": 29.51,
+    "sumup_gross_amount": 30.0,
+    "sumup_fee_amount": 0.49,
+    "sumup_net_amount": 29.51,
+    "reservations": 55,
+    "eventbrite_orders": 29,
     "events": 1
   },
   {
     "date": "2025-09-11",
-    "gross_amount": 15.0,
-    "fee_amount": 0.24,
-    "net_amount": 14.76,
+    "sumup_gross_amount": 15.0,
+    "sumup_fee_amount": 0.24,
+    "sumup_net_amount": 14.76,
+    "reservations": 49,
+    "eventbrite_orders": 22,
     "events": 1
   },
   {
     "date": "2025-09-12",
-    "gross_amount": 53.0,
-    "fee_amount": 0.89,
-    "net_amount": 52.11,
+    "sumup_gross_amount": 53.0,
+    "sumup_fee_amount": 0.89,
+    "sumup_net_amount": 52.11,
+    "reservations": 97,
+    "eventbrite_orders": 48,
     "events": 1
   },
   {
     "date": "2025-09-15",
-    "gross_amount": 53.0,
-    "fee_amount": 0.88,
-    "net_amount": 52.12,
+    "sumup_gross_amount": 53.0,
+    "sumup_fee_amount": 0.88,
+    "sumup_net_amount": 52.12,
+    "reservations": 30,
+    "eventbrite_orders": 18,
+    "events": 1
+  },
+  {
+    "date": "2025-09-17",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
     "events": 1
   },
   {
     "date": "2025-09-18",
-    "gross_amount": 110.0,
-    "fee_amount": 1.86,
-    "net_amount": 108.14,
+    "sumup_gross_amount": 110.0,
+    "sumup_fee_amount": 1.86,
+    "sumup_net_amount": 108.14,
+    "reservations": 207,
+    "eventbrite_orders": 109,
     "events": 1
   },
   {
     "date": "2025-09-20",
-    "gross_amount": 65.0,
-    "fee_amount": 1.09,
-    "net_amount": 63.91,
+    "sumup_gross_amount": 65.0,
+    "sumup_fee_amount": 1.09,
+    "sumup_net_amount": 63.91,
+    "reservations": 88,
+    "eventbrite_orders": 40,
     "events": 1
   },
   {
     "date": "2025-09-22",
-    "gross_amount": 30.0,
-    "fee_amount": 0.5,
-    "net_amount": 29.5,
+    "sumup_gross_amount": 30.0,
+    "sumup_fee_amount": 0.5,
+    "sumup_net_amount": 29.5,
+    "reservations": 35,
+    "eventbrite_orders": 19,
     "events": 1
   },
   {
     "date": "2025-09-24",
-    "gross_amount": 155.0,
-    "fee_amount": 2.62,
-    "net_amount": 152.38,
+    "sumup_gross_amount": 155.0,
+    "sumup_fee_amount": 2.62,
+    "sumup_net_amount": 152.38,
+    "reservations": 110,
+    "eventbrite_orders": 57,
     "events": 1
   },
   {
     "date": "2025-09-25",
-    "gross_amount": 60.0,
-    "fee_amount": 1.01,
-    "net_amount": 58.99,
+    "sumup_gross_amount": 60.0,
+    "sumup_fee_amount": 1.01,
+    "sumup_net_amount": 58.99,
+    "reservations": 44,
+    "eventbrite_orders": 25,
+    "events": 1
+  },
+  {
+    "date": "2025-09-26",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 80,
+    "eventbrite_orders": 38,
     "events": 1
   },
   {
     "date": "2025-09-29",
-    "gross_amount": 53.0,
-    "fee_amount": 0.89,
-    "net_amount": 52.11,
+    "sumup_gross_amount": 53.0,
+    "sumup_fee_amount": 0.89,
+    "sumup_net_amount": 52.11,
+    "reservations": 53,
+    "eventbrite_orders": 30,
     "events": 1
   },
   {
     "date": "2025-10-04",
-    "gross_amount": 95.0,
-    "fee_amount": 1.6,
-    "net_amount": 93.4,
+    "sumup_gross_amount": 95.0,
+    "sumup_fee_amount": 1.6,
+    "sumup_net_amount": 93.4,
+    "reservations": 159,
+    "eventbrite_orders": 81,
     "events": 1
   },
   {
     "date": "2025-10-06",
-    "gross_amount": 40.0,
-    "fee_amount": 0.66,
-    "net_amount": 39.34,
+    "sumup_gross_amount": 40.0,
+    "sumup_fee_amount": 0.66,
+    "sumup_net_amount": 39.34,
+    "reservations": 41,
+    "eventbrite_orders": 29,
     "events": 1
   },
   {
     "date": "2025-10-09",
-    "gross_amount": 10.0,
-    "fee_amount": 0.16,
-    "net_amount": 9.84,
+    "sumup_gross_amount": 10.0,
+    "sumup_fee_amount": 0.16,
+    "sumup_net_amount": 9.84,
+    "reservations": 57,
+    "eventbrite_orders": 28,
     "events": 1
   },
   {
     "date": "2025-10-13",
-    "gross_amount": 30.0,
-    "fee_amount": 0.49,
-    "net_amount": 29.51,
+    "sumup_gross_amount": 30.0,
+    "sumup_fee_amount": 0.49,
+    "sumup_net_amount": 29.51,
+    "reservations": 51,
+    "eventbrite_orders": 29,
     "events": 1
   },
   {
     "date": "2025-10-15",
-    "gross_amount": 100.0,
-    "fee_amount": 1.68,
-    "net_amount": 98.32,
+    "sumup_gross_amount": 100.0,
+    "sumup_fee_amount": 1.68,
+    "sumup_net_amount": 98.32,
+    "reservations": 53,
+    "eventbrite_orders": 26,
     "events": 1
   },
   {
     "date": "2025-10-20",
-    "gross_amount": 81.0,
-    "fee_amount": 1.36,
-    "net_amount": 79.64,
+    "sumup_gross_amount": 81.0,
+    "sumup_fee_amount": 1.36,
+    "sumup_net_amount": 79.64,
+    "reservations": 38,
+    "eventbrite_orders": 20,
     "events": 1
   },
   {
     "date": "2025-10-23",
-    "gross_amount": 52.0,
-    "fee_amount": 0.85,
-    "net_amount": 51.15,
+    "sumup_gross_amount": 52.0,
+    "sumup_fee_amount": 0.85,
+    "sumup_net_amount": 51.15,
+    "reservations": 59,
+    "eventbrite_orders": 29,
+    "events": 1
+  },
+  {
+    "date": "2025-10-24",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 62,
+    "eventbrite_orders": 33,
     "events": 1
   },
   {
     "date": "2025-10-27",
-    "gross_amount": 73.0,
-    "fee_amount": 1.21,
-    "net_amount": 71.79,
+    "sumup_gross_amount": 73.0,
+    "sumup_fee_amount": 1.21,
+    "sumup_net_amount": 71.79,
+    "reservations": 75,
+    "eventbrite_orders": 42,
     "events": 1
   },
   {
     "date": "2025-10-29",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.83,
+    "sumup_net_amount": 49.17,
+    "reservations": 137,
+    "eventbrite_orders": 77,
     "events": 1
   },
   {
     "date": "2025-11-03",
-    "gross_amount": 50.0,
-    "fee_amount": 0.84,
-    "net_amount": 49.16,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.84,
+    "sumup_net_amount": 49.16,
+    "reservations": 53,
+    "eventbrite_orders": 39,
     "events": 1
   },
   {
     "date": "2025-11-05",
-    "gross_amount": 225.0,
-    "fee_amount": 3.73,
-    "net_amount": 221.27,
+    "sumup_gross_amount": 225.0,
+    "sumup_fee_amount": 3.73,
+    "sumup_net_amount": 221.27,
+    "reservations": 134,
+    "eventbrite_orders": 75,
     "events": 1
   },
   {
     "date": "2025-11-08",
-    "gross_amount": 65.0,
-    "fee_amount": 1.08,
-    "net_amount": 63.92,
+    "sumup_gross_amount": 65.0,
+    "sumup_fee_amount": 1.08,
+    "sumup_net_amount": 63.92,
+    "reservations": 115,
+    "eventbrite_orders": 61,
     "events": 1
   },
   {
     "date": "2025-11-10",
-    "gross_amount": 72.0,
-    "fee_amount": 1.19,
-    "net_amount": 70.81,
+    "sumup_gross_amount": 72.0,
+    "sumup_fee_amount": 1.19,
+    "sumup_net_amount": 70.81,
+    "reservations": 51,
+    "eventbrite_orders": 31,
     "events": 1
   },
   {
     "date": "2025-11-13",
-    "gross_amount": 13.0,
-    "fee_amount": 0.2,
-    "net_amount": 12.8,
+    "sumup_gross_amount": 13.0,
+    "sumup_fee_amount": 0.2,
+    "sumup_net_amount": 12.8,
+    "reservations": 64,
+    "eventbrite_orders": 33,
     "events": 1
   },
   {
     "date": "2025-11-15",
-    "gross_amount": 80.0,
-    "fee_amount": 1.35,
-    "net_amount": 78.65,
+    "sumup_gross_amount": 80.0,
+    "sumup_fee_amount": 1.35,
+    "sumup_net_amount": 78.65,
+    "reservations": 132,
+    "eventbrite_orders": 70,
+    "events": 1
+  },
+  {
+    "date": "2025-11-17",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 28,
+    "eventbrite_orders": 16,
     "events": 1
   },
   {
     "date": "2025-11-19",
-    "gross_amount": 20.0,
-    "fee_amount": 0.34,
-    "net_amount": 19.66,
+    "sumup_gross_amount": 20.0,
+    "sumup_fee_amount": 0.34,
+    "sumup_net_amount": 19.66,
+    "reservations": 122,
+    "eventbrite_orders": 54,
     "events": 1
   },
   {
     "date": "2025-11-21",
-    "gross_amount": 105.0,
-    "fee_amount": 1.73,
-    "net_amount": 103.27,
+    "sumup_gross_amount": 105.0,
+    "sumup_fee_amount": 1.73,
+    "sumup_net_amount": 103.27,
+    "reservations": 253,
+    "eventbrite_orders": 126,
     "events": 1
   },
   {
     "date": "2025-11-24",
-    "gross_amount": 95.0,
-    "fee_amount": 1.58,
-    "net_amount": 93.42,
+    "sumup_gross_amount": 95.0,
+    "sumup_fee_amount": 1.58,
+    "sumup_net_amount": 93.42,
+    "reservations": 40,
+    "eventbrite_orders": 24,
     "events": 1
   },
   {
     "date": "2025-11-26",
-    "gross_amount": 70.0,
-    "fee_amount": 1.18,
-    "net_amount": 68.82,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.18,
+    "sumup_net_amount": 68.82,
+    "reservations": 143,
+    "eventbrite_orders": 67,
     "events": 1
   },
   {
     "date": "2025-11-27",
-    "gross_amount": 35.0,
-    "fee_amount": 0.59,
-    "net_amount": 34.41,
+    "sumup_gross_amount": 35.0,
+    "sumup_fee_amount": 0.59,
+    "sumup_net_amount": 34.41,
+    "reservations": 58,
+    "eventbrite_orders": 35,
+    "events": 1
+  },
+  {
+    "date": "2025-11-28",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 66,
+    "eventbrite_orders": 23,
     "events": 1
   },
   {
     "date": "2025-12-01",
-    "gross_amount": 115.01,
-    "fee_amount": 1.93,
-    "net_amount": 113.08,
+    "sumup_gross_amount": 115.01,
+    "sumup_fee_amount": 1.93,
+    "sumup_net_amount": 113.08,
+    "reservations": 41,
+    "eventbrite_orders": 27,
     "events": 1
   },
   {
     "date": "2025-12-06",
-    "gross_amount": 22.0,
-    "fee_amount": 0.36,
-    "net_amount": 21.64,
+    "sumup_gross_amount": 22.0,
+    "sumup_fee_amount": 0.36,
+    "sumup_net_amount": 21.64,
+    "reservations": 96,
+    "eventbrite_orders": 47,
     "events": 1
   },
   {
     "date": "2025-12-08",
-    "gross_amount": 20.0,
-    "fee_amount": 0.33,
-    "net_amount": 19.67,
+    "sumup_gross_amount": 20.0,
+    "sumup_fee_amount": 0.33,
+    "sumup_net_amount": 19.67,
+    "reservations": 74,
+    "eventbrite_orders": 37,
     "events": 1
   },
   {
     "date": "2025-12-28",
-    "gross_amount": 205.0,
-    "fee_amount": 3.42,
-    "net_amount": 201.58,
+    "sumup_gross_amount": 205.0,
+    "sumup_fee_amount": 3.42,
+    "sumup_net_amount": 201.58,
+    "reservations": 72,
+    "eventbrite_orders": 40,
     "events": 1
   },
   {
     "date": "2026-01-05",
-    "gross_amount": 70.0,
-    "fee_amount": 1.15,
-    "net_amount": 68.85,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.15,
+    "sumup_net_amount": 68.85,
+    "reservations": 33,
+    "eventbrite_orders": 23,
     "events": 1
   },
   {
     "date": "2026-01-10",
-    "gross_amount": 214.0,
-    "fee_amount": 3.66,
-    "net_amount": 210.34,
+    "sumup_gross_amount": 214.0,
+    "sumup_fee_amount": 3.66,
+    "sumup_net_amount": 210.34,
+    "reservations": 60,
+    "eventbrite_orders": 33,
     "events": 1
   },
   {
     "date": "2026-01-12",
-    "gross_amount": 35.0,
-    "fee_amount": 0.59,
-    "net_amount": 34.41,
+    "sumup_gross_amount": 35.0,
+    "sumup_fee_amount": 0.59,
+    "sumup_net_amount": 34.41,
+    "reservations": 23,
+    "eventbrite_orders": 13,
     "events": 1
   },
   {
     "date": "2026-01-16",
-    "gross_amount": 30.0,
-    "fee_amount": 0.49,
-    "net_amount": 29.51,
+    "sumup_gross_amount": 30.0,
+    "sumup_fee_amount": 0.49,
+    "sumup_net_amount": 29.51,
+    "reservations": 58,
+    "eventbrite_orders": 33,
+    "events": 1
+  },
+  {
+    "date": "2026-01-19",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 23,
+    "eventbrite_orders": 11,
     "events": 1
   },
   {
     "date": "2026-01-23",
-    "gross_amount": 68.0,
-    "fee_amount": 1.12,
-    "net_amount": 66.88,
+    "sumup_gross_amount": 68.0,
+    "sumup_fee_amount": 1.12,
+    "sumup_net_amount": 66.88,
+    "reservations": 110,
+    "eventbrite_orders": 110,
     "events": 1
   },
   {
     "date": "2026-01-25",
-    "gross_amount": 241.0,
-    "fee_amount": 4.05,
-    "net_amount": 236.95,
+    "sumup_gross_amount": 241.0,
+    "sumup_fee_amount": 4.05,
+    "sumup_net_amount": 236.95,
+    "reservations": 117,
+    "eventbrite_orders": 67,
     "events": 1
   },
   {
     "date": "2026-01-26",
-    "gross_amount": 48.0,
-    "fee_amount": 0.81,
-    "net_amount": 47.19,
+    "sumup_gross_amount": 48.0,
+    "sumup_fee_amount": 0.81,
+    "sumup_net_amount": 47.19,
+    "reservations": 54,
+    "eventbrite_orders": 32,
     "events": 1
   },
   {
     "date": "2026-01-29",
-    "gross_amount": 97.0,
-    "fee_amount": 1.63,
-    "net_amount": 95.37,
+    "sumup_gross_amount": 97.0,
+    "sumup_fee_amount": 1.63,
+    "sumup_net_amount": 95.37,
+    "reservations": 56,
+    "eventbrite_orders": 31,
     "events": 1
   },
   {
     "date": "2026-02-02",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.83,
+    "sumup_net_amount": 49.17,
+    "reservations": 26,
+    "eventbrite_orders": 19,
     "events": 1
   },
   {
     "date": "2026-02-04",
-    "gross_amount": 45.0,
-    "fee_amount": 0.75,
-    "net_amount": 44.25,
+    "sumup_gross_amount": 45.0,
+    "sumup_fee_amount": 0.75,
+    "sumup_net_amount": 44.25,
+    "reservations": 42,
+    "eventbrite_orders": 18,
+    "events": 1
+  },
+  {
+    "date": "2026-02-06",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 96,
+    "eventbrite_orders": 48,
     "events": 1
   },
   {
     "date": "2026-02-09",
-    "gross_amount": 25.0,
-    "fee_amount": 0.41,
-    "net_amount": 24.59,
+    "sumup_gross_amount": 25.0,
+    "sumup_fee_amount": 0.41,
+    "sumup_net_amount": 24.59,
+    "reservations": 36,
+    "eventbrite_orders": 18,
     "events": 1
   },
   {
     "date": "2026-02-12",
-    "gross_amount": 60.0,
-    "fee_amount": 1.01,
-    "net_amount": 58.99,
+    "sumup_gross_amount": 60.0,
+    "sumup_fee_amount": 1.01,
+    "sumup_net_amount": 58.99,
+    "reservations": 49,
+    "eventbrite_orders": 25,
     "events": 1
   },
   {
     "date": "2026-02-15",
-    "gross_amount": 80.0,
-    "fee_amount": 1.34,
-    "net_amount": 78.66,
+    "sumup_gross_amount": 80.0,
+    "sumup_fee_amount": 1.34,
+    "sumup_net_amount": 78.66,
+    "reservations": 58,
+    "eventbrite_orders": 31,
     "events": 1
   },
   {
     "date": "2026-02-16",
-    "gross_amount": 55.0,
-    "fee_amount": 0.9,
-    "net_amount": 54.1,
+    "sumup_gross_amount": 55.0,
+    "sumup_fee_amount": 0.9,
+    "sumup_net_amount": 54.1,
+    "reservations": 61,
+    "eventbrite_orders": 35,
     "events": 1
   },
   {
     "date": "2026-02-20",
-    "gross_amount": 505.0,
-    "fee_amount": 8.58,
-    "net_amount": 496.42,
+    "sumup_gross_amount": 505.0,
+    "sumup_fee_amount": 8.58,
+    "sumup_net_amount": 496.42,
+    "reservations": 91,
+    "eventbrite_orders": 52,
     "events": 1
   },
   {
     "date": "2026-02-21",
-    "gross_amount": 70.0,
-    "fee_amount": 1.17,
-    "net_amount": 68.83,
+    "sumup_gross_amount": 70.0,
+    "sumup_fee_amount": 1.17,
+    "sumup_net_amount": 68.83,
+    "reservations": 59,
+    "eventbrite_orders": 59,
     "events": 1
   },
   {
     "date": "2026-02-22",
-    "gross_amount": 166.0,
-    "fee_amount": 2.8,
-    "net_amount": 163.2,
+    "sumup_gross_amount": 166.0,
+    "sumup_fee_amount": 2.8,
+    "sumup_net_amount": 163.2,
+    "reservations": 93,
+    "eventbrite_orders": 45,
     "events": 1
   },
   {
     "date": "2026-02-23",
-    "gross_amount": 33.0,
-    "fee_amount": 0.55,
-    "net_amount": 32.45,
-    "events": 1
+    "sumup_gross_amount": 33.0,
+    "sumup_fee_amount": 0.55,
+    "sumup_net_amount": 32.45,
+    "reservations": 75,
+    "eventbrite_orders": 41,
+    "events": 2
   },
   {
     "date": "2026-02-26",
-    "gross_amount": 15.0,
-    "fee_amount": 0.25,
-    "net_amount": 14.75,
+    "sumup_gross_amount": 15.0,
+    "sumup_fee_amount": 0.25,
+    "sumup_net_amount": 14.75,
+    "reservations": 67,
+    "eventbrite_orders": 34,
+    "events": 1
+  },
+  {
+    "date": "2026-03-02",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-03-09",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
     "events": 1
   },
   {
     "date": "2026-03-12",
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
+    "sumup_gross_amount": 50.0,
+    "sumup_fee_amount": 0.83,
+    "sumup_net_amount": 49.17,
+    "reservations": 16,
+    "eventbrite_orders": 4,
+    "events": 1
+  },
+  {
+    "date": "2026-03-13",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 68,
+    "eventbrite_orders": 33,
+    "events": 1
+  },
+  {
+    "date": "2026-03-16",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-03-23",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-03-26",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 2,
+    "eventbrite_orders": 2,
+    "events": 1
+  },
+  {
+    "date": "2026-03-29",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 19,
+    "eventbrite_orders": 10,
+    "events": 1
+  },
+  {
+    "date": "2026-03-30",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-04-01",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-04-06",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-04-13",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-04-16",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 1,
+    "eventbrite_orders": 1,
+    "events": 1
+  },
+  {
+    "date": "2026-04-20",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-04-24",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 12,
+    "eventbrite_orders": 5,
+    "events": 1
+  },
+  {
+    "date": "2026-04-26",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 8,
+    "eventbrite_orders": 4,
+    "events": 1
+  },
+  {
+    "date": "2026-04-27",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-04-30",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-05-04",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-05-11",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-05-18",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-05-24",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 5,
+    "eventbrite_orders": 2,
+    "events": 1
+  },
+  {
+    "date": "2026-05-25",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-06-01",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-06-03",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-06-08",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-06-28",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 4,
+    "eventbrite_orders": 2,
+    "events": 1
+  },
+  {
+    "date": "2026-08-05",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-10-07",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
+    "events": 1
+  },
+  {
+    "date": "2026-12-02",
+    "sumup_gross_amount": 0.0,
+    "sumup_fee_amount": 0.0,
+    "sumup_net_amount": 0.0,
+    "reservations": 0,
+    "eventbrite_orders": 0,
     "events": 1
   }
 ]

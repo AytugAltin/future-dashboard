@@ -21,10 +21,10 @@ npm run dev
 
 ## Scope
 
-- overview cards
-- sales timeseries
-- top events
-- top venues
+- 2025+ reporting window
+- Eventbrite reservations / orders / upcoming events
+- SumUp tracked income
+- venue and event comparisons
 - data quality snapshot
 
 No provider API access lives here.

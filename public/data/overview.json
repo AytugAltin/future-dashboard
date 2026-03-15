@@ -1,17 +1,22 @@
 {
-  "generated_at": "2026-03-15T14:35:09.719906+00:00",
-  "events_with_linked_income": 186,
+  "generated_at": "2026-03-15T15:37:23.157124+00:00",
+  "report_start_date": "2025-01-01",
+  "events_total": 178,
+  "upcoming_events": 26,
   "venues_with_linked_income": 15,
-  "linked_payouts": 1429,
-  "unmatched_payouts": 75,
-  "total_linked_net_income": 12857.06,
-  "total_linked_gross_income": 13075.98,
-  "total_linked_fees": 218.92,
-  "unmatched_net_amount": 648.96,
+  "linked_payouts": 1058,
+  "unmatched_payouts": 22,
+  "total_reservations": 11802,
+  "total_eventbrite_orders": 6406,
+  "total_linked_net_income": 9808.29,
+  "total_linked_gross_income": 9975.38,
+  "total_linked_fees": 167.09,
+  "unmatched_net_amount": 257.57,
+  "ignored_eventbrite_revenue_total": 223.4,
   "confidence_counts": {
-    "high": 1250,
+    "high": 1045,
     "medium": 0,
-    "low": 179,
-    "unmatched": 75
+    "low": 13,
+    "unmatched": 22
   }
 }

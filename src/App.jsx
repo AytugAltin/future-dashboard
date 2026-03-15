@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 
 const euro = new Intl.NumberFormat('en-BE', { style: 'currency', currency: 'EUR' })
 const intFmt = new Intl.NumberFormat('en-BE')
@@ -29,16 +29,17 @@ export default function App() {
   useEffect(() => {
     Promise.all([
       fetch('/data/overview.json').then((r) => r.json()),
-      fetch('/data/events.json').then((r) => r.json()),
+      fetch('/data/events_overview.json').then((r) => r.json()),
       fetch('/data/venues.json').then((r) => r.json()),
       fetch('/data/sales_timeseries.json').then((r) => r.json()),
       fetch('/data/quality.json').then((r) => r.json()),
-    ]).then(([overview, events, venues, salesTimeseries, quality]) => {
-      setData({ overview, events, venues, salesTimeseries, quality })
+      fetch('/data/upcoming_events.json').then((r) => r.json()),
+    ]).then(([overview, eventsOverview, venues, salesTimeseries, quality, upcomingEvents]) => {
+      setData({ overview, eventsOverview, venues, salesTimeseries, quality, upcomingEvents })
     })
   }, [])
 
-  const topEvents = useMemo(() => (data?.events ?? []).slice().sort((a, b) => b.net_amount - a.net_amount).slice(0, 10), [data])
+  const topEvents = useMemo(() => (data?.eventsOverview ?? []).slice().sort((a, b) => b.sumup_net_amount - a.sumup_net_amount).slice(0, 10), [data])
   const topVenues = useMemo(() => (data?.venues ?? []).slice().sort((a, b) => b.net_amount - a.net_amount).slice(0, 10), [data])
 
   if (!data) return <div className="shell"><p>Loading dashboard…</p></div>
@@ -48,20 +49,23 @@ export default function App() {
       <header className="header">
         <div>
           <h1>Future Dashboard</h1>
-          <p>Read-only reporting layer from the sibling <code>future</code> repo.</p>
+          <p>2025+ view. Eventbrite = reservations. SumUp = tracked income.</p>
         </div>
-        <div className="stamp">Generated {new Date(data.overview.generated_at).toLocaleString()}</div>
+        <div className="stamp">
+          <div>From {data.overview.report_start_date}</div>
+          <div>Generated {new Date(data.overview.generated_at).toLocaleString()}</div>
+        </div>
       </header>
 
       <div className="grid cards">
-        <Card label="Linked net income" value={euro.format(data.overview.total_linked_net_income)} />
-        <Card label="Linked payouts" value={intFmt.format(data.overview.linked_payouts)} />
-        <Card label="Events with income" value={intFmt.format(data.overview.events_with_linked_income)} />
+        <Card label="Tracked net income" value={euro.format(data.overview.total_linked_net_income)} />
+        <Card label="Reservations" value={intFmt.format(data.overview.total_reservations)} subtext={`${intFmt.format(data.overview.total_eventbrite_orders)} Eventbrite orders`} />
+        <Card label="Upcoming events" value={intFmt.format(data.overview.upcoming_events)} subtext={`${intFmt.format(data.overview.events_total)} total events`} />
         <Card label="Unmatched net" value={euro.format(data.overview.unmatched_net_amount)} subtext={`${intFmt.format(data.overview.unmatched_payouts)} payouts`} />
       </div>
 
       <div className="grid two-up">
-        <Section title="Linked net income over time">
+        <Section title="Tracked income over time">
           <div className="chartWrap">
             <ResponsiveContainer width="100%" height={280}>
               <AreaChart data={data.salesTimeseries}>
@@ -69,9 +73,45 @@ export default function App() {
                 <XAxis dataKey="date" stroke="#a5b4fc" />
                 <YAxis stroke="#a5b4fc" />
                 <Tooltip />
-                <Area type="monotone" dataKey="net_amount" stroke="#60a5fa" fill="#60a5fa33" />
+                <Area type="monotone" dataKey="sumup_net_amount" stroke="#60a5fa" fill="#60a5fa33" />
               </AreaChart>
             </ResponsiveContainer>
+          </div>
+        </Section>
+
+        <Section title="Reservations over time">
+          <div className="chartWrap">
+            <ResponsiveContainer width="100%" height={280}>
+              <LineChart data={data.salesTimeseries}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#24304e" />
+                <XAxis dataKey="date" stroke="#a5b4fc" />
+                <YAxis stroke="#a5b4fc" />
+                <Tooltip />
+                <Line type="monotone" dataKey="reservations" stroke="#f59e0b" strokeWidth={2} dot={false} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </Section>
+      </div>
+
+      <div className="grid two-up">
+        <Section title="Upcoming events">
+          <div className="tableWrap">
+            <table>
+              <thead>
+                <tr><th>Date</th><th>Event</th><th>Venue</th><th>Reservations</th></tr>
+              </thead>
+              <tbody>
+                {data.upcomingEvents.slice(0, 10).map((row) => (
+                  <tr key={row.event_id}>
+                    <td>{row.event_date}</td>
+                    <td>{row.event_name}</td>
+                    <td>{row.venue_name}</td>
+                    <td>{intFmt.format(row.reservation_count)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </Section>
 
@@ -84,23 +124,24 @@ export default function App() {
               </div>
             ))}
           </div>
+          <p className="subtle">Ignored legacy Eventbrite revenue: {euro.format(data.overview.ignored_eventbrite_revenue_total)}</p>
         </Section>
       </div>
 
       <div className="grid two-up">
-        <Section title="Top events by net income">
+        <Section title="Top events by tracked net income">
           <div className="tableWrap">
             <table>
               <thead>
-                <tr><th>Date</th><th>Event</th><th>Venue</th><th>Net</th></tr>
+                <tr><th>Date</th><th>Event</th><th>Reservations</th><th>Net</th></tr>
               </thead>
               <tbody>
                 {topEvents.map((row) => (
                   <tr key={row.event_id}>
                     <td>{row.event_date}</td>
                     <td>{row.event_name}</td>
-                    <td>{row.venue_name}</td>
-                    <td>{euro.format(row.net_amount)}</td>
+                    <td>{intFmt.format(row.reservation_count)}</td>
+                    <td>{euro.format(row.sumup_net_amount)}</td>
                   </tr>
                 ))}
               </tbody>
@@ -108,7 +149,7 @@ export default function App() {
           </div>
         </Section>
 
-        <Section title="Top venues by net income">
+        <Section title="Top venues by tracked net income">
           <div className="chartWrap">
             <ResponsiveContainer width="100%" height={320}>
               <BarChart data={topVenues} layout="vertical" margin={{ left: 30 }}>
@@ -123,42 +164,26 @@ export default function App() {
         </Section>
       </div>
 
-      <Section title="Low-confidence / unmatched samples">
-        <div className="grid two-up">
-          <div className="tableWrap">
-            <h3>Low confidence</h3>
-            <table>
-              <thead>
-                <tr><th>Date</th><th>Event</th><th>Amount</th></tr>
-              </thead>
-              <tbody>
-                {data.quality.sample_low_confidence.slice(0, 8).map((row, idx) => (
-                  <tr key={idx}>
-                    <td>{row.payout_date}</td>
-                    <td>{row.event_name}</td>
-                    <td>{euro.format(row.amount)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <div className="tableWrap">
-            <h3>Unmatched</h3>
-            <table>
-              <thead>
-                <tr><th>Date</th><th>Code</th><th>Amount</th></tr>
-              </thead>
-              <tbody>
-                {data.quality.sample_unmatched.slice(0, 8).map((row, idx) => (
-                  <tr key={idx}>
-                    <td>{row.payout_date}</td>
-                    <td>{row.transaction_code}</td>
-                    <td>{euro.format(row.amount)}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+      <Section title="Reservation vs income samples">
+        <div className="tableWrap">
+          <table>
+            <thead>
+              <tr><th>Date</th><th>Event</th><th>Reservations</th><th>Capacity</th><th>Fill</th><th>Tracked net</th><th>€/reservation</th></tr>
+            </thead>
+            <tbody>
+              {data.eventsOverview.slice().sort((a, b) => b.reservation_count - a.reservation_count).slice(0, 12).map((row) => (
+                <tr key={row.event_id}>
+                  <td>{row.event_date}</td>
+                  <td>{row.event_name}</td>
+                  <td>{intFmt.format(row.reservation_count)}</td>
+                  <td>{row.event_capacity ? intFmt.format(row.event_capacity) : '—'}</td>
+                  <td>{row.reservation_fill_ratio != null ? `${Math.round(row.reservation_fill_ratio * 100)}%` : '—'}</td>
+                  <td>{euro.format(row.sumup_net_amount)}</td>
+                  <td>{euro.format(row.income_per_reservation)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </Section>
     </div>

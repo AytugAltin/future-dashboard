@@ -14,20 +14,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-07-25",
-    "event_name": "Comedy Underground: FREE English Standup Comedy",
-    "event_id": "940554643257",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 24,
-    "gross_amount": 296.0,
-    "fee_amount": 5.0,
-    "net_amount": 291.0,
-    "high_count": 11,
-    "medium_count": 0,
-    "low_count": 13
-  },
-  {
     "event_date": "2026-01-25",
     "event_name": "English Stand-Up Comedy Antwerp: Best of Belgium",
     "event_id": "1980258154447",
@@ -210,20 +196,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-05-11",
-    "event_name": "Best of Brussels: English Stand-up Comedy",
-    "event_id": "886764014037",
-    "venue_name": "GC Elzenhof",
-    "venue_city": "Ixelles",
-    "payout_count": 19,
-    "gross_amount": 148.5,
-    "fee_amount": 2.52,
-    "net_amount": 145.98,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 19
-  },
-  {
     "event_date": "2025-08-23",
     "event_name": "FREE English Stand-Up Comedy Antwerp Week-End: Best of Belgium",
     "event_id": "1540143172689",
@@ -248,20 +220,6 @@
     "fee_amount": 2.28,
     "net_amount": 132.72,
     "high_count": 13,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-09-26",
-    "event_name": "Comedy Underground: FREE English Standup Comedy",
-    "event_id": "965946490957",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 11,
-    "gross_amount": 134.99,
-    "fee_amount": 2.27,
-    "net_amount": 132.72,
-    "high_count": 11,
     "medium_count": 0,
     "low_count": 0
   },
@@ -292,20 +250,6 @@
     "high_count": 15,
     "medium_count": 0,
     "low_count": 0
-  },
-  {
-    "event_date": "2024-10-19",
-    "event_name": "SaturdayNight Comedy : Free English Stand-Up Comedy",
-    "event_id": "1029840951007",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 18,
-    "gross_amount": 127.99,
-    "fee_amount": 2.12,
-    "net_amount": 125.87,
-    "high_count": 8,
-    "medium_count": 0,
-    "low_count": 10
   },
   {
     "event_date": "2025-02-08",
@@ -392,20 +336,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-10-26",
-    "event_name": "Weekend Comedy: FREE English Stand-Up Comedy In Brussels",
-    "event_id": "1006359627737",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 13,
-    "gross_amount": 114.0,
-    "fee_amount": 1.91,
-    "net_amount": 112.09,
-    "high_count": 13,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-06-18",
     "event_name": "FREE English Stand-Up Comedy Antwerp: Best of Belgium",
     "event_id": "1390585421429",
@@ -444,20 +374,6 @@
     "fee_amount": 1.86,
     "net_amount": 108.14,
     "high_count": 8,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-08-27",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838729617",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 7,
-    "gross_amount": 110.0,
-    "fee_amount": 1.87,
-    "net_amount": 108.13,
-    "high_count": 7,
     "medium_count": 0,
     "low_count": 0
   },
@@ -602,20 +518,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-06-27",
-    "event_name": "Comedy Underground: FREE English Standup Comedy",
-    "event_id": "913448086817",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 8,
-    "gross_amount": 90.0,
-    "fee_amount": 1.51,
-    "net_amount": 88.49,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 8
-  },
-  {
     "event_date": "2025-05-29",
     "event_name": "Thursday Night Comedy: Free English Stand-Up in Brussels",
     "event_id": "1359183106259",
@@ -656,20 +558,6 @@
     "high_count": 8,
     "medium_count": 0,
     "low_count": 0
-  },
-  {
-    "event_date": "2024-06-18",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496040857",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 7,
-    "gross_amount": 85.0,
-    "fee_amount": 1.44,
-    "net_amount": 83.56,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 7
   },
   {
     "event_date": "2025-06-23",
@@ -728,34 +616,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-02-20",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495870347",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 10,
-    "gross_amount": 80.0,
-    "fee_amount": 1.33,
-    "net_amount": 78.67,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 10
-  },
-  {
-    "event_date": "2024-09-21",
-    "event_name": "SaturdayNight Comedy : Free English Stand-Up Comedy",
-    "event_id": "1011119083397",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 9,
-    "gross_amount": 80.0,
-    "fee_amount": 1.33,
-    "net_amount": 78.67,
-    "high_count": 9,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2026-02-15",
     "event_name": "English Stand-Up Comedy Antwerp: Best of Belgium",
     "event_id": "1983086316556",
@@ -784,20 +644,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-02-06",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495850287",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 14,
-    "gross_amount": 78.0,
-    "fee_amount": 1.29,
-    "net_amount": 76.71,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 14
-  },
-  {
     "event_date": "2025-04-28",
     "event_name": "Spotlight Monday: The Super Show, Free English Stand-Up Comedy (Leuven)",
     "event_id": "1314888399599",
@@ -810,20 +656,6 @@
     "high_count": 5,
     "medium_count": 0,
     "low_count": 0
-  },
-  {
-    "event_date": "2024-01-23",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495830227",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 8,
-    "gross_amount": 75.0,
-    "fee_amount": 1.25,
-    "net_amount": 73.75,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 8
   },
   {
     "event_date": "2025-01-14",
@@ -878,20 +710,6 @@
     "fee_amount": 1.27,
     "net_amount": 73.73,
     "high_count": 7,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-10-15",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "965955929187",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 74.0,
-    "fee_amount": 1.25,
-    "net_amount": 72.75,
-    "high_count": 5,
     "medium_count": 0,
     "low_count": 0
   },
@@ -1092,20 +910,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-02-13",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495860317",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 9,
-    "gross_amount": 61.0,
-    "fee_amount": 1.01,
-    "net_amount": 59.99,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 9
-  },
-  {
     "event_date": "2025-05-28",
     "event_name": "FREE English Stand-Up Comedy Antwerp: Best of Belgium",
     "event_id": "1351517066929",
@@ -1124,20 +928,6 @@
     "event_name": "Thursday Night Comedy: Free English Stand-Up in Brussels",
     "event_id": "1517337530399",
     "venue_name": "Latroupe Grote Markt",
-    "venue_city": "Bruxelles",
-    "payout_count": 6,
-    "gross_amount": 60.0,
-    "fee_amount": 1.01,
-    "net_amount": 58.99,
-    "high_count": 6,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-09-12",
-    "event_name": "Comedy Underground: FREE English Standup Comedy",
-    "event_id": "965946450837",
-    "venue_name": "Le Réservoir Bar",
     "venue_city": "Bruxelles",
     "payout_count": 6,
     "gross_amount": 60.0,
@@ -1218,20 +1008,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-10-22",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "965955939217",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 8,
-    "gross_amount": 55.0,
-    "fee_amount": 0.91,
-    "net_amount": 54.09,
-    "high_count": 8,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-06-19",
     "event_name": "Thursday Night Comedy: Free English Stand-Up in Brussels",
     "event_id": "1390581058379",
@@ -1302,20 +1078,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-11-25",
-    "event_name": "Kranky Monday: FREE English Stand-up Comedy",
-    "event_id": "1022822639047",
-    "venue_name": "Comedy Ket",
-    "venue_city": "Bruxelles",
-    "payout_count": 10,
-    "gross_amount": 51.0,
-    "fee_amount": 0.83,
-    "net_amount": 50.17,
-    "high_count": 10,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-01-28",
     "event_name": "Comedy & Cocktails Tuesday: Free English Stand-Up in Brussels!",
     "event_id": "1122850529159",
@@ -1325,34 +1087,6 @@
     "gross_amount": 51.0,
     "fee_amount": 0.86,
     "net_amount": 50.14,
-    "high_count": 7,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-06-04",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496020797",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 6,
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 6
-  },
-  {
-    "event_date": "2024-09-17",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "965955889067",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 7,
-    "gross_amount": 50.0,
-    "fee_amount": 0.83,
-    "net_amount": 49.17,
     "high_count": 7,
     "medium_count": 0,
     "low_count": 0
@@ -1442,20 +1176,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-11-20",
-    "event_name": "Saint Catherine - Circus of Laughs: Free English Stand-Up Comedy",
-    "event_id": "1028186693077",
-    "venue_name": "Le Cheval Marin",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 50.0,
-    "fee_amount": 0.84,
-    "net_amount": 49.16,
-    "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-08-11",
     "event_name": "Lazy Monday: Free English Comedy in Brussels!",
     "event_id": "1339462641819",
@@ -1512,34 +1232,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-07-02",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496060917",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 50.0,
-    "fee_amount": 0.85,
-    "net_amount": 49.15,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 4
-  },
-  {
-    "event_date": "2024-09-10",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "965955879037",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 50.0,
-    "fee_amount": 0.85,
-    "net_amount": 49.15,
-    "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-03-05",
     "event_name": "Comedy at Saint Catherine: Free English Stand-Up Comedy",
     "event_id": "1230146544429",
@@ -1554,34 +1246,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-07-30",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838689497",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 6,
-    "gross_amount": 48.0,
-    "fee_amount": 0.8,
-    "net_amount": 47.2,
-    "high_count": 6,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-09-16",
-    "event_name": "Kranky Monday: FREE English Stand-up Comedy",
-    "event_id": "995554900507",
-    "venue_name": "Comedy Ket",
-    "venue_city": "Bruxelles",
-    "payout_count": 7,
-    "gross_amount": 48.0,
-    "fee_amount": 0.8,
-    "net_amount": 47.2,
-    "high_count": 7,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2026-01-26",
     "event_name": "Lazy Monday: Free English Comedy in Brussels!",
     "event_id": "1979161133227",
@@ -1592,20 +1256,6 @@
     "fee_amount": 0.81,
     "net_amount": 47.19,
     "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-08-13",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838709557",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 7,
-    "gross_amount": 45.0,
-    "fee_amount": 0.73,
-    "net_amount": 44.27,
-    "high_count": 7,
     "medium_count": 0,
     "low_count": 0
   },
@@ -1638,20 +1288,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-10-11",
-    "event_name": "Comedy Underground: FREE English Standup Comedy",
-    "event_id": "1006359597647",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 45.0,
-    "fee_amount": 0.76,
-    "net_amount": 44.24,
-    "high_count": 4,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-04-15",
     "event_name": "Schuman Laughs: Free English Comedy Tuesdays",
     "event_id": "1122850639489",
@@ -1664,20 +1300,6 @@
     "high_count": 5,
     "medium_count": 0,
     "low_count": 0
-  },
-  {
-    "event_date": "2024-01-30",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495840257",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 8,
-    "gross_amount": 44.0,
-    "fee_amount": 0.71,
-    "net_amount": 43.29,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 8
   },
   {
     "event_date": "2025-06-16",
@@ -1694,38 +1316,10 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-04-30",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787495970647",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 44.0,
-    "fee_amount": 0.74,
-    "net_amount": 43.26,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 5
-  },
-  {
     "event_date": "2025-05-26",
     "event_name": "Lazy Monday: Free English Comedy in Brussels!",
     "event_id": "1339462531489",
     "venue_name": "Comedy Ket",
-    "venue_city": "Bruxelles",
-    "payout_count": 8,
-    "gross_amount": 42.0,
-    "fee_amount": 0.68,
-    "net_amount": 41.32,
-    "high_count": 8,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-08-29",
-    "event_name": "Comedy Underground: FREE English Standup Comedy",
-    "event_id": "940554653287",
-    "venue_name": "Le Réservoir Bar",
     "venue_city": "Bruxelles",
     "payout_count": 8,
     "gross_amount": 42.0,
@@ -1764,34 +1358,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-11-22",
-    "event_name": "Weekend Comedy: FREE English Stand-Up Comedy In Brussels",
-    "event_id": "1045402445857",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 41.0,
-    "fee_amount": 0.69,
-    "net_amount": 40.31,
-    "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-10-08",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "965955919157",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 7,
-    "gross_amount": 40.0,
-    "fee_amount": 0.65,
-    "net_amount": 39.35,
-    "high_count": 7,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-08-25",
     "event_name": "Lazy Monday: Free English Comedy in Brussels!",
     "event_id": "1339462661879",
@@ -1820,62 +1386,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-03-26",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495920497",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 40.0,
-    "fee_amount": 0.67,
-    "net_amount": 39.33,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 5
-  },
-  {
-    "event_date": "2024-05-07",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787495980677",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 40.0,
-    "fee_amount": 0.67,
-    "net_amount": 39.33,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 5
-  },
-  {
-    "event_date": "2024-09-03",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "965955869007",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 40.0,
-    "fee_amount": 0.67,
-    "net_amount": 39.33,
-    "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-12-03",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "1091165367989",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 40.0,
-    "fee_amount": 0.68,
-    "net_amount": 39.32,
-    "high_count": 4,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-08-20",
     "event_name": "Free English Stand-up Comedy In Brussels",
     "event_id": "1369673352869",
@@ -1890,20 +1400,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-04-16",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495950587",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 37.22,
-    "fee_amount": 0.62,
-    "net_amount": 36.6,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 4
-  },
-  {
     "event_date": "2025-02-10",
     "event_name": "Lazy Monday: Free English Comedy in Brussels!",
     "event_id": "1122902324079",
@@ -1913,34 +1409,6 @@
     "gross_amount": 37.0,
     "fee_amount": 0.62,
     "net_amount": 36.38,
-    "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-04-02",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495930527",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 6,
-    "gross_amount": 36.0,
-    "fee_amount": 0.59,
-    "net_amount": 35.41,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 6
-  },
-  {
-    "event_date": "2024-12-13",
-    "event_name": "Weekend Comedy: FREE English Stand-Up Comedy In Brussels",
-    "event_id": "1079188133759",
-    "venue_name": "Le Réservoir Bar",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 35.0,
-    "fee_amount": 0.58,
-    "net_amount": 34.42,
     "high_count": 5,
     "medium_count": 0,
     "low_count": 0
@@ -1974,20 +1442,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-10-28",
-    "event_name": "Kranky Monday: FREE English Stand-up Comedy",
-    "event_id": "1022809429537",
-    "venue_name": "Comedy Ket",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 35.0,
-    "fee_amount": 0.59,
-    "net_amount": 34.41,
-    "high_count": 3,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-11-27",
     "event_name": "Thursday Night Comedy: Free English Stand-Up in Brussels",
     "event_id": "1517337550459",
@@ -2011,34 +1465,6 @@
     "gross_amount": 33.0,
     "fee_amount": 0.55,
     "net_amount": 32.45,
-    "high_count": 4,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-06-25",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496050887",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 33.0,
-    "fee_amount": 0.56,
-    "net_amount": 32.44,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 3
-  },
-  {
-    "event_date": "2024-10-20",
-    "event_name": "Hangover Sunday: The Comedy Fix – For FREE!",
-    "event_id": "1009267384917",
-    "venue_name": "The Sneakers Cafe - Brochettes & Cocktails",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 30.0,
-    "fee_amount": 0.49,
-    "net_amount": 29.51,
     "high_count": 4,
     "medium_count": 0,
     "low_count": 0
@@ -2086,20 +1512,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-10-01",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "965955909127",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 30.0,
-    "fee_amount": 0.5,
-    "net_amount": 29.5,
-    "high_count": 4,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-09-22",
     "event_name": "Lazy Monday: Free English Comedy in Brussels!",
     "event_id": "1339462701999",
@@ -2112,76 +1524,6 @@
     "high_count": 3,
     "medium_count": 0,
     "low_count": 0
-  },
-  {
-    "event_date": "2024-02-27",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495880377",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 30.0,
-    "fee_amount": 0.51,
-    "net_amount": 29.49,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 3
-  },
-  {
-    "event_date": "2024-05-28",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496010767",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 30.0,
-    "fee_amount": 0.51,
-    "net_amount": 29.49,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 3
-  },
-  {
-    "event_date": "2024-10-29",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "965955949247",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 6,
-    "gross_amount": 29.0,
-    "fee_amount": 0.47,
-    "net_amount": 28.53,
-    "high_count": 6,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-11-26",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "1091165357959",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 29.0,
-    "fee_amount": 0.49,
-    "net_amount": 28.51,
-    "high_count": 5,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-05-14",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787495990707",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 5,
-    "gross_amount": 26.0,
-    "fee_amount": 0.43,
-    "net_amount": 25.57,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 5
   },
   {
     "event_date": "2025-05-19",
@@ -2226,34 +1568,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-07-23",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838679467",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 25.0,
-    "fee_amount": 0.42,
-    "net_amount": 24.58,
-    "high_count": 3,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-12-17",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "1091165388049",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 25.0,
-    "fee_amount": 0.42,
-    "net_amount": 24.58,
-    "high_count": 3,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-08-09",
     "event_name": "FREE English Stand-Up Comedy Antwerp Week-End: Best of Belgium",
     "event_id": "1540139852759",
@@ -2277,48 +1591,6 @@
     "gross_amount": 22.0,
     "fee_amount": 0.36,
     "net_amount": 21.64,
-    "high_count": 4,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-01-09",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495810167",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 21.9,
-    "fee_amount": 0.37,
-    "net_amount": 21.53,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 3
-  },
-  {
-    "event_date": "2024-08-06",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838699527",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 21.0,
-    "fee_amount": 0.35,
-    "net_amount": 20.65,
-    "high_count": 4,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-08-20",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838719587",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 4,
-    "gross_amount": 20.0,
-    "fee_amount": 0.32,
-    "net_amount": 19.68,
     "high_count": 4,
     "medium_count": 0,
     "low_count": 0
@@ -2394,20 +1666,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-09-24",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "965955899097",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 3,
-    "gross_amount": 15.0,
-    "fee_amount": 0.24,
-    "net_amount": 14.76,
-    "high_count": 3,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-09-11",
     "event_name": "Thursday Night Comedy: Free English Stand-Up in Brussels",
     "event_id": "1517337329799",
@@ -2420,20 +1678,6 @@
     "high_count": 3,
     "medium_count": 0,
     "low_count": 0
-  },
-  {
-    "event_date": "2024-06-11",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496030827",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 2,
-    "gross_amount": 15.0,
-    "fee_amount": 0.25,
-    "net_amount": 14.75,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 2
   },
   {
     "event_date": "2026-02-26",
@@ -2478,34 +1722,6 @@
     "low_count": 5
   },
   {
-    "event_date": "2024-05-21",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "787496000737",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 2,
-    "gross_amount": 11.0,
-    "fee_amount": 0.18,
-    "net_amount": 10.82,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 2
-  },
-  {
-    "event_date": "2024-01-16",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495820197",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 2,
-    "gross_amount": 10.0,
-    "fee_amount": 0.16,
-    "net_amount": 9.84,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 2
-  },
-  {
     "event_date": "2025-10-09",
     "event_name": "Thursday Night Comedy: Free English Stand-Up in Brussels",
     "event_id": "1517337339829",
@@ -2520,62 +1736,6 @@
     "low_count": 0
   },
   {
-    "event_date": "2024-03-19",
-    "event_name": "English Stand-Up Comedy",
-    "event_id": "787495910467",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 1,
-    "gross_amount": 10.0,
-    "fee_amount": 0.17,
-    "net_amount": 9.83,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 1
-  },
-  {
-    "event_date": "2024-07-09",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838659407",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 1,
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
-    "high_count": 0,
-    "medium_count": 0,
-    "low_count": 1
-  },
-  {
-    "event_date": "2024-12-10",
-    "event_name": "FREE English Stand-Up Comedy in Brussels",
-    "event_id": "1091165378019",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 1,
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
-    "high_count": 1,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-12-16",
-    "event_name": "Kranky Monday: FREE English Stand-up Comedy",
-    "event_id": "1079187291239",
-    "venue_name": "Comedy Ket",
-    "venue_city": "Bruxelles",
-    "payout_count": 1,
-    "gross_amount": 5.0,
-    "fee_amount": 0.08,
-    "net_amount": 4.92,
-    "high_count": 1,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
     "event_date": "2025-02-11",
     "event_name": "Comedy & Cocktails Tuesday: Free English Stand-Up in Brussels!",
     "event_id": "1122850549219",
@@ -2585,20 +1745,6 @@
     "gross_amount": 5.0,
     "fee_amount": 0.08,
     "net_amount": 4.92,
-    "high_count": 1,
-    "medium_count": 0,
-    "low_count": 0
-  },
-  {
-    "event_date": "2024-07-16",
-    "event_name": "FREE English Stand-Up Comedy",
-    "event_id": "927838669437",
-    "venue_name": "Kamea Restaurant Cocktails & Lounge",
-    "venue_city": "Bruxelles",
-    "payout_count": 1,
-    "gross_amount": 4.0,
-    "fee_amount": 0.07,
-    "net_amount": 3.93,
     "high_count": 1,
     "medium_count": 0,
     "low_count": 0
