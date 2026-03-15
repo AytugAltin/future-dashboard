@@ -1,0 +1,338 @@
+{
+  "summary": {
+    "high": 1250,
+    "medium": 0,
+    "low": 179,
+    "unmatched": 75
+  },
+  "unmatched_net_amount": 648.96,
+  "sample_unmatched": [
+    {
+      "payout_date": "2023-11-15",
+      "amount": 0.98,
+      "transaction_code": "T32Z4LFYQF",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 4.92,
+      "transaction_code": "TCY333U9PH",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 4.92,
+      "transaction_code": "TCSXMQ9GRU",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 4.92,
+      "transaction_code": "TCR77SE6DU",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 9.83,
+      "transaction_code": "T9D4RCNA43",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 4.92,
+      "transaction_code": "TD6EZGFTPL",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 9.83,
+      "transaction_code": "TDS42ULFNA",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 4.92,
+      "transaction_code": "TDLLHTX37K",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-15",
+      "amount": 9.83,
+      "transaction_code": "TQKVNGNRMZ",
+      "reason": "no close BCN event candidate (nearest is 55 days away)"
+    },
+    {
+      "payout_date": "2023-11-22",
+      "amount": 4.92,
+      "transaction_code": "TCFQQXS2AN",
+      "reason": "no close BCN event candidate (nearest is 48 days away)"
+    },
+    {
+      "payout_date": "2023-11-22",
+      "amount": 4.92,
+      "transaction_code": "TELESFAE42",
+      "reason": "no close BCN event candidate (nearest is 48 days away)"
+    },
+    {
+      "payout_date": "2023-11-22",
+      "amount": 19.66,
+      "transaction_code": "TESMQY6QKY",
+      "reason": "no close BCN event candidate (nearest is 48 days away)"
+    },
+    {
+      "payout_date": "2023-11-22",
+      "amount": 4.92,
+      "transaction_code": "T6UKCPU2YE",
+      "reason": "no close BCN event candidate (nearest is 48 days away)"
+    },
+    {
+      "payout_date": "2023-11-29",
+      "amount": 4.92,
+      "transaction_code": "T9KVXRTQ3U",
+      "reason": "no close BCN event candidate (nearest is 41 days away)"
+    },
+    {
+      "payout_date": "2023-11-29",
+      "amount": 9.83,
+      "transaction_code": "TXMCMFRUTE",
+      "reason": "no close BCN event candidate (nearest is 41 days away)"
+    },
+    {
+      "payout_date": "2023-11-29",
+      "amount": 7.86,
+      "transaction_code": "TCHFXME7KU",
+      "reason": "no close BCN event candidate (nearest is 41 days away)"
+    },
+    {
+      "payout_date": "2023-11-29",
+      "amount": 7.86,
+      "transaction_code": "TDGGUK4UT9",
+      "reason": "no close BCN event candidate (nearest is 41 days away)"
+    },
+    {
+      "payout_date": "2023-12-06",
+      "amount": 4.92,
+      "transaction_code": "TCVH779SRV",
+      "reason": "no close BCN event candidate (nearest is 34 days away)"
+    },
+    {
+      "payout_date": "2023-12-06",
+      "amount": 4.92,
+      "transaction_code": "TENAT74YTD",
+      "reason": "no close BCN event candidate (nearest is 34 days away)"
+    },
+    {
+      "payout_date": "2023-12-06",
+      "amount": 3.93,
+      "transaction_code": "TN7MKZCSRY",
+      "reason": "no close BCN event candidate (nearest is 34 days away)"
+    },
+    {
+      "payout_date": "2023-12-06",
+      "amount": 4.92,
+      "transaction_code": "TCQXA4MTG4",
+      "reason": "no close BCN event candidate (nearest is 34 days away)"
+    },
+    {
+      "payout_date": "2023-12-06",
+      "amount": 4.92,
+      "transaction_code": "T2NVLU6NPF",
+      "reason": "no close BCN event candidate (nearest is 34 days away)"
+    },
+    {
+      "payout_date": "2023-12-06",
+      "amount": 4.92,
+      "transaction_code": "TERMGTD7UR",
+      "reason": "no close BCN event candidate (nearest is 34 days away)"
+    },
+    {
+      "payout_date": "2023-12-13",
+      "amount": 9.83,
+      "transaction_code": "TKCDXKXDMP",
+      "reason": "no close BCN event candidate (nearest is 27 days away)"
+    },
+    {
+      "payout_date": "2023-12-20",
+      "amount": 14.75,
+      "transaction_code": "T2CNRHVL42",
+      "reason": "no close BCN event candidate (nearest is 20 days away)"
+    }
+  ],
+  "sample_low_confidence": [
+    {
+      "payout_date": "2024-01-10",
+      "amount": 6.78,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-09",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-10",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-09",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-10",
+      "amount": 9.83,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-09",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-17",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-16",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-17",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-16",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 9.83,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 9.83,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 14.75,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 19.66,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-24",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-23",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 1.97,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 1.97,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 14.75,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-01-31",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-01-30",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-02-07",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-02-06",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-02-07",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-02-06",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-02-07",
+      "amount": 3.93,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-02-06",
+      "reason": "nearest BCN event by date (1 day difference)"
+    },
+    {
+      "payout_date": "2024-02-07",
+      "amount": 4.92,
+      "event_name": "English Stand-Up Comedy",
+      "event_date": "2024-02-06",
+      "reason": "nearest BCN event by date (1 day difference)"
+    }
+  ]
+}
