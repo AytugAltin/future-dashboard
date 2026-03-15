@@ -53,7 +53,9 @@ export default function App() {
         </div>
         <div className="stamp">
           <div>From {data.overview.report_start_date}</div>
-          <div>Generated {new Date(data.overview.generated_at).toLocaleString()}</div>
+          <div>Export generated {new Date(data.overview.generated_at).toLocaleString()}</div>
+          <div>Linked payouts TSV {new Date(data.overview.source_timestamps.linked_links_tsv_mtime).toLocaleString()}</div>
+          <div>Eventbrite query {new Date(data.overview.source_timestamps.eventbrite_query_generated_at).toLocaleString()}</div>
         </div>
       </header>
 
@@ -95,7 +97,7 @@ export default function App() {
       </div>
 
       <div className="grid two-up">
-        <Section title="Upcoming events">
+        <Section title="Upcoming events (sorted by reservations)">
           <div className="tableWrap">
             <table>
               <thead>
