@@ -3,9 +3,9 @@
     "high": 1045,
     "medium": 0,
     "low": 13,
-    "unmatched": 22
+    "unmatched": 24
   },
-  "unmatched_net_amount": 257.57,
+  "unmatched_net_amount": 277.24,
   "sample_unmatched": [
     {
       "payout_date": "2025-05-23",
@@ -137,6 +137,18 @@
       "payout_date": "2026-01-21",
       "amount": 9.83,
       "transaction_code": "TAAAZFHR2ZK",
+      "reason": "no close BCN event candidate (nearest is 2 days away)"
+    },
+    {
+      "payout_date": "2026-03-15",
+      "amount": 4.92,
+      "transaction_code": "TAAAZ6MCB9T",
+      "reason": "no close BCN event candidate (nearest is 2 days away)"
+    },
+    {
+      "payout_date": "2026-03-15",
+      "amount": 14.75,
+      "transaction_code": "TAAAZ6MCKZU",
       "reason": "no close BCN event candidate (nearest is 2 days away)"
     }
   ],
