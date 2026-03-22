@@ -274,13 +274,16 @@ export default function App() {
   const [page, setPage] = useState('home')
 
   useEffect(() => {
+    const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`
+    const dataUrl = (file) => `${base}data/${file}`
+
     Promise.all([
-      fetch('/data/overview.json').then((r) => r.json()),
-      fetch('/data/events_overview.json').then((r) => r.json()),
-      fetch('/data/venues.json').then((r) => r.json()),
-      fetch('/data/sales_timeseries.json').then((r) => r.json()),
-      fetch('/data/quality.json').then((r) => r.json()),
-      fetch('/data/upcoming_events.json').then((r) => r.json()),
+      fetch(dataUrl('overview.json')).then((r) => r.json()),
+      fetch(dataUrl('events_overview.json')).then((r) => r.json()),
+      fetch(dataUrl('venues.json')).then((r) => r.json()),
+      fetch(dataUrl('sales_timeseries.json')).then((r) => r.json()),
+      fetch(dataUrl('quality.json')).then((r) => r.json()),
+      fetch(dataUrl('upcoming_events.json')).then((r) => r.json()),
     ]).then(([overview, eventsOverview, venues, salesTimeseries, quality, upcomingEvents]) => {
       setData({ overview, eventsOverview, venues, salesTimeseries, quality, upcomingEvents })
     })
