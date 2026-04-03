@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN Concept E — Premium minimal</title>
+    <link rel="stylesheet" href="./shared.css" />
+    <style>
+      .schedule-shell {
+        display: grid;
+        gap: 1px;
+        background: var(--line);
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+
+      .schedule-shell .schedule-row {
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        background: rgba(255, 255, 255, 0.03);
+      }
+    </style>
+  </head>
+  <body class="theme-premium">
+    <div class="site-shell">
+      <div class="wrap">
+        <div class="topbar">
+          <a class="brand" href="./index.html">
+            <div class="brand-mark">E</div>
+            <div>BCN — premium minimal demo</div>
+          </a>
+          <div class="nav">
+            <a href="#curated">Curated picks</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#trust">Trust</a>
+            <a href="./index.html">All concepts</a>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="notice">Concept E • filler content • premium minimal</span>
+              <h1>A calmer, more curated BCN front door.</h1>
+              <p>
+                This concept trades some loudness for confidence. It still foregrounds upcoming nights,
+                but with more breathing room, fewer cards, and a slightly more premium tone.
+              </p>
+              <div class="button-row">
+                <a class="button" href="#curated">See curated picks</a>
+                <a class="secondary-button" href="#schedule">Browse full schedule</a>
+              </div>
+            </div>
+
+            <div class="panel" id="trust">
+              <span class="kicker">Why it feels different</span>
+              <h3>More restraint. Same conversion logic.</h3>
+              <p>
+                Placeholder trust copy about elegant presentation, cleaner hierarchy, and a better fit for more premium rooms or partnerships.
+              </p>
+              <div class="pill-row" style="margin-bottom: 16px;">
+                <span class="pill">Curated lineups</span>
+                <span class="pill">Mobile-first</span>
+                <span class="pill">Simple booking</span>
+              </div>
+              <div class="media-placeholder">Premium hero image placeholder</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="curated">
+          <div class="section-head">
+            <div>
+              <h2>Curated picks</h2>
+              <p>Fewer homepage blocks, more focus, and a stronger sense of selectivity.</p>
+            </div>
+          </div>
+          <div class="grid-2">
+            <article class="card">
+              <span class="kicker">Brussels</span>
+              <h3>Saturday Spotlight</h3>
+              <p>Sat 12 Apr • 20:00 • Central Brussels Room</p>
+              <p>Placeholder copy describing a polished flagship night without turning the page into a long editorial piece.</p>
+              <a class="button" href="#">Get tickets</a>
+            </article>
+            <article class="card">
+              <span class="kicker">Antwerp</span>
+              <h3>Late Set Series</h3>
+              <p>Sat 19 Apr • 20:30 • Placeholder venue</p>
+              <p>Filler copy for a slightly more premium recurring format.</p>
+              <a class="button" href="#">Get tickets</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="schedule">
+          <div class="section-head">
+            <div>
+              <h2>Upcoming schedule</h2>
+              <p>A minimal list with practical metadata and clean CTAs.</p>
+            </div>
+          </div>
+
+          <div class="schedule-shell">
+            <div class="schedule-row">
+              <div class="event-top">
+                <div>
+                  <p class="eyebrow">Thu 10 Apr • Brussels</p>
+                  <h3 class="event-title">Midweek Crowd Warm-Up</h3>
+                </div>
+                <div class="button-row">
+                  <span class="price-tag">€9</span>
+                  <a class="button" href="#">Tickets</a>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-row">
+              <div class="event-top">
+                <div>
+                  <p class="eyebrow">Fri 11 Apr • Ghent</p>
+                  <h3 class="event-title">Friday Laugh Circuit</h3>
+                </div>
+                <div class="button-row">
+                  <span class="price-tag">€10</span>
+                  <a class="button" href="#">Tickets</a>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-row">
+              <div class="event-top">
+                <div>
+                  <p class="eyebrow">Tue 15 Apr • Leuven</p>
+                  <h3 class="event-title">Campus Comedy Social</h3>
+                </div>
+                <div class="button-row">
+                  <span class="price-tag">Free</span>
+                  <a class="button" href="#">Reserve</a>
+                </div>
+              </div>
+            </div>
+            <div class="schedule-row">
+              <div class="event-top">
+                <div>
+                  <p class="eyebrow">Sat 19 Apr • Antwerp</p>
+                  <h3 class="event-title">Late Night in the South</h3>
+                </div>
+                <div class="button-row">
+                  <span class="price-tag">€14</span>
+                  <a class="button" href="#">Tickets</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="split">
+            <div class="quote">
+              <span class="kicker">Trust layer</span>
+              <strong>Good for a more selective BCN phase.</strong>
+              <p>
+                Placeholder copy about fewer, better-presented nights. The emphasis is confidence, polish, and a cleaner brand surface.
+              </p>
+            </div>
+            <div class="signup">
+              <span class="kicker">Subscriber capture</span>
+              <h2>Get the next dates first.</h2>
+              <p>Premium look, same practical city-based signup underneath.</p>
+              <div class="form-row">
+                <input class="input" type="email" placeholder="Email address" />
+                <select class="select">
+                  <option>Choose city</option>
+                  <option>Brussels</option>
+                  <option>Ghent</option>
+                  <option>Leuven</option>
+                  <option>Antwerp</option>
+                </select>
+                <button class="button" type="button">Join</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-grid">
+            <div>
+              <strong>Best for</strong>
+              <p>Higher-trust presentation, curated nights, and a cleaner more selective BCN brand surface.</p>
+            </div>
+            <div>
+              <strong>Main risk</strong>
+              <p>If the event volume is high, this style can start to feel too restrained and hide the breadth of activity.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

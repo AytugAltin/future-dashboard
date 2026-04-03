@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN Concept C — City network</title>
+    <link rel="stylesheet" href="./shared.css" />
+    <style>
+      .city-hero {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .city-hero .city-tile {
+        min-height: 260px;
+        display: grid;
+        align-content: space-between;
+      }
+
+      @media (max-width: 1000px) {
+        .city-hero {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 720px) {
+        .city-hero {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="theme-light">
+    <div class="site-shell">
+      <div class="wrap">
+        <div class="topbar">
+          <a class="brand" href="./index.html">
+            <div class="brand-mark">C</div>
+            <div>BCN — city network demo</div>
+          </a>
+          <div class="nav">
+            <a href="#cities">Cities</a>
+            <a href="#next">Next in each city</a>
+            <a href="#signup">Join by city</a>
+            <a href="./index.html">All concepts</a>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="notice">Concept C • filler content • city-first</span>
+            <h1>BCN as a network of local comedy nights.</h1>
+            <p>
+              This concept makes the city layer primary. Instead of browsing one big list, users can jump straight into Brussels,
+              Ghent, Leuven, or Antwerp and see what’s happening near them.
+            </p>
+            <div class="button-row">
+              <a class="button" href="#cities">Choose your city</a>
+              <a class="secondary-button" href="#next">See the next show in each city</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="cities">
+          <div class="section-head">
+            <div>
+              <h2>Choose your city</h2>
+              <p>Each city gets its own lightweight hub and signup logic.</p>
+            </div>
+          </div>
+          <div class="city-hero">
+            <article class="city-tile">
+              <div>
+                <span class="kicker">Brussels</span>
+                <h3>International crowd, quick decision path.</h3>
+                <p>Placeholder copy for a city page tuned for busy social traffic and fast ticket intent.</p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="#">See Brussels</a>
+              </div>
+            </article>
+            <article class="city-tile">
+              <div>
+                <span class="kicker">Ghent</span>
+                <h3>Recurring nights with a warmer local feel.</h3>
+                <p>Filler content about room rhythm, regular crowd energy, and city-specific retention.</p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="#">See Ghent</a>
+              </div>
+            </article>
+            <article class="city-tile">
+              <div>
+                <span class="kicker">Leuven</span>
+                <h3>Low-friction entry and student-friendly demand capture.</h3>
+                <p>Placeholder for easier signup conversion, simple format labels, and regular reminders.</p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="#">See Leuven</a>
+              </div>
+            </article>
+            <article class="city-tile">
+              <div>
+                <span class="kicker">Antwerp</span>
+                <h3>Slightly bigger-night energy with premium polish.</h3>
+                <p>Filler text for a city page that leans a little more curated and event-led.</p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="#">See Antwerp</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="next">
+          <div class="section-head">
+            <div>
+              <h2>Next show in each city</h2>
+              <p>Instead of one long calendar, the homepage previews the next strongest date per city.</p>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="card event-card">
+              <span class="kicker">Brussels</span>
+              <h3 class="event-title">Midweek Crowd Warm-Up</h3>
+              <p class="eyebrow">Thu 10 Apr • 19:30 • Central Brussels Room</p>
+              <p>Placeholder summary for the next Brussels night.</p>
+              <div class="button-row">
+                <a class="button" href="#">Tickets</a>
+                <a class="secondary-button" href="#">Join Brussels list</a>
+              </div>
+            </div>
+            <div class="card event-card">
+              <span class="kicker">Ghent</span>
+              <h3 class="event-title">Friday Laugh Circuit</h3>
+              <p class="eyebrow">Fri 11 Apr • 20:00 • Placeholder venue</p>
+              <p>Filler summary for the next Ghent date.</p>
+              <div class="button-row">
+                <a class="button" href="#">Tickets</a>
+                <a class="secondary-button" href="#">Join Ghent list</a>
+              </div>
+            </div>
+            <div class="card event-card">
+              <span class="kicker">Leuven</span>
+              <h3 class="event-title">Campus Comedy Social</h3>
+              <p class="eyebrow">Tue 15 Apr • 20:00 • Placeholder room</p>
+              <p>Placeholder summary for the next Leuven date.</p>
+              <div class="button-row">
+                <a class="button" href="#">Reserve</a>
+                <a class="secondary-button" href="#">Join Leuven list</a>
+              </div>
+            </div>
+            <div class="card event-card">
+              <span class="kicker">Antwerp</span>
+              <h3 class="event-title">Late Night in the South</h3>
+              <p class="eyebrow">Sat 19 Apr • 20:30 • Placeholder venue</p>
+              <p>Placeholder summary for the next Antwerp date.</p>
+              <div class="button-row">
+                <a class="button" href="#">Tickets</a>
+                <a class="secondary-button" href="#">Join Antwerp list</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="grid-3">
+            <div class="metric">
+              <strong>4</strong>
+              <div>City landing pages</div>
+              <small>Designed to support segmented signup and local discovery</small>
+            </div>
+            <div class="metric">
+              <strong>1</strong>
+              <div>Primary organizing layer</div>
+              <small>City, not genre or venue</small>
+            </div>
+            <div class="metric">
+              <strong>Weekly</strong>
+              <div>Ops rhythm</div>
+              <small>Swap event cards, archive old dates, update city proof</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="signup">
+          <div class="split">
+            <div class="signup">
+              <span class="kicker">City-based newsletter</span>
+              <h2>Get the next comedy nights near you.</h2>
+              <p>This is the strongest fit for BCN’s segmented retention model.</p>
+              <div class="form-row">
+                <input class="input" type="email" placeholder="Email address" />
+                <select class="select">
+                  <option>Pick your city</option>
+                  <option>Brussels</option>
+                  <option>Ghent</option>
+                  <option>Leuven</option>
+                  <option>Antwerp</option>
+                </select>
+                <button class="button" type="button">Join</button>
+              </div>
+            </div>
+            <div class="quote">
+              <span class="kicker">Why this concept works</span>
+              <strong>It matches BCN’s actual operating model better than a generic events site.</strong>
+              <p>
+                BCN isn’t one venue. It’s a distributed promoter. This structure reflects that reality and makes future expansion cleaner.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-grid">
+            <div>
+              <strong>Best for</strong>
+              <p>City discovery, segmented email growth, local repeat attendance, and expansion logic.</p>
+            </div>
+            <div>
+              <strong>Main risk</strong>
+              <p>If a city has too few active shows, its page may feel thin without a good empty state.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

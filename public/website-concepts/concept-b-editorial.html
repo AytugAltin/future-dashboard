@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN Concept B — Show-first editorial</title>
+    <link rel="stylesheet" href="./shared.css" />
+    <style>
+      .lead-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1.3fr 0.7fr;
+      }
+
+      .story-stack {
+        display: grid;
+        gap: 18px;
+      }
+
+      .editor-note {
+        padding: 18px 0 4px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 0.82rem;
+      }
+
+      @media (max-width: 900px) {
+        .lead-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="wrap">
+        <div class="topbar">
+          <a class="brand" href="./index.html">
+            <div class="brand-mark">B</div>
+            <div>BCN — editorial demo</div>
+          </a>
+          <div class="nav">
+            <a href="#feature">Featured night</a>
+            <a href="#stories">Stories</a>
+            <a href="#schedule">Schedule</a>
+            <a href="./index.html">All concepts</a>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="notice">Concept B • filler content • show-first editorial</span>
+            <h1>Comedy nights, framed like stories — still built to convert.</h1>
+            <p>
+              This direction adds a bit more tone and atmosphere. It spotlights flagship nights,
+              but still keeps practical booking information visible on mobile.
+            </p>
+            <div class="button-row">
+              <a class="button" href="#feature">Read the featured night</a>
+              <a class="secondary-button" href="#schedule">See all shows</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="feature">
+          <div class="editor-note">Editor’s pick</div>
+          <div class="lead-grid">
+            <article class="feature-shell">
+              <span class="kicker">Saturday feature • Brussels</span>
+              <h2>Late Laughs at the corner room.</h2>
+              <p>
+                Placeholder story copy: the room fills early, the lineups rotate, and the city crowd gives the night a fast pace.
+                This concept uses editorial framing to make a flagship show feel more desirable before the user clicks through.
+              </p>
+              <div class="pill-row" style="margin: 10px 0 18px;">
+                <span class="pill">Sat 12 Apr</span>
+                <span class="pill">20:00</span>
+                <span class="pill">€12 early bird</span>
+              </div>
+              <div class="button-row">
+                <a class="button" href="#">Get tickets</a>
+                <a class="secondary-button" href="#stories">More featured nights</a>
+              </div>
+            </article>
+
+            <div class="media-stack">
+              <div>Feature hero placeholder</div>
+              <div>Lineup poster placeholder</div>
+              <div>Backstage still placeholder</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="stories">
+          <div class="section-head">
+            <div>
+              <h2>Featured nights</h2>
+              <p>Short editorial cards that make specific nights feel like must-attend moments.</p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="story-card">
+              <span class="kicker">Ghent</span>
+              <h3>Friday room, bigger laughs</h3>
+              <p>Filler copy about a recurring room with a little more intimacy and a warmer crowd rhythm.</p>
+              <a class="secondary-button" href="#">Open show page</a>
+            </article>
+            <article class="story-card">
+              <span class="kicker">Leuven</span>
+              <h3>Low-friction student night</h3>
+              <p>Placeholder copy about easy entry, fresher acts, and city-specific energy.</p>
+              <a class="secondary-button" href="#">Open show page</a>
+            </article>
+            <article class="story-card">
+              <span class="kicker">Antwerp</span>
+              <h3>Late set with a stronger premium feel</h3>
+              <p>Filler description of a more elevated night with slightly larger-ticket positioning.</p>
+              <a class="secondary-button" href="#">Open show page</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="schedule">
+          <div class="section-head">
+            <div>
+              <h2>Fast schedule</h2>
+              <p>Even in the editorial version, users can still scan the upcoming calendar quickly.</p>
+            </div>
+          </div>
+
+          <div class="table-like panel">
+            <div class="table-row">
+              <div class="eyebrow">Thu 10 Apr</div>
+              <div>
+                <strong>Midweek Crowd Warm-Up</strong>
+                <p>Brussels • Central Brussels Room • filler lineup</p>
+              </div>
+              <a class="button" href="#">Tickets</a>
+            </div>
+            <div class="table-row">
+              <div class="eyebrow">Fri 11 Apr</div>
+              <div>
+                <strong>Friday Laugh Circuit</strong>
+                <p>Ghent • Placeholder venue • filler acts + host</p>
+              </div>
+              <a class="button" href="#">Tickets</a>
+            </div>
+            <div class="table-row">
+              <div class="eyebrow">Tue 15 Apr</div>
+              <div>
+                <strong>Campus Comedy Social</strong>
+                <p>Leuven • Placeholder room • free / venue-supported</p>
+              </div>
+              <a class="button" href="#">Reserve</a>
+            </div>
+            <div class="table-row">
+              <div class="eyebrow">Sat 19 Apr</div>
+              <div>
+                <strong>Late Night in the South</strong>
+                <p>Antwerp • Placeholder venue • late set format</p>
+              </div>
+              <a class="button" href="#">Tickets</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="split">
+            <div class="quote">
+              <span class="kicker">Why this concept works</span>
+              <strong>It gives BCN a more premium voice without turning the site into a blog.</strong>
+              <p>
+                The homepage can tell a tiny bit more story around flagship shows, while still keeping a quick schedule block lower on the page.
+              </p>
+            </div>
+            <div class="signup">
+              <span class="kicker">Newsletter</span>
+              <h2>Get city-based show drops.</h2>
+              <p>Placeholder signup for users who like the editorial vibe but are not ready to click through today.</p>
+              <div class="form-row">
+                <input class="input" type="email" placeholder="Email address" />
+                <select class="select">
+                  <option>Choose city</option>
+                  <option>Brussels</option>
+                  <option>Ghent</option>
+                  <option>Leuven</option>
+                  <option>Antwerp</option>
+                </select>
+                <button class="button" type="button">Join</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-grid">
+            <div>
+              <strong>Best for</strong>
+              <p>Flagship nights, stronger tone, and slightly more premium storytelling.</p>
+            </div>
+            <div>
+              <strong>Main risk</strong>
+              <p>If copy gets too long, mobile users may lose the straight line to ticket CTA.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

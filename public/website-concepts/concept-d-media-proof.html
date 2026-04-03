@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN Concept D — Media-rich proof</title>
+    <link rel="stylesheet" href="./shared.css" />
+    <style>
+      .proof-grid {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: 1.05fr 0.95fr;
+      }
+
+      .mini-reel {
+        display: grid;
+        gap: 18px;
+      }
+
+      @media (max-width: 900px) {
+        .proof-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="theme-neon">
+    <div class="site-shell">
+      <div class="wrap">
+        <div class="topbar">
+          <a class="brand" href="./index.html">
+            <div class="brand-mark">D</div>
+            <div>BCN — media-proof demo</div>
+          </a>
+          <div class="nav">
+            <a href="#hero-show">Featured show</a>
+            <a href="#proof">Proof block</a>
+            <a href="#clips">Clips</a>
+            <a href="./index.html">All concepts</a>
+          </div>
+        </div>
+
+        <section class="hero">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="notice">Concept D • filler content • proof-led</span>
+              <h1>Use the media to build trust — not to bury the booking path.</h1>
+              <p>
+                This concept assumes BCN has strong photos, backstage stills, and short raw clips.
+                It keeps one lead visual per section, but still puts upcoming shows and ticket CTAs first.
+              </p>
+              <div class="button-row">
+                <a class="button" href="#hero-show">See featured show</a>
+                <a class="secondary-button" href="#proof">See proof block</a>
+              </div>
+            </div>
+
+            <div class="frame" id="hero-show">
+              <span class="kicker">Featured night</span>
+              <h3>Brussels Late Laughs</h3>
+              <p class="eyebrow">Sat 12 Apr • 20:00 • Central Brussels Room • €12</p>
+              <div class="video-frame">Short crowd-reaction clip placeholder</div>
+              <div class="button-row" style="margin-top: 16px;">
+                <a class="button" href="#">Get tickets</a>
+                <a class="secondary-button" href="#clips">View proof assets</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="proof">
+          <div class="section-head">
+            <div>
+              <h2>Proof layer</h2>
+              <p>Visual trust after the ticket path is already clear.</p>
+            </div>
+          </div>
+
+          <div class="proof-grid">
+            <div class="quote">
+              <span class="kicker">Why this exists</span>
+              <strong>People buy faster when the room feels real.</strong>
+              <p>
+                Placeholder trust copy. This section uses one lead asset, two short supporting proof points,
+                and a quote block instead of a heavy gallery or autoplay wall.
+              </p>
+              <div class="logo-row">
+                <span class="badge">Packed room placeholder</span>
+                <span class="badge">4 active cities</span>
+                <span class="badge">Recurring nights</span>
+              </div>
+            </div>
+            <div class="media-stack">
+              <div>Crowd image placeholder</div>
+              <div>Stage reaction placeholder</div>
+              <div>BTS setup placeholder</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <div>
+              <h2>Upcoming shows</h2>
+              <p>Even the visual concept keeps cards practical and scannable.</p>
+            </div>
+          </div>
+          <div class="grid-3">
+            <article class="story-card">
+              <span class="kicker">Brussels</span>
+              <h3>Midweek Crowd Warm-Up</h3>
+              <p>Thu 10 Apr • Placeholder venue • short vibe copy</p>
+              <a class="button" href="#">Tickets</a>
+            </article>
+            <article class="story-card">
+              <span class="kicker">Ghent</span>
+              <h3>Friday Laugh Circuit</h3>
+              <p>Fri 11 Apr • Placeholder venue • short vibe copy</p>
+              <a class="button" href="#">Tickets</a>
+            </article>
+            <article class="story-card">
+              <span class="kicker">Antwerp</span>
+              <h3>Late Night in the South</h3>
+              <p>Sat 19 Apr • Placeholder venue • short vibe copy</p>
+              <a class="button" href="#">Tickets</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="clips">
+          <div class="split">
+            <div class="mini-reel">
+              <div class="panel">
+                <span class="kicker">Clip 1</span>
+                <h3>Crowd laugh burst</h3>
+                <p>5–10 second placeholder proof clip with a clear BCN event caption nearby.</p>
+              </div>
+              <div class="panel">
+                <span class="kicker">Clip 2</span>
+                <h3>Mic check + room filling</h3>
+                <p>Another short placeholder clip. Supporting layer only — not primary navigation.</p>
+              </div>
+            </div>
+            <div class="signup">
+              <span class="kicker">Fallback conversion</span>
+              <h2>Get next shows near you.</h2>
+              <p>Users who like the energy but aren’t ready to click tickets can still subscribe by city.</p>
+              <div class="form-row">
+                <input class="input" type="email" placeholder="Email address" />
+                <select class="select">
+                  <option>Choose city</option>
+                  <option>Brussels</option>
+                  <option>Ghent</option>
+                  <option>Leuven</option>
+                  <option>Antwerp</option>
+                </select>
+                <button class="button" type="button">Join</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-grid">
+            <div>
+              <strong>Best for</strong>
+              <p>Showing real audience energy and venue credibility when BCN has a curated media pack ready.</p>
+            </div>
+            <div>
+              <strong>Main risk</strong>
+              <p>It becomes weak fast if media is low quality, repetitive, too heavy, or given too much space.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
