@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-04-04T00:00:00Z",
+  "assumptions": [
+    "Occurrence history is merged by the exported occurrence_id (same venue + local date/time, even when multiple Eventbrite listings exist).",
+    "Reservations come from Eventbrite order.tickets_per_order; Eventbrite order counts stay separate from ticket totals.",
+    "If order-level rows are incomplete, the final point is adjusted to land on events_overview.json totals; if no order rows exist, the chart falls back to a show-day total point."
+  ],
+  "occurrences": []
+}

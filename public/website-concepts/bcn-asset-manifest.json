@@ -1,0 +1,388 @@
+{
+  "generatedAt": "2026-04-04",
+  "project": "Belgian Comedy Network website design sprint",
+  "notes": [
+    "Public-reference manifest for prototyping only.",
+    "Do not assume production clearance from public visibility alone.",
+    "Some CDN asset URLs may expire or be platform-scoped."
+  ],
+  "assets": [
+    {
+      "id": "ig-avatar-bcn",
+      "title": "BCN Instagram avatar / logo reference",
+      "platform": "instagram",
+      "kind": "logo-avatar",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.2885-19/466020218_570598338687198_7212574556078025044_n.jpg?stp=dst-jpg_s240x240_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=106&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=XUaPUu1GUpYQ7kNvwGR2ts_&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3MbU71A48Ag-LKCyOyoD-FI-TBo8rsx-Ri-ps9zdB9iw&oe=69D6E9C0&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "poor",
+        "eventCard": "good",
+        "proofTile": "excellent"
+      },
+      "text_burden": "low",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "low",
+        "hype": "low",
+        "socialProof": "low"
+      },
+      "recommended_slots": [
+        "brand badge",
+        "favicon reference",
+        "social proof badge"
+      ],
+      "usage_status": "reference-potentially-reusable",
+      "notes": "Strong yellow-on-black avatar reference; better to recreate from a proper vector source than reuse this raster avatar directly.",
+      "copyright_note": "Likely BCN-controlled branding, but this scraped avatar should not replace the proper source logo asset."
+    },
+    {
+      "id": "ig-academy-promo",
+      "title": "Academy Comedy Night Brussels Instagram promo",
+      "platform": "instagram",
+      "kind": "poster-square",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.82787-15/658827701_17939220498185772_6830906043697291409_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=bdytJ8fH9GsQ7kNvwHfy1m5&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3-P7W2ntv9ZSgM0bihon7z-5ZMY-PxxI9T28lAABf79w&oe=69D6C7CD&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "poor",
+        "eventCard": "medium",
+        "proofTile": "good"
+      },
+      "text_burden": "high",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "low",
+        "hype": "medium",
+        "socialProof": "low"
+      },
+      "recommended_slots": [
+        "archive tile",
+        "promo wall",
+        "event card art"
+      ],
+      "usage_status": "prototype-only",
+      "notes": "Square poster with theater-seat background; too much baked-in text for hero use.",
+      "copyright_note": "Public BCN promo art; reuse rights unverified."
+    },
+    {
+      "id": "ig-antwerp-promo",
+      "title": "Antwerp Best of Belgium Instagram promo",
+      "platform": "instagram",
+      "kind": "poster-square",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.82787-15/656035922_17938613313185772_7883651438343276729_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=nBUbckE7eosQ7kNvwF07OBx&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af13sbD4Wpa-kkjU3o7tNMu6Te2jAEqvvPwzbVkqfEJjAA&oe=69D6DB00&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "poor",
+        "eventCard": "okay",
+        "proofTile": "good"
+      },
+      "text_burden": "very-high",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "low",
+        "hype": "medium",
+        "socialProof": "low"
+      },
+      "recommended_slots": [
+        "event card art",
+        "archive tile",
+        "city promo tile"
+      ],
+      "usage_status": "prototype-only",
+      "notes": "Square spotlight poster with mic/stool symbolism; reads generic rather than documentary.",
+      "copyright_note": "Public BCN promo art; reuse rights unverified."
+    },
+    {
+      "id": "ig-lefridge-promo",
+      "title": "Le Fridge English Edition Instagram promo",
+      "platform": "instagram",
+      "kind": "poster-square",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.82787-15/640568437_17935293849185772_1405188672968684098_n.jpg?stp=dst-jpg_e15_fr_s1080x1080_tt6&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=YVBjIFGuT_0Q7kNvwFkDArX&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1y41RRdbGr9KccdgP1SYPlIULy8ZHloIGYeANpDMPMxw&oe=69D6F3EC&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "poor",
+        "eventCard": "medium-poor",
+        "proofTile": "good"
+      },
+      "text_burden": "very-high",
+      "bcn_relevance": "medium-high",
+      "signals": {
+        "trust": "low-medium",
+        "hype": "medium",
+        "socialProof": "low"
+      },
+      "recommended_slots": [
+        "promo archive",
+        "partner/collab tile",
+        "editorial insert"
+      ],
+      "usage_status": "prototype-reference-only",
+      "notes": "Strong campaign art, but dense text and partner branding limit flexibility.",
+      "copyright_note": "May include partner branding; do not assume broad reuse rights."
+    },
+    {
+      "id": "ig-brussels-is-a-joke-promo",
+      "title": "Brussels Is a Joke Instagram promo",
+      "platform": "instagram",
+      "kind": "poster-square",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.82787-15/627291988_17933464926185772_3227022154770075332_n.jpg?stp=dst-jpg_e15_fr_p1080x1080_tt6&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=Ve6TQVIM5kQQ7kNvwEBAgXk&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af08Iz48OAkFkC2pOp-eNNZpICZsFTbvxhmUCecQP3ZzUA&oe=69D6C749&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium-high",
+      "crop": {
+        "hero": "medium-poor",
+        "eventCard": "medium",
+        "proofTile": "good"
+      },
+      "text_burden": "high",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "low",
+        "hype": "medium-high",
+        "socialProof": "low"
+      },
+      "recommended_slots": [
+        "campaign tile",
+        "event card art",
+        "editorial insert"
+      ],
+      "usage_status": "prototype-reference-only",
+      "notes": "Illustrated event concept with stronger graphic identity than most BCN posters, but still too text-heavy for lead use.",
+      "copyright_note": "Event-specific graphic asset; reuse rights unverified."
+    },
+    {
+      "id": "ig-latroupe-clip-cover",
+      "title": "Latroupe comedian clip cover",
+      "platform": "instagram",
+      "kind": "reel-cover-photo",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.82787-15/643555542_18448115773109940_7625324432276374395_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=JkTrsS1gqW8Q7kNvwFJ23HT&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af1efW9Hs2ILMo1ynAhJT8i1LNT4Yc9f54AV5QiHy-kdDQ&oe=69D6F40B&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium-high",
+      "crop": {
+        "hero": "decent",
+        "eventCard": "good",
+        "proofTile": "good"
+      },
+      "text_burden": "medium",
+      "bcn_relevance": "very-high",
+      "signals": {
+        "trust": "high",
+        "hype": "medium",
+        "socialProof": "medium"
+      },
+      "recommended_slots": [
+        "performer card",
+        "supporting editorial image",
+        "proof strip"
+      ],
+      "usage_status": "prototype-first-maybe-reusable-with-clean-frame",
+      "notes": "Best Instagram human/stage image found; current reel cover still has overlaid social text.",
+      "copyright_note": "Likely BCN-posted clip frame, but still not assumed cleared as-is. A clean frame export would be safer."
+    },
+    {
+      "id": "ig-cheval-marin-crowdwork-cover",
+      "title": "Cheval Marin crowdwork reel cover",
+      "platform": "instagram",
+      "kind": "reel-cover-photo",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "asset_url": "https://scontent-sof1-1.cdninstagram.com/v/t51.82787-15/658176800_18453942613109940_7614063858551851329_n.jpg?stp=dst-jpg_e15_tt6&_nc_ht=scontent-sof1-1.cdninstagram.com&_nc_cat=100&_nc_oc=Q6cZ2gEmZn-C0M5HIEfpfIBDJI5BRxczNYp2j0pOKgxYCcjSR1LYmQx2c0162Dk14o77KGdAkx359-hB5hhF_Otx7nhh&_nc_ohc=2nJNW3huSCoQ7kNvwGrmKd3&_nc_gid=WCY80Y37JcntZprdfZf7RQ&edm=APs17CUBAAAA&ccb=7-5&oh=00_Af3qICs0gjY2yi9zhRE6UAfoBKWPuC7ZFBglXcBBeV_Msw&oe=69D6D6D5&_nc_sid=10d13b",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "weak",
+        "eventCard": "fair",
+        "proofTile": "fair"
+      },
+      "text_burden": "high",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "medium",
+        "hype": "medium-strong",
+        "socialProof": "strong"
+      },
+      "recommended_slots": [
+        "reels/social proof strip",
+        "clip tile",
+        "crowdwork section"
+      ],
+      "usage_status": "prototype-first-maybe-reusable-with-clean-frame",
+      "notes": "Very social-native and authentic, but meme overlays make it too messy for polished lead placements.",
+      "copyright_note": "Likely BCN-posted clip frame; use as prototype reference unless clean source is confirmed."
+    },
+    {
+      "id": "eb-antwerp-live-hero",
+      "title": "Antwerp Best of Belgium Eventbrite live photo",
+      "platform": "eventbrite",
+      "kind": "live-event-photo",
+      "source_page_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980258240705",
+      "asset_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1174486377%2F1589080780773%2F1%2Foriginal.20260110-131921?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=0ebfdabfc68a8dc184259b4be5f68192",
+      "asset_url_may_expire": true,
+      "quality": "high",
+      "crop": {
+        "hero": "good",
+        "eventCard": "decent",
+        "proofTile": "excellent"
+      },
+      "text_burden": "low",
+      "bcn_relevance": "very-high",
+      "signals": {
+        "trust": "high",
+        "hype": "medium-high",
+        "socialProof": "very-high"
+      },
+      "recommended_slots": [
+        "homepage hero",
+        "proof block lead image",
+        "about/community section",
+        "Antwerp city view"
+      ],
+      "usage_status": "best-potentially-reusable-later",
+      "notes": "Strongest overall BCN media candidate found. Real room, real crowd, strong venue atmosphere, no problematic overlay text.",
+      "copyright_note": "Public Eventbrite image only; do not assume broad website reuse rights without BCN confirmation."
+    },
+    {
+      "id": "eb-academy-live-photo",
+      "title": "Academy Comedy Nights Brussels Eventbrite live photo",
+      "platform": "eventbrite",
+      "kind": "live-event-photo",
+      "source_page_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661782683",
+      "asset_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1038485123%2F1589080780773%2F1%2Foriginal.20250525-130920?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.61553030303&fp-y=0.50700280112&s=a9dfd45e1ff3a2cca93527f48c6667ae",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "weak-fair",
+        "eventCard": "fair",
+        "proofTile": "okay"
+      },
+      "text_burden": "low-medium",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "medium",
+        "hype": "low-medium",
+        "socialProof": "medium-low"
+      },
+      "recommended_slots": [
+        "secondary gallery image",
+        "Brussels event detail support",
+        "academy/intimate room section"
+      ],
+      "usage_status": "potentially-reusable-with-caution",
+      "notes": "Authentic stage photo, but darker and less polished than the Antwerp image.",
+      "copyright_note": "Public Eventbrite image only; production reuse still uncertain."
+    },
+    {
+      "id": "eb-friday-illustrated-crowd",
+      "title": "Friday Night Stand-Up Eventbrite illustrated crowd poster",
+      "platform": "eventbrite",
+      "kind": "poster-wide",
+      "source_page_url": "https://www.eventbrite.be/o/belgian-comedy-network-66817651253",
+      "asset_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1038488803%2F1589080780773%2F1%2Foriginal.20250525-132517?crop=focalpoint&fit=crop&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=f52a6f65b7d392b21b1d945daff94aca",
+      "asset_url_may_expire": true,
+      "quality": "medium-high",
+      "crop": {
+        "hero": "moderate",
+        "eventCard": "fair-good",
+        "proofTile": "weak-fair"
+      },
+      "text_burden": "medium-high",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "low-medium",
+        "hype": "high",
+        "socialProof": "medium"
+      },
+      "recommended_slots": [
+        "event card art",
+        "promo strip",
+        "archive tile"
+      ],
+      "usage_status": "prototype-only",
+      "notes": "Punchy and energetic but clearly illustrated/graphic rather than documentary proof.",
+      "copyright_note": "Graphic poster asset; broad reuse rights unverified."
+    },
+    {
+      "id": "eb-belgium-is-a-joke-banner",
+      "title": "Belgium Is a Joke Eventbrite banner",
+      "platform": "eventbrite",
+      "kind": "poster-banner",
+      "source_page_url": "https://www.eventbrite.be/o/belgian-comedy-network-66817651253",
+      "asset_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1175255607%2F1589080780773%2F1%2Foriginal.20260119-171109?crop=focalpoint&fit=crop&h=230&w=460&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.481&fp-y=0.026&s=4ab0d648671fb71cb459e000e4d89719",
+      "asset_url_may_expire": true,
+      "quality": "medium-high",
+      "crop": {
+        "hero": "fair",
+        "eventCard": "good",
+        "proofTile": "poor"
+      },
+      "text_burden": "medium",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "medium",
+        "hype": "medium",
+        "socialProof": "low"
+      },
+      "recommended_slots": [
+        "event listing art",
+        "campaign strip",
+        "schedule module"
+      ],
+      "usage_status": "prototype-reference-only",
+      "notes": "Clean event identity art; works better as a banner/card than as a proof image.",
+      "copyright_note": "Event-specific graphic asset; reuse rights unverified."
+    },
+    {
+      "id": "eb-ghent-allstars-collage",
+      "title": "Comedy All-Stars Ghent Eventbrite collage",
+      "platform": "eventbrite",
+      "kind": "photo-collage-poster",
+      "source_page_url": "https://www.eventbrite.be/o/belgian-comedy-network-66817651253",
+      "asset_url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1175722413%2F1589080780773%2F1%2Foriginal.20260124-170243?crop=focalpoint&fit=crop&h=230&w=460&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.498&fp-y=0.503&s=23b2cb429c9311eacb075d780d9adfe3",
+      "asset_url_may_expire": true,
+      "quality": "medium",
+      "crop": {
+        "hero": "poor-mediocre",
+        "eventCard": "decent",
+        "proofTile": "good"
+      },
+      "text_burden": "high",
+      "bcn_relevance": "high",
+      "signals": {
+        "trust": "moderate",
+        "hype": "good",
+        "socialProof": "strong"
+      },
+      "recommended_slots": [
+        "proof tile",
+        "event card",
+        "Ghent city support image"
+      ],
+      "usage_status": "prototype-first-maybe-reusable-if-owned",
+      "notes": "Human and warm, but collage bars + central promo text limit hero use.",
+      "copyright_note": "Composite/poster-style asset; reuse rights unverified."
+    }
+  ],
+  "reference_signals": [
+    {
+      "id": "eventbrite-organizer-brand-card",
+      "platform": "eventbrite",
+      "source_page_url": "https://www.eventbrite.be/o/belgian-comedy-network-66817651253",
+      "type": "page-reference",
+      "notes": "Useful reference for BCN black/yellow avatar treatment, organizer-card trust block, and follower/event-count proof UI."
+    },
+    {
+      "id": "instagram-embed-metadata",
+      "platform": "instagram",
+      "source_page_url": "https://www.instagram.com/belgiancomedynetwork/",
+      "type": "profile-reference",
+      "notes": "Embed-accessible metadata showed 5,198 followers and 31 posts at fetch time; useful for a compact 'seen on Instagram' proof treatment."
+    }
+  ]
+}

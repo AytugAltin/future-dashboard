@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN Template — Premium Minimal</title>
+    <meta name="description" content="BCN premium-minimal template: same shared system, calmer density, curated schedule, and a strong paid-night-out fit." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./bcn-visual-system.css" />
+    <link rel="stylesheet" href="./bcn-template-system.css" />
+    <style>
+      body.template-page.premium-variant {
+        background:
+          radial-gradient(circle at 10% 0%, rgba(255,159,67,0.12), transparent 24%),
+          radial-gradient(circle at 90% 0%, rgba(232,255,97,0.06), transparent 18%),
+          linear-gradient(180deg, #12100f 0%, #0a0a0a 100%);
+      }
+      body.premium-variant {
+        --accent: #ff9f43;
+        --panel: rgba(255,248,238,0.055);
+      }
+      .premium-shell { display:grid; gap:18px; }
+      .premium-hero { display:grid; gap:18px; }
+      .premium-line { display:flex; flex-wrap:wrap; gap:10px 16px; color:var(--muted); }
+      .premium-line strong { color:var(--text); }
+      .curated-list { display:grid; gap:12px; }
+    </style>
+  </head>
+  <body class="bcn-sprint-page template-page premium-variant">
+    <a class="skip-link" href="#schedule">Skip to curated schedule</a>
+
+    <header class="topbar">
+      <div class="wrap topbar-row">
+        <a class="brand" href="#top" aria-label="Belgian Comedy Network premium-minimal template home">
+          <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+            <rect width="44" height="44" rx="12" fill="#151522"/>
+            <path d="M14 13.5C14 11.567 15.567 10 17.5 10H27.5C31.6421 10 35 13.3579 35 17.5C35 21.6421 31.6421 25 27.5 25H21V34H17.5C15.567 34 14 32.433 14 30.5V13.5Z" fill="#E8FF61"/>
+            <path d="M21 17H27C28.6569 17 30 18.3431 30 20C30 21.6569 28.6569 23 27 23H21V17Z" fill="#151522"/>
+            <path d="M52 12.5H67.5C73.299 12.5 77 15.471 77 20.25C77 25.029 73.299 28 67.5 28H58V34H52V12.5ZM58 17.25V23.25H67C69.299 23.25 70.75 22.178 70.75 20.25C70.75 18.322 69.299 17.25 67 17.25H58Z" fill="#F7F8FC"/>
+            <path d="M80.4688 34V12.5H86.4688V34H80.4688Z" fill="#F7F8FC"/>
+            <path d="M91.5586 34V12.5H97.5586L109.309 26.1875V12.5H115.309V34H109.309L97.5586 20.3125V34H91.5586Z" fill="#F7F8FC"/>
+            <path d="M129.244 34.5C122.322 34.5 117.559 29.863 117.559 23.25C117.559 16.637 122.353 12 129.338 12C134.117 12 137.865 14.048 139.916 17.625L134.619 20.5312C133.463 18.4375 131.525 17.1875 129.307 17.1875C125.791 17.1875 123.715 19.628 123.715 23.25C123.715 26.872 125.791 29.3125 129.307 29.3125C131.525 29.3125 133.463 28.0625 134.619 25.9688L139.916 28.875C137.865 32.451 134.088 34.5 129.244 34.5Z" fill="#F7F8FC"/>
+            <path d="M142.402 34V12.5H159.121V17.25H148.402V20.75H158.152V25.25H148.402V29.25H159.121V34H142.402Z" fill="#F7F8FC"/>
+          </svg>
+          <span class="brand-copy">
+            <strong>Template variant</strong>
+            <span>Premium minimal</span>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Page sections">
+          <a href="#schedule">Schedule</a>
+          <a href="#newsletter">Newsletter</a>
+          <a href="#about">About</a>
+          <span>Same system, calmer density</span>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="wrap premium-shell">
+      <section class="hero premium-hero">
+        <section class="panel" style="display:grid; gap:18px; align-content:start;">
+          <span class="eyebrow">Premium-minimal template</span>
+          <h1 class="hero-title">Less noise. One strong night. One clear path.</h1>
+          <p class="lede">
+            This variant keeps the BCN system intact but reduces density: fewer visible cards, more whitespace,
+            and one active show detail surface doing most of the work.
+          </p>
+          <div class="premium-line" id="hero-line"></div>
+          <div class="chip-row" id="city-chips" aria-label="Filter by city"></div>
+          <div class="button-row" id="hero-actions"></div>
+          <div class="variant-links">
+            <a href="./template-editorial-show-first.html">Open editorial-show-first</a>
+            <a href="./template-city-network.html">Open city-network</a>
+            <a href="./index.html">Back to concept index</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="section" id="schedule">
+        <div class="section-head">
+          <h2>Curated schedule</h2>
+          <p>
+            Instead of a dense grid, this variant shows a smaller curated rail and keeps one selected show expanded.
+          </p>
+        </div>
+        <div class="schedule-grid">
+          <section class="panel curated-list" id="schedule-list"></section>
+          <aside class="detail-panel">
+            <div class="detail-figure" data-img-source="unsplash">
+              <img id="detail-image" src="https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop" alt="Premium BCN mood image" />
+              <div class="detail-caption">
+                <span class="eyebrow" id="detail-city-badge">Antwerp</span>
+                <strong id="detail-image-title">Calmer, more selective presentation</strong>
+              </div>
+            </div>
+            <div>
+              <h2 id="detail-title">Selected show</h2>
+              <div class="detail-meta-grid" id="detail-meta"></div>
+              <p id="detail-copy">This layout works best when one active date is allowed to carry more of the page.</p>
+              <div class="detail-actions" id="detail-actions"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="newsletter">
+        <div class="newsletter-grid">
+          <section class="newsletter-card">
+            <span class="eyebrow">Concierge-style signup</span>
+            <h3>Newsletter stays calm and city-specific.</h3>
+            <p>
+              It comes after the curated schedule/detail area, so it reads like a fallback for people not ready to book yet.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="form-row">
+                <input class="input" type="email" name="email" placeholder="Email address" required />
+                <select class="select" name="city" id="newsletter-city" required></select>
+                <button class="button" type="submit">Join</button>
+              </div>
+              <div class="form-note" aria-live="polite"></div>
+            </form>
+          </section>
+          <section class="newsletter-card">
+            <span class="eyebrow">Explicit mapping</span>
+            <p><strong>Inherits from:</strong> <code>bcn-concept-premium-minimal.html</code></p>
+            <p><strong>Stakeholder rule:</strong> keep premium calm, remove aggregate metrics, preserve whitespace, reduce duplicated booking prompts.</p>
+            <p><strong>Figma applies to:</strong> Header, MinimalHero, CityChips, CuratedShowList, ActiveShowDetail, NewsletterBlock.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="about-grid">
+          <article class="about-card">
+            <span class="eyebrow">About BCN</span>
+            <h3>Useful when the night should feel a bit more selective.</h3>
+            <p>
+              This is still a show-first BCN page. It just gives more room to the chosen date, making paid or premium-feeling nights read with more confidence.
+            </p>
+          </article>
+          <article class="about-card">
+            <span class="eyebrow">What is deliberately missing</span>
+            <p>No hero metrics. No noisy proof strip. No duplicate book buttons everywhere. No emoji UI.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <section class="footer-card">
+            <h3>template-premium-minimal</h3>
+            <p>Best refined / paid-night variant while still keeping the BCN ticket path obvious.</p>
+          </section>
+          <section class="footer-card">
+            <div class="variant-links">
+              <a href="./template-editorial-show-first.html">Judge editorial-show-first</a>
+              <a href="./template-city-network.html">Judge city-network</a>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module">
+      import { CITY_ORDER, CITY_META, cityAccent, getEvents, nextEvent, formatLongDate, ticketLabel, ticketTypeLabel, venueProof } from './bcn-template-data.js';
+
+      const heroLine = document.getElementById('hero-line');
+      const heroActions = document.getElementById('hero-actions');
+      const cityChips = document.getElementById('city-chips');
+      const scheduleList = document.getElementById('schedule-list');
+      const detailCityBadge = document.getElementById('detail-city-badge');
+      const detailImageTitle = document.getElementById('detail-image-title');
+      const detailTitle = document.getElementById('detail-title');
+      const detailMeta = document.getElementById('detail-meta');
+      const detailCopy = document.getElementById('detail-copy');
+      const detailActions = document.getElementById('detail-actions');
+      const detailImage = document.getElementById('detail-image');
+      const newsletterCity = document.getElementById('newsletter-city');
+      const newsletterForm = document.getElementById('newsletter-form');
+
+      const images = {
+        brussels: 'https://images.unsplash.com/photo-1705771426257-8b35ea77b1aa?w=1400&q=80&fit=crop',
+        ghent: 'https://images.unsplash.com/photo-1615474603924-9d94c3554b64?w=1400&q=80&fit=crop',
+        leuven: 'https://images.unsplash.com/photo-1759200407416-8a180896c9f4?w=1400&q=80&fit=crop',
+        antwerp: 'https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop'
+      };
+
+      let currentCity = 'antwerp';
+      let currentEvent = nextEvent('antwerp') || nextEvent('brussels');
+
+      function renderSelectors() {
+        const cities = CITY_ORDER.filter((city) => city !== 'all');
+        cityChips.innerHTML = cities.map((city) => `
+          <button class="city-chip" type="button" data-city="${city}" aria-pressed="${city === currentCity}">${CITY_META[city].label}</button>
+        `).join('');
+
+        newsletterCity.innerHTML = cities.map((city) => `
+          <option value="${city}" ${city === currentCity ? 'selected' : ''}>${CITY_META[city].label}</option>
+        `).join('');
+      }
+
+      function renderHero() {
+        const event = currentEvent;
+        document.documentElement.style.setProperty('--accent', cityAccent(currentCity));
+        heroLine.innerHTML = `
+          <span><strong>${CITY_META[currentCity].label}</strong></span>
+          <span>${formatLongDate(event.date)}</span>
+          <span>${event.time}</span>
+          <span>${event.venue}</span>
+        `;
+        heroActions.innerHTML = `
+          <a class="button" href="${event.ticketUrl}" target="_blank" rel="noreferrer">${ticketLabel(event)}</a>
+          <a class="button-secondary" href="#newsletter">${CITY_META[currentCity].signup}</a>
+        `;
+      }
+
+      function renderList() {
+        const events = getEvents(currentCity);
+        if (!events.length) {
+          scheduleList.innerHTML = `
+            <article class="empty-state">
+              <span class="eyebrow">Quiet city state</span>
+              <h3>${CITY_META[currentCity].emptyTitle}</h3>
+              <p>${CITY_META[currentCity].emptyText}</p>
+              <a class="button" href="#newsletter">${CITY_META[currentCity].signup}</a>
+            </article>
+          `;
+          currentEvent = null;
+          renderDetail();
+          return;
+        }
+
+        currentEvent = events.find((event) => event.id === currentEvent?.id) || events[0];
+        scheduleList.innerHTML = events.map((event) => `
+          <article class="schedule-item" aria-current="${event.id === currentEvent.id}">
+            <div class="schedule-top">
+              <div class="mini-art"><strong>${CITY_META[event.city].label}</strong></div>
+              <div>
+                <span class="eyebrow">${ticketTypeLabel(event)}</span>
+                <h3 class="event-title">${event.title}</h3>
+                <p class="event-meta">${formatLongDate(event.date)} · ${event.time} · ${event.venue} · ${event.venueCity}</p>
+              </div>
+              <div class="button-row">
+                <a class="button" href="${event.ticketUrl}" target="_blank" rel="noreferrer">${ticketLabel(event)}</a>
+                <button class="button-secondary" type="button" data-event="${event.id}">Focus</button>
+              </div>
+            </div>
+          </article>
+        `).join('');
+
+        renderDetail();
+      }
+
+      function renderDetail() {
+        if (!currentEvent) {
+          detailCityBadge.textContent = CITY_META[currentCity].label;
+          detailImageTitle.textContent = 'Quiet city fallback';
+          detailTitle.textContent = CITY_META[currentCity].emptyTitle;
+          detailMeta.innerHTML = `
+            <div class="detail-meta-box"><strong>Status</strong><span>No live date</span></div>
+            <div class="detail-meta-box"><strong>Best action</strong><span>${CITY_META[currentCity].signup}</span></div>
+          `;
+          detailCopy.textContent = CITY_META[currentCity].emptyText;
+          detailActions.innerHTML = `<a class="button" href="#newsletter">${CITY_META[currentCity].signup}</a>`;
+          detailImage.src = images[currentCity];
+          return;
+        }
+
+        detailCityBadge.textContent = CITY_META[currentEvent.city].label;
+        detailImageTitle.textContent = currentEvent.note;
+        detailTitle.textContent = currentEvent.title;
+        detailMeta.innerHTML = `
+          <div class="detail-meta-box"><strong>Date</strong><span>${formatLongDate(currentEvent.date)} · ${currentEvent.time}</span></div>
+          <div class="detail-meta-box"><strong>Venue</strong><span>${currentEvent.venue} · ${currentEvent.venueCity}</span></div>
+          <div class="detail-meta-box"><strong>Admission</strong><span>${ticketTypeLabel(currentEvent)}</span></div>
+          <div class="detail-meta-box"><strong>Venue proof</strong><span>${venueProof(currentEvent)}</span></div>
+        `;
+        detailCopy.textContent = currentEvent.summary;
+        detailActions.innerHTML = `
+          <a class="button" href="${currentEvent.ticketUrl}" target="_blank" rel="noreferrer">${ticketLabel(currentEvent)}</a>
+          <a class="button-secondary" href="#newsletter">${CITY_META[currentEvent.city].signup}</a>
+        `;
+        detailImage.src = images[currentEvent.city];
+      }
+
+      function renderAll() {
+        renderSelectors();
+        renderHero();
+        renderList();
+      }
+
+      document.addEventListener('click', (event) => {
+        const city = event.target.closest('[data-city]');
+        const eventButton = event.target.closest('[data-event]');
+        if (city) {
+          currentCity = city.dataset.city;
+          currentEvent = nextEvent(currentCity);
+          renderAll();
+        }
+        if (eventButton) {
+          currentEvent = getEvents(currentCity).find((item) => item.id === eventButton.dataset.event);
+          renderAll();
+        }
+      });
+
+      newsletterForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const note = newsletterForm.querySelector('.form-note');
+        const data = new FormData(newsletterForm);
+        note.textContent = `Prototype submission captured for ${CITY_META[data.get('city')].label}.`;
+      });
+
+      renderAll();
+    </script>
+  </body>
+</html>

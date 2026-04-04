@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-04-04T00:00:00Z",
+  "metric": "cumulative_reservations_with_bucket_additions",
+  "assumptions": [
+    "This stub keeps the dashboard fetch path stable until the real exporter runs.",
+    "Curves are keyed by occurrence_id and may be derived from occurrence_reservation_history.json.",
+    "Client-side benchmark selection still happens in the dashboard UI."
+  ],
+  "curves": []
+}

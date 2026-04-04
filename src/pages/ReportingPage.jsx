@@ -3,6 +3,7 @@ import { Area, AreaChart, Bar, BarChart, CartesianGrid, Line, LineChart, Respons
 import { Card } from '../components/Card.jsx'
 import { Section } from '../components/Section.jsx'
 import { euro, intFmt } from '../formatters.js'
+import { buildVenueEconomicsSummary } from '../utils/economics.js'
 
 export function ReportingPage({ data, filters, onFiltersChange, onSelectEvent }) {
   const tsBounds = useMemo(() => {
@@ -52,6 +53,11 @@ export function ReportingPage({ data, filters, onFiltersChange, onSelectEvent })
     const set = new Set((data.eventsOverview ?? []).map((r) => r.venue_city).filter(Boolean))
     return [...set].sort((a, b) => a.localeCompare(b))
   }, [data.eventsOverview])
+
+  const venueEconomicsSummary = useMemo(
+    () => buildVenueEconomicsSummary(data.eventsOverview, data.venueEconomics),
+    [data.eventsOverview, data.venueEconomics]
+  )
 
   return (
     <div className="pageStack">
@@ -122,9 +128,83 @@ export function ReportingPage({ data, filters, onFiltersChange, onSelectEvent })
       <div className="grid cards">
         <Card label="Tracked net income" value={euro.format(data.overview.total_linked_net_income)} />
         <Card label="Reservations" value={intFmt.format(data.overview.total_reservations)} subtext={`${intFmt.format(data.overview.total_eventbrite_orders)} Eventbrite orders`} />
-        <Card label="Upcoming events" value={intFmt.format(data.overview.upcoming_events)} subtext={`${intFmt.format(data.overview.events_total)} total events`} />
+        <Card label="Upcoming occurrences" value={intFmt.format(data.overview.upcoming_events)} subtext={`${intFmt.format(data.overview.events_total)} total logical occurrences`} />
         <Card label="Unmatched net" value={euro.format(data.overview.unmatched_net_amount)} subtext={`${intFmt.format(data.overview.unmatched_payouts)} payouts`} />
       </div>
+
+      <Section title="Venue economics rules">
+        <p className="subtle">
+          Config-backed rules for Walliwer and La Troupe. This section documents reporting assumptions and ops reminders; invoicing remains backlog only.
+        </p>
+        <div className="economicsRuleGrid">
+          {venueEconomicsSummary.map((rule) => (
+            <article key={rule.venue_id} className="economicsRuleCard">
+              <div className="economicsRuleHeader">
+                <div>
+                  <h3>{rule.label}</h3>
+                  <p className="subtle">{rule.summary}</p>
+                </div>
+                <span className="metaChip">{rule.exportSnapshotLabel}</span>
+              </div>
+
+              <div className="metricsGrid economicsMetricsGrid">
+                <div className="metricBox">
+                  <span>Matched events</span>
+                  <strong>{intFmt.format(rule.matchedEventCount)}</strong>
+                </div>
+                <div className="metricBox">
+                  <span>Upcoming live</span>
+                  <strong>{intFmt.format(rule.upcomingEventCount)}</strong>
+                </div>
+                <div className="metricBox">
+                  <span>Reservations</span>
+                  <strong>{intFmt.format(rule.reservationCount)}</strong>
+                </div>
+                <div className="metricBox">
+                  <span>Tracked net</span>
+                  <strong>{euro.format(rule.trackedNetAmount)}</strong>
+                </div>
+              </div>
+
+              {rule.matchedVenueNames.length ? (
+                <p className="subtle">
+                  Matched venue names in export: <strong>{rule.matchedVenueNames.join(', ')}</strong>
+                </p>
+              ) : null}
+
+              <div className="economicsRuleColumns">
+                <div>
+                  <h4>Economics</h4>
+                  <ul className="economicsRuleList">
+                    {rule.notes.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4>Ops / cadence</h4>
+                  <ul className="economicsRuleList">
+                    {rule.opsNotes.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4>Deferred / assumptions</h4>
+                  <ul className="economicsRuleList">
+                    {rule.deferred.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                    {rule.assumptions?.map((note) => (
+                      <li key={note}>{note}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </Section>
 
       <div className="grid two-up">
         <Section title="Tracked income over time">
@@ -184,7 +264,7 @@ export function ReportingPage({ data, filters, onFiltersChange, onSelectEvent })
         </Section>
       </div>
 
-      <Section title="Top events by tracked net income">
+      <Section title="Top logical occurrences by tracked net income">
         <div className="tableWrap">
           <table>
             <thead>
@@ -193,7 +273,7 @@ export function ReportingPage({ data, filters, onFiltersChange, onSelectEvent })
             <tbody>
               {filteredTopEvents.map((row) => (
                 <tr
-                  key={row.event_id}
+                  key={row.occurrence_id ?? row.event_id}
                   className="tableRowClickable"
                   onClick={() => onSelectEvent(row)}
                   onKeyDown={(e) => {

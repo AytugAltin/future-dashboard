@@ -1,0 +1,45 @@
+/**
+ * BCN sprint visual layer — load in <head> before inline page styles.
+ * Rules: BCN-Track/projects/website-job/bcn-visual-rules.md
+ * Add class="bcn-sprint-page" on <body> for these to apply.
+ */
+
+body.bcn-sprint-page {
+  scroll-padding-top: 72px;
+}
+
+body.bcn-sprint-page ::selection {
+  background: color-mix(in srgb, var(--accent, #ff5a36) 38%, transparent);
+  color: var(--text, #f4f1eb);
+}
+
+body.bcn-sprint-page a:focus-visible,
+body.bcn-sprint-page button:focus-visible,
+body.bcn-sprint-page summary:focus-visible,
+body.bcn-sprint-page [role="button"]:focus-visible,
+body.bcn-sprint-page input:focus-visible,
+body.bcn-sprint-page select:focus-visible,
+body.bcn-sprint-page textarea:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent-2, #e8ff61) 90%, white);
+  outline-offset: 3px;
+}
+
+body.bcn-sprint-page a:focus:not(:focus-visible),
+body.bcn-sprint-page button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body.bcn-sprint-page time {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.bcn-sprint-page *,
+  body.bcn-sprint-page *::before,
+  body.bcn-sprint-page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

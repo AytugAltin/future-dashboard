@@ -135,7 +135,7 @@ export default function App() {
         <ReportingPage data={data} filters={filters} onFiltersChange={onFiltersChange} onSelectEvent={setDetailEvent} />
       )}
 
-      {detailEvent ? <EventDetailModal event={detailEvent} onClose={closeDetail} /> : null}
+      {detailEvent ? <EventDetailModal event={detailEvent} data={data} onClose={closeDetail} /> : null}
     </div>
   )
 }

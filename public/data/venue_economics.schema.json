@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcn.local/schemas/venue_economics.schema.json",
+  "title": "BCN Venue Economics Rules",
+  "type": "object",
+  "required": ["schema_version", "currency", "venues"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "currency": {
+      "type": "string",
+      "minLength": 3
+    },
+    "source_requirement": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "venues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["venue_id", "label", "match", "economics"],
+        "properties": {
+          "venue_id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "match": {
+            "type": "object",
+            "properties": {
+              "mode": {
+                "type": "string",
+                "enum": ["any", "all"]
+              },
+              "venue_names": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "venue_aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "event_name_keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "economics": {
+            "type": "object",
+            "properties": {
+              "income_adjustments": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["adjustment_type", "amount_eur"],
+                  "properties": {
+                    "adjustment_type": {
+                      "type": "string"
+                    },
+                    "amount_eur": {
+                      "type": "number"
+                    },
+                    "frequency": {
+                      "type": "string"
+                    },
+                    "applies_to": {
+                      "type": "string"
+                    },
+                    "confidence": {
+                      "type": "string"
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "fixed_costs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["cost_type", "amount_eur"],
+                  "properties": {
+                    "cost_type": {
+                      "type": "string"
+                    },
+                    "amount_eur": {
+                      "type": "number"
+                    },
+                    "frequency": {
+                      "type": "string"
+                    },
+                    "payable_by": {
+                      "type": "string"
+                    },
+                    "workflow_status": {
+                      "type": "string"
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "cash_split_when_no_sumup": {
+                "type": "object",
+                "properties": {
+                  "trigger": {
+                    "type": "string"
+                  },
+                  "currency": {
+                    "type": "string"
+                  },
+                  "splits": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["party", "amount_eur"],
+                      "properties": {
+                        "party": {
+                          "type": "string"
+                        },
+                        "amount_eur": {
+                          "type": "number"
+                        }
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              },
+              "ad_budget_guidance": {
+                "type": "object",
+                "properties": {
+                  "target_eur": {
+                    "type": "number"
+                  },
+                  "acceptable_max_eur": {
+                    "type": "number"
+                  },
+                  "notes": {
+                    "type": "string"
+                  }
+                },
+                "additionalProperties": true
+              }
+            },
+            "additionalProperties": true
+          },
+          "ops": {
+            "type": "object",
+            "properties": {
+              "cadence": {
+                "type": "object",
+                "properties": {
+                  "typical_occurrences_per_month": {
+                    "type": "number"
+                  },
+                  "weekday": {
+                    "type": "string"
+                  },
+                  "dates_may_be_tbd": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": true
+              },
+              "tasks": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["task_id", "label", "status"],
+                  "properties": {
+                    "task_id": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "timing": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "assumptions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deferred": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

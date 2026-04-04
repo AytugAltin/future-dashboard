@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN Template — Editorial Show-First</title>
+    <meta
+      name="description"
+      content="BCN editorial show-first template: one Figma-aligned system, with a strong hero, early city chips, and direct ticket paths."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./bcn-visual-system.css" />
+    <link rel="stylesheet" href="./bcn-template-system.css" />
+  </head>
+  <body class="bcn-sprint-page template-page">
+    <a class="skip-link" href="#shows">Skip to shows</a>
+
+    <header class="topbar">
+      <div class="wrap topbar-row">
+        <a class="brand" href="#top" aria-label="Belgian Comedy Network editorial template home">
+          <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+            <rect width="44" height="44" rx="12" fill="#151522"/>
+            <path d="M14 13.5C14 11.567 15.567 10 17.5 10H27.5C31.6421 10 35 13.3579 35 17.5C35 21.6421 31.6421 25 27.5 25H21V34H17.5C15.567 34 14 32.433 14 30.5V13.5Z" fill="#E8FF61"/>
+            <path d="M21 17H27C28.6569 17 30 18.3431 30 20C30 21.6569 28.6569 23 27 23H21V17Z" fill="#151522"/>
+            <path d="M52 12.5H67.5C73.299 12.5 77 15.471 77 20.25C77 25.029 73.299 28 67.5 28H58V34H52V12.5ZM58 17.25V23.25H67C69.299 23.25 70.75 22.178 70.75 20.25C70.75 18.322 69.299 17.25 67 17.25H58Z" fill="#F7F8FC"/>
+            <path d="M80.4688 34V12.5H86.4688V34H80.4688Z" fill="#F7F8FC"/>
+            <path d="M91.5586 34V12.5H97.5586L109.309 26.1875V12.5H115.309V34H109.309L97.5586 20.3125V34H91.5586Z" fill="#F7F8FC"/>
+            <path d="M129.244 34.5C122.322 34.5 117.559 29.863 117.559 23.25C117.559 16.637 122.353 12 129.338 12C134.117 12 137.865 14.048 139.916 17.625L134.619 20.5312C133.463 18.4375 131.525 17.1875 129.307 17.1875C125.791 17.1875 123.715 19.628 123.715 23.25C123.715 26.872 125.791 29.3125 129.307 29.3125C131.525 29.3125 133.463 28.0625 134.619 25.9688L139.916 28.875C137.865 32.451 134.088 34.5 129.244 34.5Z" fill="#F7F8FC"/>
+            <path d="M142.402 34V12.5H159.121V17.25H148.402V20.75H158.152V25.25H148.402V29.25H159.121V34H142.402Z" fill="#F7F8FC"/>
+          </svg>
+          <span class="brand-copy">
+            <strong>Template variant</strong>
+            <span>Editorial show-first</span>
+          </span>
+        </a>
+        <nav class="topnav" aria-label="Page sections">
+          <a href="#shows">Shows</a>
+          <a href="#newsletter">Newsletter</a>
+          <a href="#about">About</a>
+          <span>Same system, story-led layout</span>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top" class="wrap">
+      <section class="hero">
+        <div class="hero-grid">
+          <section class="panel" style="display:grid; gap:18px; align-content:start;">
+            <span class="eyebrow">Editorial / show-first template</span>
+            <h1 class="hero-title">A city night out, framed around the next show.</h1>
+            <p class="lede">
+              This is the lead BCN direction: one strong upcoming show, visible city chips, minimal chrome,
+              and a direct ticket path before the page becomes anything else.
+            </p>
+            <div class="chip-row" id="hero-city-chips" aria-label="Choose city"></div>
+            <div id="hero-copy" class="stack"></div>
+            <div class="variant-links" aria-label="Other template variants">
+              <a href="./template-city-network.html">Open city-network</a>
+              <a href="./template-premium-minimal.html">Open premium-minimal</a>
+              <a href="./index.html">Back to concept index</a>
+            </div>
+          </section>
+
+          <aside class="media-hero" data-img-source="unsplash">
+            <img id="hero-image" src="https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop" alt="Nightlife crowd mood image for BCN editorial template" />
+            <div class="media-copy">
+              <span class="eyebrow" id="hero-kicker">Next up in Brussels</span>
+              <strong id="hero-side-title">Tickets stay obvious even when the page gets more cinematic.</strong>
+              <p id="hero-side-copy">The hero keeps the show first, then lets the imagery support the mood instead of replacing the information.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="shows">
+        <div class="section-head">
+          <h2>Upcoming shows</h2>
+          <p>Cards stay short: show, date, venue, CTA. No hero stats. No reservation theater. No emoji UI.</p>
+        </div>
+        <div class="card-grid" id="show-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="split-grid">
+          <article class="panel" id="featured-story" style="display:grid; gap:14px;"></article>
+          <article class="panel" style="display:grid; gap:14px;">
+            <span class="eyebrow">Why this variant exists</span>
+            <h3>Best when BCN needs the homepage to feel alive fastest.</h3>
+            <p>
+              This variant inherits the strongest parts of the editorial baseline: hero-led show framing,
+              image-backed atmosphere, and minimal chrome. It deliberately leaves out vanity proof and long copy.
+            </p>
+            <div class="meta-row">
+              <span class="meta-pill">Shows first</span>
+              <span class="meta-pill">City filter early</span>
+              <span class="meta-pill">Ticket path primary</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="newsletter">
+        <div class="newsletter-grid">
+          <section class="newsletter-card">
+            <span class="eyebrow">Newsletter by city</span>
+            <h3>Get the right city, not the whole noise.</h3>
+            <p>
+              Newsletter comes after the first show block so it supports conversion instead of competing with it.
+            </p>
+            <form class="newsletter-form" id="newsletter-form">
+              <div class="form-row">
+                <input class="input" type="email" name="email" placeholder="Email address" required />
+                <select class="select" name="city" id="newsletter-city" required></select>
+                <button class="button" type="submit">Join</button>
+              </div>
+              <div class="form-note" aria-live="polite"></div>
+            </form>
+          </section>
+          <section class="newsletter-card">
+            <span class="eyebrow">Template mapping</span>
+            <p><strong>Inherits from:</strong> <code>bcn-concept-editorial-show-first.html</code></p>
+            <p><strong>Stakeholder line:</strong> primary line, keep mood, reduce stats, slim newsletter, fix overflow.</p>
+            <p><strong>Figma applies to:</strong> Header, HeroShowSpotlight, CityChips, EventCard, TicketButton, NewsletterBlock.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="about-grid">
+          <article class="about-card">
+            <span class="eyebrow">About BCN</span>
+            <h3>English-language comedy nights across Belgium.</h3>
+            <p>
+              Belgian Comedy Network runs stand-up nights for internationals, expats, students, date-night couples,
+              and city-break visitors. The homepage job is simple: show what is on, where it is, and where to click.
+            </p>
+          </article>
+          <article class="about-card">
+            <span class="eyebrow">Contact</span>
+            <div class="footer-links">
+              <a href="mailto:hello@belgiancomedynetwork.be">hello@belgiancomedynetwork.be</a>
+              <a href="mailto:bookings@belgiancomedynetwork.be">bookings@belgiancomedynetwork.be</a>
+              <a href="https://instagram.com/belgiancomedynetwork" target="_blank" rel="noreferrer">Instagram</a>
+              <a href="https://www.eventbrite.be/o/belgian-comedy-network-66817651253" target="_blank" rel="noreferrer">Eventbrite</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-grid">
+          <section class="footer-card">
+            <h3>template-editorial-show-first</h3>
+            <p>Strong show-led hero, early city chips, minimal chrome, and the clearest homepage mood layer.</p>
+          </section>
+          <section class="footer-card">
+            <div class="variant-links">
+              <a href="./template-city-network.html">Judge city-network</a>
+              <a href="./template-premium-minimal.html">Judge premium-minimal</a>
+            </div>
+          </section>
+        </div>
+      </footer>
+    </main>
+
+    <script type="module">
+      import { CITY_ORDER, CITY_META, getEvents, nextEvent, formatLongDate, ticketLabel, ticketTypeLabel, venueProof } from './bcn-template-data.js';
+
+      const heroCityChips = document.getElementById('hero-city-chips');
+      const heroCopy = document.getElementById('hero-copy');
+      const heroKicker = document.getElementById('hero-kicker');
+      const heroSideTitle = document.getElementById('hero-side-title');
+      const heroSideCopy = document.getElementById('hero-side-copy');
+      const showGrid = document.getElementById('show-grid');
+      const featuredStory = document.getElementById('featured-story');
+      const newsletterCity = document.getElementById('newsletter-city');
+      const newsletterForm = document.getElementById('newsletter-form');
+
+      const heroImages = {
+        all: 'https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop',
+        brussels: 'https://images.unsplash.com/photo-1705771426257-8b35ea77b1aa?w=1400&q=80&fit=crop',
+        ghent: 'https://images.unsplash.com/photo-1615474603924-9d94c3554b64?w=1400&q=80&fit=crop',
+        leuven: 'https://images.unsplash.com/photo-1759200407416-8a180896c9f4?w=1400&q=80&fit=crop',
+        antwerp: 'https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop'
+      };
+
+      let currentCity = 'all';
+
+      function renderCityOptions() {
+        newsletterCity.innerHTML = CITY_ORDER.filter((city) => city !== 'all').map((city) => `
+          <option value="${city}">${CITY_META[city].label}</option>
+        `).join('');
+      }
+
+      function renderChips() {
+        heroCityChips.innerHTML = CITY_ORDER.map((city) => `
+          <button class="city-chip" type="button" data-city="${city}" aria-pressed="${city === currentCity}">${CITY_META[city].label}</button>
+        `).join('');
+      }
+
+      function renderHero() {
+        const event = nextEvent(currentCity) || nextEvent('all');
+        heroCopy.innerHTML = `
+          <span class="eyebrow">${CITY_META[currentCity].label}</span>
+          <h2 class="display-title" style="font-size:clamp(1.9rem,4vw,3.6rem);">${event.title}</h2>
+          <p class="lede">${formatLongDate(event.date)} · ${event.time} · ${event.venue} · ${event.venueCity}</p>
+          <div class="button-row">
+            <a class="button" href="${event.ticketUrl}" target="_blank" rel="noreferrer">${ticketLabel(event)}</a>
+            <a class="button-secondary" href="#newsletter">${CITY_META[event.city].signup}</a>
+          </div>
+          <div class="meta-row">
+            <span class="meta-pill">${ticketTypeLabel(event)}</span>
+            <span class="meta-pill">${event.venue}</span>
+          </div>
+        `;
+
+        document.documentElement.style.setProperty('--accent', CITY_META[event.city].accent);
+        document.getElementById('hero-image').src = heroImages[currentCity];
+        heroKicker.textContent = currentCity === 'all' ? `Next up in ${CITY_META[event.city].label}` : CITY_META[currentCity].label;
+        heroSideTitle.textContent = event.note;
+        heroSideCopy.textContent = CITY_META[currentCity].intro;
+      }
+
+      function renderGrid() {
+        const events = getEvents(currentCity);
+        if (!events.length) {
+          showGrid.innerHTML = `
+            <article class="empty-state" style="grid-column:1/-1;">
+              <span class="eyebrow">Honest empty state</span>
+              <h3>${CITY_META[currentCity].emptyTitle}</h3>
+              <p>${CITY_META[currentCity].emptyText}</p>
+              <div class="button-row">
+                <a class="button" href="#newsletter">${CITY_META[currentCity].signup}</a>
+                <button class="button-secondary" type="button" data-reset>See all cities</button>
+              </div>
+            </article>
+          `;
+          showGrid.querySelector('[data-reset]')?.addEventListener('click', () => {
+            currentCity = 'all';
+            renderAll();
+          });
+          return;
+        }
+
+        showGrid.innerHTML = events.map((event) => `
+          <article class="card">
+            <div class="event-copy">
+              <div class="event-top">
+                <div>
+                  <span class="eyebrow">${CITY_META[event.city].label}</span>
+                  <h3 class="event-title">${event.title}</h3>
+                </div>
+                <span class="meta-pill">${ticketTypeLabel(event)}</span>
+              </div>
+              <p class="event-meta">${formatLongDate(event.date)} · ${event.time} · ${event.venue} · ${event.venueCity}</p>
+              <p>${event.summary}</p>
+              <div class="button-row">
+                <a class="button" href="${event.ticketUrl}" target="_blank" rel="noreferrer">${ticketLabel(event)}</a>
+                <a class="button-secondary" href="#newsletter">${CITY_META[event.city].signup}</a>
+              </div>
+            </div>
+          </article>
+        `).join('');
+      }
+
+      function renderStory() {
+        const event = nextEvent(currentCity) || nextEvent('all');
+        featuredStory.innerHTML = `
+          <span class="eyebrow">Explicit mapping</span>
+          <h3>This template inherits the kept editorial line without carrying over its unwanted noise.</h3>
+          <p><strong>Concept source:</strong> editorial-show-first archived baseline.</p>
+          <p><strong>Stakeholder rule:</strong> keep strong show-led hero, imagery, minimal chrome; remove hero stats and reduce copy.</p>
+          <p><strong>Real BCN proof:</strong> ${venueProof(event)}</p>
+        `;
+      }
+
+      function renderAll() {
+        renderChips();
+        renderHero();
+        renderGrid();
+        renderStory();
+        newsletterCity.value = currentCity === 'all' ? 'brussels' : currentCity;
+      }
+
+      heroCityChips.addEventListener('click', (event) => {
+        const button = event.target.closest('[data-city]');
+        if (!button) return;
+        currentCity = button.dataset.city;
+        renderAll();
+      });
+
+      newsletterForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const note = form.querySelector('.form-note');
+        const data = new FormData(form);
+        note.textContent = `Prototype submission captured for ${CITY_META[data.get('city')].label}.`;
+      });
+
+      renderCityOptions();
+      renderAll();
+    </script>
+  </body>
+</html>

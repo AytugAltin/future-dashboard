@@ -1,0 +1,2074 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BCN — Premium Minimal Concept</title>
+    <meta
+      name="description"
+      content="Premium minimal website concept for Belgian Comedy Network using real BCN event data and real Eventbrite ticket links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./bcn-visual-system.css" />
+    <style>
+      :root {
+        --bg: #0e0d0c;
+        --bg-soft: #141210;
+        --panel: rgba(255, 248, 238, 0.055);
+        --panel-strong: rgba(255, 248, 238, 0.09);
+        --panel-glow: rgba(201, 164, 106, 0.12);
+        --text: #f4f1eb;
+        --muted: #b9b2a8;
+        --line: rgba(244, 241, 235, 0.12);
+        --line-strong: rgba(244, 241, 235, 0.2);
+        --accent: #c9a46a;
+        --accent-soft: rgba(201, 164, 106, 0.18);
+        --accent-brussels: #ff5b5b;
+        --accent-ghent: #7a5cff;
+        --accent-leuven: #00b894;
+        --accent-antwerp: #ff9f43;
+        --success: #8dd3a6;
+        --shadow: 0 28px 90px rgba(0, 0, 0, 0.4);
+        --radius-xl: 32px;
+        --radius-lg: 24px;
+        --radius-md: 18px;
+        --radius-sm: 14px;
+        --max: 1240px;
+        --header-height: 84px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(201, 164, 106, 0.15), transparent 30%),
+          radial-gradient(circle at 85% 10%, rgba(255, 91, 91, 0.1), transparent 24%),
+          linear-gradient(180deg, #161210 0%, #0d0c0b 42%, #090909 100%);
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.2;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.15' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.16'/%3E%3C/svg%3E");
+      }
+
+      body[data-city="brussels"] {
+        --accent: var(--accent-brussels);
+        --accent-soft: rgba(255, 91, 91, 0.18);
+      }
+
+      body[data-city="ghent"] {
+        --accent: var(--accent-ghent);
+        --accent-soft: rgba(122, 92, 255, 0.18);
+      }
+
+      body[data-city="leuven"] {
+        --accent: var(--accent-leuven);
+        --accent-soft: rgba(0, 184, 148, 0.18);
+      }
+
+      body[data-city="antwerp"] {
+        --accent: var(--accent-antwerp);
+        --accent-soft: rgba(255, 159, 67, 0.18);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      .skip-link {
+        position: absolute;
+        left: 16px;
+        top: -48px;
+        z-index: 30;
+        padding: 12px 16px;
+        border-radius: 999px;
+        background: #fff;
+        color: #111;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+      }
+
+      .shell {
+        width: min(calc(100% - 32px), var(--max));
+        margin: 0 auto;
+      }
+
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(18px);
+        background: rgba(10, 10, 10, 0.68);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .header-row {
+        min-height: var(--header-height);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
+      }
+
+      .brand svg {
+        width: 148px;
+        height: auto;
+        flex: none;
+      }
+
+      .brand-copy {
+        display: grid;
+        gap: 2px;
+      }
+
+      .brand-copy strong {
+        font-size: 0.82rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .brand-copy span {
+        font-size: 0.98rem;
+      }
+
+      .header-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .header-nav a {
+        padding: 10px 14px;
+        border-radius: 999px;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.035);
+        border: 1px solid transparent;
+      }
+
+      .header-nav a:hover {
+        color: var(--text);
+        border-color: var(--line);
+      }
+
+      main {
+        padding: 26px 0 54px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .panel,
+      .card,
+      .city-card,
+      .detail-panel,
+      .ledger,
+      .newsletter-card,
+      .about-card,
+      .footer-card,
+      .micro-form {
+        position: relative;
+        background: linear-gradient(180deg, rgba(255, 248, 238, 0.065), rgba(255, 248, 238, 0.038));
+        border: 1px solid var(--line);
+        border-radius: var(--radius-xl);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .hero-copy {
+        padding: 36px;
+        display: grid;
+        align-content: start;
+        gap: 24px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        width: fit-content;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--muted);
+        font-size: 0.79rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 999px;
+        background: var(--accent);
+        box-shadow: 0 0 18px var(--accent);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "DM Serif Display", Georgia, serif;
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        font-weight: 400;
+      }
+
+      h1 {
+        font-size: clamp(3rem, 6vw, 5.9rem);
+        max-width: 11ch;
+      }
+
+      h2 {
+        font-size: clamp(2rem, 4vw, 3.4rem);
+      }
+
+      h3 {
+        font-size: clamp(1.35rem, 2vw, 1.85rem);
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lede {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+        max-width: 58ch;
+      }
+
+      .next-line {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        color: var(--text);
+        font-size: 0.98rem;
+      }
+
+      .next-line strong {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .button-row,
+      .metric-row,
+      .trust-line,
+      .footer-links,
+      .detail-actions,
+      .mini-meta,
+      .about-links,
+      .city-bullets {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .button,
+      .button-secondary,
+      .button-ghost,
+      .filter-pill {
+        min-height: 48px;
+        padding: 0 18px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 700;
+        transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+      }
+
+      .button:hover,
+      .button-secondary:hover,
+      .button-ghost:hover,
+      .filter-pill:hover,
+      .schedule-item:hover {
+        transform: translateY(-1px);
+      }
+
+      .button {
+        background: linear-gradient(135deg, var(--accent), #f5d2a5);
+        color: #16110d;
+      }
+
+      .button-secondary {
+        background: rgba(255, 255, 255, 0.055);
+        color: var(--text);
+        border-color: var(--line);
+      }
+
+      .button-ghost,
+      .filter-pill {
+        background: transparent;
+        color: var(--muted);
+        border-color: var(--line);
+      }
+
+      .filter-pill[aria-pressed="true"] {
+        color: var(--text);
+        border-color: rgba(255, 255, 255, 0.28);
+        background: var(--accent-soft);
+      }
+
+      .micro-form {
+        padding: 16px;
+        display: grid;
+        gap: 12px;
+        border-radius: var(--radius-lg);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03)),
+          radial-gradient(circle at top left, rgba(201, 164, 106, 0.12), transparent 44%);
+      }
+
+      .micro-form h2 {
+        font-size: 1.45rem;
+        letter-spacing: -0.03em;
+      }
+
+      .micro-form p {
+        color: var(--muted);
+        font-size: 0.95rem;
+        line-height: 1.55;
+      }
+
+      .field-row {
+        display: grid;
+        grid-template-columns: 1.2fr 0.9fr auto;
+        gap: 10px;
+      }
+
+      .field,
+      .select {
+        min-height: 48px;
+        padding: 0 14px;
+        border-radius: 16px;
+        border: 1px solid var(--line);
+        background: rgba(9, 9, 9, 0.46);
+        color: var(--text);
+      }
+
+      .field::placeholder {
+        color: #9d958b;
+      }
+
+      .form-note {
+        min-height: 1.2em;
+        font-size: 0.9rem;
+        color: var(--success);
+      }
+
+      .hero-visual {
+        min-height: 100%;
+        display: grid;
+      }
+
+      .visual-frame {
+        position: relative;
+        min-height: 100%;
+        border-radius: var(--radius-xl);
+        overflow: hidden;
+      }
+
+      .visual-frame::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(8, 8, 8, 0.06), rgba(8, 8, 8, 0.66)),
+          radial-gradient(circle at 72% 20%, rgba(245, 210, 165, 0.28), transparent 23%);
+      }
+
+      .visual-frame img {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .hero-overlay {
+        position: relative;
+        z-index: 1;
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 28px;
+      }
+
+      .medallion {
+        align-self: flex-start;
+        padding: 14px 16px;
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        background: rgba(15, 12, 10, 0.62);
+        backdrop-filter: blur(12px);
+      }
+
+      .medallion strong {
+        display: block;
+        font-size: 1.9rem;
+        font-family: "DM Serif Display", serif;
+        color: var(--accent);
+      }
+
+      .medallion span,
+      .hero-caption p,
+      .stat-line small,
+      .detail-copy small,
+      .venue-pill small,
+      .newsletter-copy p,
+      .about-card p,
+      .footer-card p,
+      .empty-state p,
+      .schedule-meta,
+      .chip,
+      .city-card p,
+      .city-card small,
+      .detail-meta dd {
+        color: var(--muted);
+      }
+
+      .hero-caption {
+        display: grid;
+        gap: 12px;
+        max-width: 30rem;
+      }
+
+      .hero-caption strong {
+        font-size: 1.1rem;
+      }
+
+      .spotlight-icon {
+        width: 96px;
+        height: 96px;
+        opacity: 0.9;
+      }
+
+      .trust-strip {
+        margin-top: 18px;
+        padding: 16px 22px;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.04);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .trust-strip strong {
+        color: var(--accent);
+      }
+
+      .section {
+        margin-top: 30px;
+      }
+
+      .section-head {
+        display: grid;
+        gap: 10px;
+        margin-bottom: 18px;
+      }
+
+      .section-head p {
+        color: var(--muted);
+        max-width: 48rem;
+        line-height: 1.6;
+      }
+
+      .featured-grid,
+      .cities-grid,
+      .venue-grid,
+      .footer-grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .featured-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .event-card {
+        padding: 18px;
+        display: grid;
+        gap: 16px;
+        border-radius: var(--radius-lg);
+      }
+
+      .event-art,
+      .mini-art {
+        position: relative;
+        overflow: hidden;
+        border-radius: 22px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.18), transparent 28%),
+          radial-gradient(circle at 80% 26%, var(--accent-soft), transparent 30%),
+          linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+      }
+
+      .event-art {
+        min-height: 170px;
+        padding: 18px;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .event-art::before,
+      .mini-art::before {
+        content: "";
+        position: absolute;
+        inset: -10% auto auto -8%;
+        width: 120px;
+        height: 120px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(244, 241, 235, 0.3), transparent 62%);
+      }
+
+      .event-art::after,
+      .mini-art::after {
+        content: "";
+        position: absolute;
+        right: 14px;
+        top: 12px;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.05);
+        box-shadow: inset 0 0 24px rgba(255, 255, 255, 0.08);
+      }
+
+      .art-copy {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        gap: 8px;
+      }
+
+      .art-copy span,
+      .ticket-badge,
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        min-height: 32px;
+        padding: 0 12px;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(15, 12, 10, 0.48);
+        font-size: 0.84rem;
+      }
+
+      .ticket-badge {
+        color: var(--text);
+      }
+
+      .art-copy strong {
+        font-family: "DM Serif Display", serif;
+        font-size: 1.45rem;
+        line-height: 1;
+      }
+
+      .card-copy {
+        display: grid;
+        gap: 12px;
+      }
+
+      .card-copy p {
+        color: var(--muted);
+        line-height: 1.58;
+      }
+
+      .schedule-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.88fr);
+        gap: 18px;
+        align-items: start;
+      }
+
+      .schedule-shell {
+        padding: 18px;
+        display: grid;
+        gap: 14px;
+      }
+
+      .filter-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 4px;
+      }
+
+      .schedule-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .schedule-item {
+        width: 100%;
+        text-align: left;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-lg);
+        background: rgba(255, 255, 255, 0.035);
+        padding: 14px;
+        color: var(--text);
+        display: grid;
+        gap: 12px;
+        transition: border-color 160ms ease, background 160ms ease, transform 160ms ease;
+      }
+
+      .schedule-item[aria-current="true"] {
+        border-color: rgba(255, 255, 255, 0.26);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.04));
+      }
+
+      .schedule-top {
+        display: grid;
+        grid-template-columns: 92px minmax(0, 1fr) auto;
+        gap: 14px;
+        align-items: center;
+      }
+
+      .mini-art {
+        min-height: 92px;
+        padding: 12px;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .mini-art strong {
+        position: relative;
+        z-index: 1;
+        font-size: 1rem;
+        font-family: "DM Serif Display", serif;
+      }
+
+      .schedule-copy {
+        display: grid;
+        gap: 6px;
+      }
+
+      .schedule-copy h3 {
+        font-size: 1.35rem;
+      }
+
+      .schedule-meta {
+        font-size: 0.93rem;
+        line-height: 1.5;
+      }
+
+      .schedule-ticket {
+        display: grid;
+        justify-items: end;
+        gap: 10px;
+      }
+
+      .detail-panel {
+        padding: 18px;
+        position: sticky;
+        top: calc(var(--header-height) + 16px);
+        display: grid;
+        gap: 18px;
+      }
+
+      .detail-figure {
+        position: relative;
+        min-height: 290px;
+        border-radius: 26px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+      }
+
+      .detail-figure img {
+        position: absolute;
+        inset: 0;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .detail-figure::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(6, 6, 6, 0.15), rgba(6, 6, 6, 0.75)),
+          radial-gradient(circle at 78% 18%, rgba(244, 210, 165, 0.24), transparent 22%);
+      }
+
+      .detail-badge {
+        position: absolute;
+        left: 18px;
+        top: 18px;
+        z-index: 1;
+      }
+
+      .detail-copy {
+        display: grid;
+        gap: 16px;
+      }
+
+      .detail-meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 0;
+      }
+
+      .detail-meta div {
+        padding: 12px 14px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.025);
+      }
+
+      .detail-meta dt {
+        margin: 0 0 4px;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--muted);
+      }
+
+      .detail-meta dd {
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .detail-body-text,
+      .newsletter-copy p,
+      .about-card p,
+      .footer-card p,
+      .empty-state p {
+        line-height: 1.7;
+      }
+
+      .detail-body-text {
+        color: var(--muted);
+      }
+
+      .venue-pill {
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        display: grid;
+        gap: 4px;
+      }
+
+      .venue-pill strong {
+        color: var(--accent);
+      }
+
+      .city-section {
+        display: grid;
+        gap: 18px;
+      }
+
+      .cities-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .city-card {
+        width: 100%;
+        border: 1px solid var(--line);
+        color: var(--text);
+        text-align: left;
+        padding: 18px;
+        display: grid;
+        gap: 14px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.025));
+      }
+
+      .city-card[aria-pressed="true"] {
+        border-color: rgba(255, 255, 255, 0.28);
+        background: linear-gradient(180deg, var(--accent-soft), rgba(255, 255, 255, 0.03));
+      }
+
+      .city-icon {
+        width: 68px;
+        height: 68px;
+      }
+
+      .city-card strong {
+        font-size: 1.25rem;
+      }
+
+      .city-card p,
+      .city-card small {
+        line-height: 1.6;
+      }
+
+      .empty-state {
+        padding: 22px;
+        border-radius: 24px;
+        border: 1px dashed rgba(255, 255, 255, 0.14);
+        background: rgba(255, 255, 255, 0.02);
+        display: grid;
+        gap: 10px;
+      }
+
+      .newsletter-layout,
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+        gap: 18px;
+      }
+
+      .newsletter-card,
+      .about-card,
+      .footer-card,
+      .ledger {
+        padding: 24px;
+        display: grid;
+        gap: 18px;
+      }
+
+      .newsletter-card figure,
+      .about-figure {
+        margin: 0;
+        border-radius: 22px;
+        overflow: hidden;
+        min-height: 250px;
+        position: relative;
+      }
+
+      .newsletter-card figure::after,
+      .about-figure::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(8, 8, 8, 0.14), rgba(8, 8, 8, 0.6));
+      }
+
+      .newsletter-card figure img,
+      .about-figure img {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .newsletter-form {
+        display: grid;
+        gap: 12px;
+      }
+
+      .newsletter-form .field-row {
+        grid-template-columns: 1fr 0.9fr;
+      }
+
+      .newsletter-form .button {
+        width: fit-content;
+      }
+
+      .metric-row {
+        gap: 10px;
+      }
+
+      .stat-line {
+        flex: 1 1 180px;
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .stat-line strong {
+        display: block;
+        margin-bottom: 4px;
+        color: var(--accent);
+        font-size: 1.2rem;
+      }
+
+      .venue-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .venue-item {
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+        display: grid;
+        gap: 6px;
+      }
+
+      .venue-item strong {
+        font-size: 1rem;
+      }
+
+      .about-links a,
+      .footer-links a {
+        color: var(--muted);
+      }
+
+      .about-links a:hover,
+      .footer-links a:hover {
+        color: var(--text);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+      }
+
+      .footer-tag {
+        color: var(--muted);
+      }
+
+      .live-region {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        padding: 12px 14px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(8, 8, 8, 0.9);
+        color: var(--text);
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 180ms ease, transform 180ms ease;
+        pointer-events: none;
+      }
+
+      .live-region.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      @media (max-width: 1080px) {
+        .hero,
+        .schedule-layout,
+        .newsletter-layout,
+        .about-layout,
+        .footer-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .detail-panel {
+          position: static;
+        }
+
+        .cities-grid,
+        .featured-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 760px) {
+        :root {
+          --header-height: 72px;
+        }
+
+        .shell {
+          width: min(calc(100% - 24px), var(--max));
+        }
+
+        .header-row {
+          align-items: flex-start;
+          padding: 14px 0;
+          flex-direction: column;
+        }
+
+        .brand {
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        .brand svg {
+          width: 132px;
+        }
+
+        .brand-copy {
+          display: none;
+        }
+
+        .header-nav {
+          width: 100%;
+          justify-content: flex-start;
+          overflow-x: auto;
+          flex-wrap: nowrap;
+          padding-bottom: 2px;
+        }
+
+        main {
+          padding-top: 18px;
+        }
+
+        .hero-copy,
+        .newsletter-card,
+        .about-card,
+        .footer-card,
+        .ledger,
+        .schedule-shell,
+        .detail-panel {
+          padding: 18px;
+        }
+
+        .field-row,
+        .newsletter-form .field-row,
+        .schedule-top,
+        .detail-meta,
+        .venue-grid,
+        .featured-grid,
+        .cities-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .schedule-ticket {
+          justify-items: start;
+        }
+
+        .hero-caption {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="bcn-sprint-page" data-city="all">
+    <a class="skip-link" href="#shows">Skip to shows</a>
+
+    <header class="site-header">
+      <div class="shell header-row">
+        <a class="brand" href="#top" aria-label="Belgian Comedy Network homepage concept">
+          <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+            <rect width="44" height="44" rx="12" fill="#151522"/>
+            <path d="M14 13.5C14 11.567 15.567 10 17.5 10H27.5C31.6421 10 35 13.3579 35 17.5C35 21.6421 31.6421 25 27.5 25H21V34H17.5C15.567 34 14 32.433 14 30.5V13.5Z" fill="#E8FF61"/>
+            <path d="M21 17H27C28.6569 17 30 18.3431 30 20C30 21.6569 28.6569 23 27 23H21V17Z" fill="#151522"/>
+            <path d="M52 12.5H67.5C73.299 12.5 77 15.471 77 20.25C77 25.029 73.299 28 67.5 28H58V34H52V12.5ZM58 17.25V23.25H67C69.299 23.25 70.75 22.178 70.75 20.25C70.75 18.322 69.299 17.25 67 17.25H58Z" fill="#F7F8FC"/>
+            <path d="M80.4688 34V12.5H86.4688V34H80.4688Z" fill="#F7F8FC"/>
+            <path d="M91.5586 34V12.5H97.5586L109.309 26.1875V12.5H115.309V34H109.309L97.5586 20.3125V34H91.5586Z" fill="#F7F8FC"/>
+            <path d="M129.244 34.5C122.322 34.5 117.559 29.863 117.559 23.25C117.559 16.637 122.353 12 129.338 12C134.117 12 137.865 14.048 139.916 17.625L134.619 20.5312C133.463 18.4375 131.525 17.1875 129.307 17.1875C125.791 17.1875 123.715 19.628 123.715 23.25C123.715 26.872 125.791 29.3125 129.307 29.3125C131.525 29.3125 133.463 28.0625 134.619 25.9688L139.916 28.875C137.865 32.451 134.088 34.5 129.244 34.5Z" fill="#F7F8FC"/>
+            <path d="M142.402 34V12.5H159.121V17.25H148.402V20.75H158.152V25.25H148.402V29.25H159.121V34H142.402Z" fill="#F7F8FC"/>
+          </svg>
+          <span class="brand-copy">
+            <strong>Premium minimal concept</strong>
+            <span>English-language comedy nights across Belgium</span>
+          </span>
+        </a>
+
+        <nav class="header-nav" aria-label="Primary">
+          <a href="#upcoming">Upcoming</a>
+          <a href="#cities">Cities</a>
+          <a href="#shows">Show detail</a>
+          <a href="#newsletter">Newsletter</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <div class="shell">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="panel hero-copy">
+            <span class="eyebrow">A more deliberate BCN front door</span>
+            <div>
+              <h1 id="hero-title">Stand-up nights that feel worth going out for.</h1>
+              <p class="lede">
+                Belgian Comedy Network produces English-language comedy nights in Brussels, Ghent,
+                Leuven, and Antwerp. This concept pushes clarity first, then adds a calmer, premium
+                frame around the next bookable show.
+              </p>
+            </div>
+
+            <div class="next-line" id="next-line">
+              <span><strong>Next:</strong> Thu 16 Apr 2026</span>
+              <span>20:00</span>
+              <span>Latroupe Grote Markt</span>
+              <span>Brussels</span>
+            </div>
+
+            <div class="button-row">
+              <a class="button" id="hero-ticket" href="https://www.eventbrite.be/e/1979661782683" target="_blank" rel="noreferrer">
+                Reserve next show
+              </a>
+              <a class="button-secondary" href="#upcoming">See upcoming dates</a>
+              <button class="button-ghost" id="share-brand" type="button">Share BCN</button>
+            </div>
+
+            <form class="micro-form" id="hero-newsletter" aria-label="Join newsletter from hero">
+              <div>
+                <h2>Get city drops, not spam.</h2>
+                <p>
+                  One clean email when new dates land in Brussels, Ghent, Leuven, or Antwerp.
+                </p>
+              </div>
+              <div class="field-row">
+                <label>
+                  <span class="sr-only" style="position:absolute;left:-9999px;">Email address</span>
+                  <input class="field" type="email" name="email" placeholder="Email address" required />
+                </label>
+                <label>
+                  <span class="sr-only" style="position:absolute;left:-9999px;">Choose city</span>
+                  <select class="select" name="city" required>
+                    <option value="">Choose city</option>
+                    <option value="brussels">Brussels</option>
+                    <option value="ghent">Ghent</option>
+                    <option value="leuven">Leuven</option>
+                    <option value="antwerp">Antwerp</option>
+                  </select>
+                </label>
+                <button class="button" type="submit">Join</button>
+              </div>
+              <div class="form-note" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <figure class="card hero-visual">
+            <div class="visual-frame">
+              <img
+                src="https://images.unsplash.com/photo-1705771426257-8b35ea77b1aa?w=1400&q=80&fit=crop"
+                alt="Dimly lit bar interior setting a luxury night-out mood"
+                data-img-source="unsplash"
+              />
+              <div class="hero-overlay">
+                <div class="medallion" data-img-source="css">
+                  <span>Produced so far</span>
+                  <strong>164+</strong>
+                  <small>real BCN shows</small>
+                </div>
+
+                <div class="hero-caption">
+                  <svg class="spotlight-icon" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+                    <path d="M33 14L63 14L55 34H41L33 14Z" stroke="rgba(244,241,235,0.9)" stroke-width="2.5"/>
+                    <path d="M48 34V79" stroke="rgba(244,241,235,0.55)" stroke-width="2.5"/>
+                    <path d="M48 34L22 82" stroke="rgba(244,241,235,0.2)" stroke-width="2.5"/>
+                    <path d="M48 34L74 82" stroke="rgba(244,241,235,0.2)" stroke-width="2.5"/>
+                    <circle cx="48" cy="79" r="8" fill="var(--accent)" fill-opacity="0.82"/>
+                  </svg>
+                  <strong>Next up: Academy Comedy Nights — Free English Stand-Up in Brussels</strong>
+                  <p>
+                    Central Brussels, 20:00, free reservation. Immediate action for people who already know they want a night out.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </section>
+
+        <section class="trust-strip" aria-label="Trust stats">
+          <div class="trust-line">
+            <span><strong>14 venues</strong> across Brussels, Ghent, Leuven, and Antwerp</span>
+            <span><strong>164+ shows</strong> produced</span>
+            <span><strong>11,900+ tickets</strong> distributed</span>
+          </div>
+          <div class="mini-meta">
+            <span class="chip">Real BCN data</span>
+            <span class="chip">Real Eventbrite links</span>
+            <span class="chip">No backend dependency</span>
+          </div>
+        </section>
+
+        <section class="section" id="upcoming" aria-labelledby="upcoming-title">
+          <div class="section-head">
+            <span class="eyebrow">Immediate conversion</span>
+            <h2 id="upcoming-title">Upcoming dates, already ticketable.</h2>
+            <p>
+              The homepage keeps the next three bookable nights in plain view. No extra click is needed to reveal a ticket button.
+            </p>
+          </div>
+          <div class="featured-grid" id="featured-grid"></div>
+        </section>
+
+        <section class="section city-section" id="cities" aria-labelledby="cities-title">
+          <div class="section-head">
+            <span class="eyebrow">City filters</span>
+            <h2 id="cities-title">Pick a city and the page tightens around it.</h2>
+            <p>
+              Accent color, schedule, detail panel, and waitlist messaging all update instantly. No reload, no hidden menu.
+            </p>
+          </div>
+          <div class="cities-grid">
+            <button class="city-card" type="button" data-city-filter="brussels" aria-pressed="false">
+              <svg class="city-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+                <rect x="6" y="6" width="60" height="60" rx="20" fill="rgba(255,91,91,0.16)" stroke="rgba(255,255,255,0.12)"/>
+                <path d="M18 49H54" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M24 49V34L30 28V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M36 49V24L42 18V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M48 49V31L52 27V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+              </svg>
+              <div>
+                <strong>Brussels</strong>
+                <p>Flagship free-entry rhythm, central rooms, and the strongest BCN volume.</p>
+              </div>
+              <small>5 upcoming Brussels-area dates in the supplied snapshot.</small>
+            </button>
+
+            <button class="city-card" type="button" data-city-filter="ghent" aria-pressed="false">
+              <svg class="city-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+                <rect x="6" y="6" width="60" height="60" rx="20" fill="rgba(122,92,255,0.16)" stroke="rgba(255,255,255,0.12)"/>
+                <path d="M18 49H54" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M24 49V31L28 27L32 31V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M36 49V22L40 18L44 22V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M48 49V36L51 33L54 36V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+              </svg>
+              <div>
+                <strong>Ghent</strong>
+                <p>Historic BCN footprint at Theater Tinnenpot, with newsletter-first recovery when the next date is not yet live.</p>
+              </div>
+              <small>6 historic BCN shows · 903 tickets distributed.</small>
+            </button>
+
+            <button class="city-card" type="button" data-city-filter="leuven" aria-pressed="false">
+              <svg class="city-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+                <rect x="6" y="6" width="60" height="60" rx="20" fill="rgba(0,184,148,0.16)" stroke="rgba(255,255,255,0.12)"/>
+                <path d="M18 49H54" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M25 49V32L31 26L37 32V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M37 49V21L43 15L49 21V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+              </svg>
+              <div>
+                <strong>Leuven</strong>
+                <p>Student-city energy with real BCN history at OPEK, Vismarkt 7, and Campus Corso.</p>
+              </div>
+              <small>8 historic Leuven shows across three venues · 1,621 tickets.</small>
+            </button>
+
+            <button class="city-card" type="button" data-city-filter="antwerp" aria-pressed="false">
+              <svg class="city-icon" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-img-source="svg">
+                <rect x="6" y="6" width="60" height="60" rx="20" fill="rgba(255,159,67,0.16)" stroke="rgba(255,255,255,0.12)"/>
+                <path d="M18 49H54" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M24 49V34L31 27L38 34V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+                <path d="M40 49V24L45 19L50 24V49" stroke="rgba(255,255,255,0.8)" stroke-width="2.2"/>
+              </svg>
+              <div>
+                <strong>Antwerp</strong>
+                <p>Paid showcase nights with the cleanest premium fit in the snapshot: bigger room, higher capacity, clearer destination intent.</p>
+              </div>
+              <small>3 upcoming Antwerp dates in the snapshot · 24 historic Antwerp shows · 2,482 tickets.</small>
+            </button>
+          </div>
+        </section>
+
+        <section class="section" id="shows" aria-labelledby="shows-title">
+          <div class="section-head">
+            <span class="eyebrow">Schedule + detail</span>
+            <h2 id="shows-title">One list. One focused detail surface.</h2>
+            <p id="filter-summary">
+              All upcoming BCN dates are visible here. Tap any show to inspect the detail panel without leaving the page.
+            </p>
+          </div>
+
+          <div class="schedule-layout">
+            <div class="panel schedule-shell">
+              <div class="filter-row" role="toolbar" aria-label="Filter upcoming shows by city">
+                <button class="filter-pill" type="button" data-filter="all" aria-pressed="true">All cities</button>
+                <button class="filter-pill" type="button" data-filter="brussels" aria-pressed="false">Brussels</button>
+                <button class="filter-pill" type="button" data-filter="ghent" aria-pressed="false">Ghent</button>
+                <button class="filter-pill" type="button" data-filter="leuven" aria-pressed="false">Leuven</button>
+                <button class="filter-pill" type="button" data-filter="antwerp" aria-pressed="false">Antwerp</button>
+              </div>
+              <div class="schedule-list" id="schedule-list"></div>
+            </div>
+
+            <aside class="detail-panel" id="detail-panel" aria-live="polite">
+              <figure class="detail-figure">
+                <img
+                  id="detail-image"
+                  src="https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop"
+                  alt="Audience and stage atmosphere inside a bar venue"
+                  data-img-source="unsplash"
+                />
+                <span class="ticket-badge detail-badge" id="detail-badge">Free reservation</span>
+              </figure>
+
+              <div class="detail-copy">
+                <div>
+                  <span class="eyebrow" id="detail-city">Brussels</span>
+                  <h2 id="detail-title">Academy Comedy Nights – Free English Stand-Up in Brussels</h2>
+                </div>
+
+                <dl class="detail-meta">
+                  <div>
+                    <dt>Date</dt>
+                    <dd id="detail-date">Thu 16 Apr 2026 · 20:00</dd>
+                  </div>
+                  <div>
+                    <dt>Venue</dt>
+                    <dd id="detail-venue">Latroupe Grote Markt · Brussels</dd>
+                  </div>
+                  <div>
+                    <dt>Admission</dt>
+                    <dd id="detail-price">Free entry · Eventbrite reservation</dd>
+                  </div>
+                  <div>
+                    <dt>Room size</dt>
+                    <dd id="detail-capacity">80 capacity</dd>
+                  </div>
+                </dl>
+
+                <p class="detail-body-text" id="detail-description">
+                  A free-entry BCN night in central Brussels: quick to understand, easy to reserve, and strong for new audience conversion.
+                </p>
+
+                <div class="venue-pill" id="venue-context">
+                  <span class="eyebrow" style="margin-bottom:0;">Venue context</span>
+                  <strong>Latroupe Grote Markt has hosted 25 BCN events and 1,199 distributed tickets.</strong>
+                  <small>That gives this concept a concrete trust layer instead of generic social-proof filler.</small>
+                </div>
+
+                <div class="venue-pill">
+                  <span class="eyebrow" style="margin-bottom:0;">Line-up note</span>
+                  <small>
+                    Rotating BCN line-up of English-language comics. Final names are typically announced closer to show date on Eventbrite or Instagram.
+                  </small>
+                </div>
+
+                <div class="detail-actions">
+                  <a class="button" id="detail-ticket" href="https://www.eventbrite.be/e/1979661782683" target="_blank" rel="noreferrer">
+                    Reserve on Eventbrite
+                  </a>
+                  <button class="button-secondary" id="share-show" type="button">Share this show</button>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="newsletter" aria-labelledby="newsletter-title">
+          <div class="newsletter-layout">
+            <div class="newsletter-card">
+              <span class="eyebrow">Newsletter</span>
+              <h2 id="newsletter-title">Use email like a concierge, not a blast list.</h2>
+              <div class="newsletter-copy">
+                <p>
+                  This premium-minimal direction assumes BCN wins by sending fewer, sharper updates. City-led signup matters because Ghent and Leuven may need waitlist energy before the next public drop, while Brussels and Antwerp often have something live now.
+                </p>
+              </div>
+              <form class="newsletter-form" id="newsletter-form">
+                <div class="field-row">
+                  <label>
+                    <span class="sr-only" style="position:absolute;left:-9999px;">Email address</span>
+                    <input class="field" type="email" name="email" placeholder="Email address" required />
+                  </label>
+                  <label>
+                    <span class="sr-only" style="position:absolute;left:-9999px;">City preference</span>
+                    <select class="select" name="city" required>
+                      <option value="">Choose city</option>
+                      <option value="brussels">Brussels</option>
+                      <option value="ghent">Ghent</option>
+                      <option value="leuven">Leuven</option>
+                      <option value="antwerp">Antwerp</option>
+                    </select>
+                  </label>
+                </div>
+                <button class="button" type="submit">Join the city list</button>
+                <div class="form-note" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <div class="newsletter-card">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1615474603924-9d94c3554b64?w=1400&q=80&fit=crop"
+                  alt="Night street scene supporting the late-evening comedy mood"
+                  loading="lazy"
+                  data-img-source="unsplash"
+                />
+              </figure>
+              <div class="metric-row">
+                <div class="stat-line">
+                  <strong>Brussels</strong>
+                  <small>Most active BCN city in the current snapshot.</small>
+                </div>
+                <div class="stat-line">
+                  <strong>Antwerp</strong>
+                  <small>Best premium-ticket fit in the upcoming run.</small>
+                </div>
+                <div class="stat-line">
+                  <strong>Ghent + Leuven</strong>
+                  <small>Best captured with waitlist-first city signup until dates go live.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about" aria-labelledby="about-title">
+          <div class="about-layout">
+            <div class="about-card">
+              <span class="eyebrow">About BCN</span>
+              <h2 id="about-title">Sharp, warm, social. Not corporate. Not scrappy in the wrong way.</h2>
+              <p>
+                Belgian Comedy Network produces English-language stand-up nights for expats, internationals, students, date-night couples, and city-break visitors across Belgium. The core operational reality is simple: people want to know what the show is, when it happens, where it is, and whether they should book now.
+              </p>
+              <p>
+                This concept leans into a luxury-night-out tone without adding operational drag. It keeps the information architecture flat, uses real venue history for proof, and lets BCN look more selective without hiding the actual schedule.
+              </p>
+              <div class="about-links">
+                <a href="mailto:hello@belgiancomedynetwork.be">hello@belgiancomedynetwork.be</a>
+                <a href="mailto:bookings@belgiancomedynetwork.be">bookings@belgiancomedynetwork.be</a>
+                <a href="https://instagram.com/belgiancomedynetwork" target="_blank" rel="noreferrer">Instagram</a>
+                <a href="https://www.eventbrite.be/o/belgian-comedy-network-66817651253" target="_blank" rel="noreferrer">Eventbrite</a>
+              </div>
+            </div>
+
+            <div class="ledger">
+              <figure class="about-figure">
+                <img
+                  src="https://images.unsplash.com/photo-1759200407416-8a180896c9f4?w=1400&q=80&fit=crop"
+                  alt="Bar nightlife image reinforcing a premium evening atmosphere"
+                  loading="lazy"
+                  data-img-source="unsplash"
+                />
+              </figure>
+              <div>
+                <span class="eyebrow">Venue ledger</span>
+                <h3>Real BCN proof, kept tight.</h3>
+              </div>
+              <div class="venue-grid">
+                <div class="venue-item">
+                  <strong>Comedy Ket · Brussels</strong>
+                  <small>48 events · 2,425 tickets</small>
+                </div>
+                <div class="venue-item">
+                  <strong>Vertigo Antwerpen · Antwerp</strong>
+                  <small>17 events · 1,445 tickets</small>
+                </div>
+                <div class="venue-item">
+                  <strong>Theater Tinnenpot · Ghent</strong>
+                  <small>6 events · 903 tickets</small>
+                </div>
+                <div class="venue-item">
+                  <strong>OPEK · Leuven</strong>
+                  <small>4 events · 1,021 tickets</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="section footer-grid">
+          <div class="footer-card">
+            <span class="eyebrow">Footer</span>
+            <h3>Belgian Comedy Network — English-language comedy nights across Belgium.</h3>
+            <p class="footer-tag">
+              Shows first. Real ticket links. Enough proof to trust the night without crowding the page.
+            </p>
+            <div class="footer-links">
+              <a href="#shows">Shows</a>
+              <a href="#cities">Cities</a>
+              <a href="#about">About</a>
+              <a href="#newsletter">Newsletter</a>
+              <a href="mailto:hello@belgiancomedynetwork.be">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer-card">
+            <span class="eyebrow">Reality check</span>
+            <p>
+              All event CTAs point to real Eventbrite URLs from the supplied BCN snapshot. Imagery is prototype-safe mood media from Unsplash plus inline SVG/CSS graphics, so production launch would still need rights-cleared BCN photography.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <div class="live-region" id="live-region" aria-live="polite"></div>
+
+    <!-- CLICK COMPLEXITY REPORT
+    Path 1: Homepage → nearest event ticket
+    1. Visible primary CTA “Reserve next show” on hero
+    2. External redirect to Eventbrite
+    Total: 2 actions
+
+    Path 2: “I want Brussels shows” → ticket
+    1. Tap Brussels city filter/card or Brussels pill
+    2. Tap visible Eventbrite CTA on relevant Brussels event
+    3. External redirect to Eventbrite
+    Total: 3 actions
+
+    Path 3: “I want Antwerp shows” → ticket
+    1. Tap Antwerp city filter/card or Antwerp pill
+    2. Tap visible Eventbrite CTA on relevant Antwerp event
+    3. External redirect to Eventbrite
+    Total: 3 actions
+
+    Path 4: Homepage → newsletter signup submitted
+    1. Fill email field in hero micro-form
+    2. Choose city from dropdown
+    3. Submit form
+    Total: 3 actions
+
+    Total complexity score: 2.75 average
+    Comparison:
+    - Eventbrite direct listing: ~2 actions once already on the org page, but weaker BCN brand context and weaker city/story scan.
+    - Red Mic style event discovery: typically ~3–4 actions depending on date discovery and navigation depth.
+    -->
+
+    <!-- SELF-ASSESSMENT
+    Direction: Premium minimal / dark luxury conversion
+    Click complexity score: 2.75
+      Path homepage→ticket: 2 actions
+      Path city-filter→ticket: 3 actions
+      Path mobile→ticket: 2 actions via hero CTA (no hamburger penalty)
+      Path homepage→newsletter: 3 actions
+    Images used: 13
+      From Instagram: 0
+      From Eventbrite: 0
+      From Unsplash: 4
+      CSS gradients/art: 3
+      Inline SVG: 6
+    Image quality notes: Unsplash mood photography reads cleanly and crops well; it sets atmosphere but still needs BCN-owned media before launch.
+    Fonts: DM Serif Display + Plus Jakarta Sans — editorial enough for premium tone, practical enough for event metadata.
+    CSS techniques used: layered radial gradients, grain overlay SVG, spotlight overlays, glassy panels, city accent theming, poster-style CSS art.
+    Mobile tested: yes
+    Real data used: yes — all 8 supplied upcoming events, real venue stats, real Eventbrite IDs/URLs, real contact/social links.
+    Strongest feature: The page feels calmer and more premium while still keeping ticket actions obvious and close.
+    Weakest feature: The premium tone depends on better real BCN photography than the prototype currently uses.
+    What I'd improve with more time: Replace prototype mood images with BCN crowd/stage photography and refine the empty-state storytelling for Ghent and Leuven with real upcoming dates.
+    -->
+
+    <script>
+      const events = [
+        {
+          id: "1979661782683",
+          event_name: "Academy Comedy Nights – Free English Stand-Up in Brussels",
+          event_date: "2026-04-16",
+          local_time: "20:00",
+          venue_name: "Latroupe Grote Markt",
+          venue_city: "Brussels",
+          event_capacity: 80,
+          ticket_type: "free",
+          eventbrite_id: "1979661782683",
+          ticket_url: "https://www.eventbrite.be/e/1979661782683",
+          status: "upcoming"
+        },
+        {
+          id: "1892066374459",
+          event_name: "Friday Night Stand-Up Comedy In English For FREE!",
+          event_date: "2026-04-24",
+          local_time: "20:00",
+          venue_name: "Av. Orban 54",
+          venue_city: "Woluwe-Saint-Pierre (Brussels)",
+          event_capacity: 80,
+          reservations: 25,
+          ticket_type: "free",
+          eventbrite_id: "1892066374459",
+          ticket_url: "https://www.eventbrite.be/e/1892066374459",
+          status: "upcoming"
+        },
+        {
+          id: "1980258240705",
+          event_name: "English Stand-Up Comedy Antwerp: Best of Belgium",
+          event_date: "2026-04-26",
+          local_time: "20:00",
+          venue_name: "Vertigo Antwerpen",
+          venue_city: "Antwerp",
+          event_capacity: 160,
+          reservations: 8,
+          ticket_type: "paid",
+          eventbrite_id: "1980258240705",
+          ticket_url: "https://www.eventbrite.be/e/1980258240705",
+          status: "upcoming"
+        },
+        {
+          id: "1979661786695",
+          event_name: "Academy Comedy Nights – Free English Stand-Up in Brussels",
+          event_date: "2026-04-30",
+          local_time: "20:00",
+          venue_name: "Latroupe Grote Markt",
+          venue_city: "Brussels",
+          event_capacity: 80,
+          ticket_type: "free",
+          eventbrite_id: "1979661786695",
+          ticket_url: "https://www.eventbrite.be/e/1979661786695",
+          status: "upcoming"
+        },
+        {
+          id: "1984641303564",
+          event_name: "Academy Comedy Nights – Free English Stand-Up in Brussels",
+          event_date: "2026-05-14",
+          local_time: "20:00",
+          venue_name: "Latroupe Grote Markt",
+          venue_city: "Brussels",
+          event_capacity: 80,
+          ticket_type: "free",
+          eventbrite_id: "1984641303564",
+          ticket_url: "https://www.eventbrite.be/e/1984641303564",
+          status: "upcoming"
+        },
+        {
+          id: "1980258241708",
+          event_name: "English Stand-Up Comedy Antwerp: Best of Belgium",
+          event_date: "2026-05-24",
+          local_time: "20:00",
+          venue_name: "Vertigo Antwerpen",
+          venue_city: "Antwerp",
+          event_capacity: 160,
+          ticket_type: "paid",
+          eventbrite_id: "1980258241708",
+          ticket_url: "https://www.eventbrite.be/e/1980258241708",
+          status: "upcoming"
+        },
+        {
+          id: "1984641304567",
+          event_name: "Academy Comedy Nights – Free English Stand-Up in Brussels",
+          event_date: "2026-05-28",
+          local_time: "20:00",
+          venue_name: "Latroupe Grote Markt",
+          venue_city: "Brussels",
+          event_capacity: 80,
+          ticket_type: "free",
+          eventbrite_id: "1984641304567",
+          ticket_url: "https://www.eventbrite.be/e/1984641304567",
+          status: "upcoming"
+        },
+        {
+          id: "1980258242711",
+          event_name: "English Stand-Up Comedy Antwerp: Best of Belgium",
+          event_date: "2026-06-28",
+          local_time: "20:00",
+          venue_name: "Vertigo Antwerpen",
+          venue_city: "Antwerp",
+          event_capacity: 160,
+          ticket_type: "paid",
+          eventbrite_id: "1980258242711",
+          ticket_url: "https://www.eventbrite.be/e/1980258242711",
+          status: "upcoming"
+        }
+      ];
+
+      const venueStats = {
+        "Comedy Ket": { city: "Brussels", events: 48, tickets: 2425 },
+        "Vertigo Antwerpen": { city: "Antwerp", events: 17, tickets: 1445 },
+        "Theater Tinnenpot": { city: "Ghent", events: 6, tickets: 903 },
+        "Kamea Restaurant": { city: "Brussels", events: 21, tickets: 948 },
+        "Latroupe Grote Markt": { city: "Brussels", events: 25, tickets: 1199 },
+        OPEK: { city: "Leuven", events: 4, tickets: 1021 },
+        "Le Réservoir Bar": { city: "Brussels", events: 8, tickets: 559 },
+        "Vismarkt 7": { city: "Leuven", events: 3, tickets: 499 },
+        "a&o Hostel Antwerpen": { city: "Antwerp", events: 7, tickets: 1037 },
+        "Le Cheval Marin": { city: "Brussels", events: 10, tickets: 643 },
+        "a&o Brussel Centrum": { city: "Brussels", events: 5, tickets: 539 },
+        "Campus Corso": { city: "Leuven", events: 1, tickets: 101 },
+        "Art Base": { city: "Brussels", events: 1, tickets: 69 },
+        "Av. Orban 54": { city: "Woluwe-Saint-Pierre", events: 7, tickets: 488 }
+      };
+
+      const cityMeta = {
+        all: {
+          label: "All cities",
+          detailImage: "https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop",
+          detailAlt: "Audience and stage atmosphere inside a bar venue",
+          description:
+            "All upcoming BCN dates are visible here. Tap any show to inspect the detail panel without leaving the page."
+        },
+        brussels: {
+          label: "Brussels",
+          detailImage: "https://images.unsplash.com/photo-1705771426257-8b35ea77b1aa?w=1400&q=80&fit=crop",
+          detailAlt: "Dimly lit bar interior for a Brussels night-out mood",
+          description:
+            "Brussels combines recurring free-entry conversion nights with the strongest BCN trust base."
+        },
+        ghent: {
+          label: "Ghent",
+          detailImage: "https://images.unsplash.com/photo-1615474603924-9d94c3554b64?w=1400&q=80&fit=crop",
+          detailAlt: "Night street scene used for Ghent waitlist mood",
+          description:
+            "No upcoming Ghent date appears in the supplied snapshot, so the premium move is to capture waitlist intent cleanly."
+        },
+        leuven: {
+          label: "Leuven",
+          detailImage: "https://images.unsplash.com/photo-1759200407416-8a180896c9f4?w=1400&q=80&fit=crop",
+          detailAlt: "Bar nightlife mood image used for Leuven waitlist state",
+          description:
+            "Leuven has real BCN history and should stay in the navigation, even when the next public date is not live yet."
+        },
+        antwerp: {
+          label: "Antwerp",
+          detailImage: "https://images.unsplash.com/photo-1732820240720-bef20afb3d67?w=1400&q=80&fit=crop",
+          detailAlt: "Audience and stage atmosphere for Antwerp premium showcase mood",
+          description:
+            "Antwerp is the clearest premium-ticket story in the current run: higher capacity, stronger paid-night framing."
+        }
+      };
+
+      const scheduleList = document.getElementById("schedule-list");
+      const featuredGrid = document.getElementById("featured-grid");
+      const liveRegion = document.getElementById("live-region");
+      const filterSummary = document.getElementById("filter-summary");
+      const body = document.body;
+
+      const detailTitle = document.getElementById("detail-title");
+      const detailCity = document.getElementById("detail-city");
+      const detailDate = document.getElementById("detail-date");
+      const detailVenue = document.getElementById("detail-venue");
+      const detailPrice = document.getElementById("detail-price");
+      const detailCapacity = document.getElementById("detail-capacity");
+      const detailDescription = document.getElementById("detail-description");
+      const detailTicket = document.getElementById("detail-ticket");
+      const detailImage = document.getElementById("detail-image");
+      const detailBadge = document.getElementById("detail-badge");
+      const venueContext = document.getElementById("venue-context");
+      const shareShowButton = document.getElementById("share-show");
+      const shareBrandButton = document.getElementById("share-brand");
+
+      let currentFilter = "all";
+      let currentEventId = events[0].id;
+
+      const cityKeyFor = (venueCity) => {
+        if (venueCity.toLowerCase().includes("brussels") || venueCity.toLowerCase().includes("woluwe")) return "brussels";
+        if (venueCity.toLowerCase().includes("ghent")) return "ghent";
+        if (venueCity.toLowerCase().includes("leuven")) return "leuven";
+        if (venueCity.toLowerCase().includes("antwerp")) return "antwerp";
+        return "all";
+      };
+
+      const eventTitleLabel = (event) => {
+        if (event.ticket_type === "free") return "Free reservation";
+        return "Paid ticket";
+      };
+
+      const formatDate = (dateStr) =>
+        new Intl.DateTimeFormat("en-GB", {
+          weekday: "short",
+          day: "2-digit",
+          month: "short",
+          year: "numeric"
+        }).format(new Date(`${dateStr}T12:00:00`));
+
+      const shortDate = (dateStr) =>
+        new Intl.DateTimeFormat("en-GB", {
+          day: "2-digit",
+          month: "short"
+        }).format(new Date(`${dateStr}T12:00:00`));
+
+      const capacityLine = (event) => {
+        if (event.reservations) {
+          return `${event.event_capacity} capacity · ${event.reservations} reservations currently visible in snapshot`;
+        }
+        return `${event.event_capacity} capacity`;
+      };
+
+      const eventDescription = (event) => {
+        const city = cityKeyFor(event.venue_city);
+        if (city === "brussels" && event.venue_name === "Latroupe Grote Markt") {
+          return "A recurring free-entry BCN night in central Brussels: quick to understand, easy to reserve, and strong for first-time audience conversion.";
+        }
+        if (city === "brussels" && event.venue_name === "Av. Orban 54") {
+          return "An intimate Brussels-area free-entry night with neighbourhood energy and a softer room scale than the city-centre flagship shows.";
+        }
+        if (city === "antwerp") {
+          return "A paid Best of Belgium showcase in Antwerp, suited to a cleaner premium frame and a more destination-style ticket decision.";
+        }
+        return "English-language stand-up night from BCN with direct Eventbrite booking and a deliberately short path from interest to action.";
+      };
+
+      const venueContextText = (event) => {
+        const stats = venueStats[event.venue_name];
+        if (!stats) {
+          return {
+            title: "This venue is in the current BCN snapshot, but historical volume was not supplied here.",
+            note: "Trust proof falls back to BCN-wide venue and ticket counts."
+          };
+        }
+        return {
+          title: `${event.venue_name} has hosted ${stats.events} BCN events and ${stats.tickets.toLocaleString("en-GB")} distributed tickets.`,
+          note: "That gives this page concrete proof instead of generic claims."
+        };
+      };
+
+      const renderFeatured = () => {
+        const featured = events.slice(0, 3);
+        featuredGrid.innerHTML = featured
+          .map((event) => {
+            const city = cityKeyFor(event.venue_city);
+            return `
+              <article class="card event-card" aria-label="${event.event_name}">
+                <div class="event-art" data-img-source="css">
+                  <div class="art-copy">
+                    <span>${cityMeta[city].label}</span>
+                    <strong>${shortDate(event.event_date)}</strong>
+                  </div>
+                </div>
+                <div class="card-copy">
+                  <div class="mini-meta">
+                    <span class="ticket-badge">${eventTitleLabel(event)}</span>
+                    <span class="chip">${event.venue_name}</span>
+                  </div>
+                  <h3>${event.event_name}</h3>
+                  <p><time datetime="${event.event_date}T${event.local_time}">${formatDate(event.event_date)} · ${event.local_time}</time> · ${event.venue_city}</p>
+                  <p>${eventDescription(event)}</p>
+                  <div class="button-row">
+                    <button class="button-secondary" type="button" data-select-event="${event.id}">View details</button>
+                    <a class="button" href="${event.ticket_url}" target="_blank" rel="noreferrer">${event.ticket_type === "free" ? "Reserve" : "Get tickets"}</a>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+      };
+
+      const renderSchedule = () => {
+        const filtered = currentFilter === "all"
+          ? events
+          : events.filter((event) => cityKeyFor(event.venue_city) === currentFilter);
+
+        document.querySelectorAll("[data-filter]").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.filter === currentFilter));
+        });
+
+        document.querySelectorAll("[data-city-filter]").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.cityFilter === currentFilter));
+        });
+
+        body.dataset.city = currentFilter;
+        filterSummary.textContent = cityMeta[currentFilter].description;
+
+        if (!filtered.some((event) => event.id === currentEventId)) {
+          currentEventId = filtered[0]?.id || null;
+        }
+
+        if (!filtered.length) {
+          scheduleList.innerHTML = `
+            <div class="empty-state">
+              <span class="eyebrow">No live date in snapshot</span>
+              <h3>${cityMeta[currentFilter].label} currently has no upcoming public listing in the supplied data.</h3>
+              <p>Keep the city visible, keep the city signup close, and use BCN’s real historical footprint as trust instead of pretending the schedule is fuller than it is.</p>
+              <a class="button" href="#newsletter">Join the ${cityMeta[currentFilter].label} list</a>
+            </div>
+          `;
+          renderEmptyDetail(currentFilter);
+          return;
+        }
+
+        scheduleList.innerHTML = filtered
+          .map((event) => {
+            const city = cityKeyFor(event.venue_city);
+            return `
+              <article class="schedule-item" data-event-id="${event.id}" aria-current="${String(currentEventId === event.id)}">
+                <div class="schedule-top">
+                  <div class="mini-art" data-img-source="css"><strong>${shortDate(event.event_date)}</strong></div>
+                  <div class="schedule-copy">
+                    <span class="ticket-badge">${cityMeta[city].label}</span>
+                    <h3>${event.event_name}</h3>
+                    <p class="schedule-meta"><time datetime="${event.event_date}T${event.local_time}">${formatDate(event.event_date)} · ${event.local_time}</time> · ${event.venue_name} · ${event.venue_city}</p>
+                  </div>
+                  <div class="schedule-ticket">
+                    <span class="chip">${event.ticket_type === "free" ? "Free" : "Paid"}</span>
+                    <div class="button-row" style="justify-content:flex-end;">
+                      <button class="button-secondary" type="button" data-view-event="${event.id}">View details</button>
+                      <a class="button" href="${event.ticket_url}" target="_blank" rel="noreferrer">${event.ticket_type === "free" ? "Reserve" : "Tickets"}</a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            `;
+          })
+          .join("");
+
+        const activeEvent = filtered.find((event) => event.id === currentEventId) || filtered[0];
+        currentEventId = activeEvent.id;
+        renderDetail(activeEvent);
+
+        scheduleList.querySelectorAll("[data-view-event]").forEach((button) => {
+          button.addEventListener("click", () => {
+            currentEventId = button.dataset.viewEvent;
+            const nextEvent = filtered.find((event) => event.id === currentEventId);
+            renderSchedule();
+            renderDetail(nextEvent);
+          });
+        });
+      };
+
+      const renderEmptyDetail = (cityKey) => {
+        detailTitle.textContent = `${cityMeta[cityKey].label}: waitlist-first until the next public date lands`;
+        detailCity.textContent = cityMeta[cityKey].label;
+        detailDate.textContent = "Newsletter capture recommended";
+        detailVenue.textContent = "No upcoming date in supplied snapshot";
+        detailPrice.textContent = "Free city signup";
+        detailCapacity.textContent = "Historical trust still visible";
+        detailDescription.textContent = cityMeta[cityKey].description;
+        detailTicket.textContent = `Join ${cityMeta[cityKey].label} list`;
+        detailTicket.setAttribute("href", "#newsletter");
+        detailTicket.removeAttribute("target");
+        detailTicket.removeAttribute("rel");
+        detailBadge.textContent = "Waitlist state";
+        detailImage.src = cityMeta[cityKey].detailImage;
+        detailImage.alt = cityMeta[cityKey].detailAlt;
+        detailImage.dataset.imgSource = "unsplash";
+        venueContext.innerHTML = `
+          <span class="eyebrow" style="margin-bottom:0;">Why this is still honest</span>
+          <strong>${cityMeta[cityKey].label} stays in the system because BCN has real historic proof there.</strong>
+          <small>The design avoids fake filler events and pushes the city-specific signup instead.</small>
+        `;
+      };
+
+      const renderDetail = (event) => {
+        const city = cityKeyFor(event.venue_city);
+        const context = venueContextText(event);
+        detailTitle.textContent = event.event_name;
+        detailCity.textContent = cityMeta[city].label;
+        detailDate.textContent = `${formatDate(event.event_date)} · ${event.local_time}`;
+        detailVenue.textContent = `${event.venue_name} · ${event.venue_city}`;
+        detailPrice.textContent = event.ticket_type === "free" ? "Free entry · Eventbrite reservation" : "Paid ticket · Eventbrite checkout";
+        detailCapacity.textContent = capacityLine(event);
+        detailDescription.textContent = eventDescription(event);
+        detailTicket.textContent = event.ticket_type === "free" ? "Reserve on Eventbrite" : "Get tickets on Eventbrite";
+        detailTicket.setAttribute("href", event.ticket_url);
+        detailTicket.setAttribute("target", "_blank");
+        detailTicket.setAttribute("rel", "noreferrer");
+        detailBadge.textContent = eventTitleLabel(event);
+        detailImage.src = cityMeta[city].detailImage;
+        detailImage.alt = cityMeta[city].detailAlt;
+        detailImage.dataset.imgSource = "unsplash";
+        venueContext.innerHTML = `
+          <span class="eyebrow" style="margin-bottom:0;">Venue context</span>
+          <strong>${context.title}</strong>
+          <small>${context.note}</small>
+        `;
+
+        shareShowButton.onclick = () => shareLink({
+          title: event.event_name,
+          text: `${formatDate(event.event_date)} · ${event.local_time} · ${event.venue_name}`,
+          url: event.ticket_url,
+          success: "Show link copied"
+        });
+      };
+
+      const setFilter = (filter) => {
+        currentFilter = filter;
+        renderSchedule();
+      };
+
+      const shareLink = async ({ title, text, url, success }) => {
+        try {
+          if (navigator.share) {
+            await navigator.share({ title, text, url });
+            announce(success);
+            return;
+          }
+          await navigator.clipboard.writeText(url);
+          announce(success);
+        } catch (error) {
+          announce("Share dismissed");
+        }
+      };
+
+      const announce = (message) => {
+        liveRegion.textContent = message;
+        liveRegion.classList.add("visible");
+        window.clearTimeout(announce.timer);
+        announce.timer = window.setTimeout(() => {
+          liveRegion.classList.remove("visible");
+        }, 2200);
+      };
+
+      const setupForms = () => {
+        document.querySelectorAll("form").forEach((form) => {
+          form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const note = form.querySelector(".form-note");
+            const data = new FormData(form);
+            const city = data.get("city");
+            if (!city) {
+              note.textContent = "Choose a city first.";
+              return;
+            }
+            note.textContent = `Prototype signup captured for ${cityMeta[city].label}. Connect to a real ESP before launch.`;
+            form.reset();
+          });
+        });
+      };
+
+      document.querySelectorAll("[data-filter]").forEach((button) => {
+        button.addEventListener("click", () => setFilter(button.dataset.filter));
+      });
+
+      document.querySelectorAll("[data-city-filter]").forEach((button) => {
+        button.addEventListener("click", () => {
+          setFilter(button.dataset.cityFilter);
+          document.getElementById("shows").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+
+      featuredGrid.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-select-event]");
+        if (!button) return;
+        currentEventId = button.dataset.selectEvent;
+        currentFilter = cityKeyFor(events.find((item) => item.id === currentEventId).venue_city);
+        renderSchedule();
+        document.getElementById("shows").scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+
+      shareBrandButton.addEventListener("click", () =>
+        shareLink({
+          title: "Belgian Comedy Network",
+          text: "English-language comedy nights across Belgium",
+          url: window.location.href,
+          success: "BCN concept link copied"
+        })
+      );
+
+      const nextEvent = events[0];
+      document.getElementById("next-line").innerHTML = `
+        <span><strong>Next:</strong> ${formatDate(nextEvent.event_date)}</span>
+        <span>${nextEvent.local_time}</span>
+        <span>${nextEvent.venue_name}</span>
+        <span>${nextEvent.venue_city}</span>
+      `;
+      document.getElementById("hero-ticket").href = nextEvent.ticket_url;
+
+      renderFeatured();
+      renderSchedule();
+      setupForms();
+    </script>
+  </body>
+</html>

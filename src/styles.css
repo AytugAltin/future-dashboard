@@ -26,13 +26,30 @@ button { font: inherit; }
 .filterHint { flex: 1 1 220px; margin: 0; font-size: 0.85rem; color: #94a3b8; align-self: center; }
 .modalBackdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.65); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; }
 .modalPanel { background: #121a2f; border: 1px solid #23304f; border-radius: 16px; max-width: min(640px, 100%); max-height: min(85vh, 900px); overflow: auto; width: 100%; display: flex; flex-direction: column; }
+.modalPanelWide { max-width: min(980px, 100%); }
 .modalHeader { display: flex; justify-content: space-between; align-items: center; padding: 14px 16px; border-bottom: 1px solid #23304f; }
 .modalHeader h3 { margin: 0; font-size: 1.1rem; }
 .modalClose { background: transparent; border: none; color: #94a3b8; font-size: 1.8rem; line-height: 1; cursor: pointer; padding: 0 4px; }
 .modalClose:hover { color: #fff; }
-.modalBody { padding: 16px; }
-.modalLinkRow { margin: 0 0 14px; }
+.modalBody { padding: 16px; display: grid; gap: 18px; }
+.modalLinkList { display: grid; gap: 8px; margin-bottom: 14px; }
+.modalLinkRow { margin: 0; }
 .modalLinkRow a { color: #6ee7b7; }
+.modalChartSection { display: grid; gap: 14px; margin-bottom: 18px; padding: 14px; background: #0f172a; border: 1px solid #23304f; border-radius: 14px; }
+.modalChartTop { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; }
+.modalChartTitle { margin: 0 0 6px; font-size: 1rem; }
+.modalChartCopy { margin: 0; color: #cbd5e1; line-height: 1.5; }
+.modalChartCopy code { font-size: 0.84rem; }
+.modalLeadCurveWrap { min-height: 320px; }
+.leadCurveMeta { display: flex; flex-wrap: wrap; gap: 10px; }
+.leadCurveFootnote { margin-top: -4px; }
+.leadCurveTooltip { background: #0f172a; border: 1px solid #23304f; border-radius: 10px; padding: 10px 12px; color: #e2e8f0; display: grid; gap: 4px; }
+.leadCurveTooltipTitle { color: #a5b4fc; margin-bottom: 2px; }
+.modalNotesList { margin: 0; padding-left: 18px; color: #cbd5e1; display: grid; gap: 6px; }
+.segmentedControl { display: inline-flex; flex-wrap: wrap; gap: 6px; background: #111827; border: 1px solid #23304f; border-radius: 999px; padding: 4px; }
+.segmentedBtn { background: transparent; border: none; color: #cbd5e1; border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+.segmentedBtn.active { background: #1d4ed8; color: #fff; }
+.segmentedBtn:hover:not(.active) { background: #1e293b; }
 .detailGrid { display: grid; gap: 0; margin: 0; }
 .detailRow { display: grid; grid-template-columns: minmax(120px, 40%) 1fr; gap: 8px 12px; padding: 8px 0; border-bottom: 1px solid #1e293b; }
 .detailRow dt { font-size: 0.82rem; color: #94a3b8; margin: 0; }
@@ -90,6 +107,28 @@ th { color: #a5b4fc; font-weight: 600; }
 .summaryText { color: #94a3b8; }
 .summaryMeta { display: flex; gap: 10px; flex-wrap: wrap; }
 .metaChip { padding: 8px 12px; border-radius: 999px; background: #0f172a; color: #c7d2fe; border: 1px solid #23304f; }
+.calendarStack { display: grid; gap: 18px; }
+.calendarMonths { display: grid; gap: 16px; }
+.calendarMonthCard { background: #0f172a; border: 1px solid #23304f; border-radius: 16px; padding: 14px; display: grid; gap: 12px; }
+.calendarMonthHeader { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+.calendarMonthHeader h3 { margin: 0; font-size: 1rem; }
+.calendarMonthMeta { color: #94a3b8; font-size: 0.88rem; }
+.calendarWeekdays { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; color: #94a3b8; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.calendarGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }
+.calendarDay { min-height: 138px; border: 1px solid #23304f; border-radius: 12px; background: #111827; padding: 10px; display: grid; gap: 8px; align-content: start; }
+.calendarDayHasEvents { border-color: #2c4d77; background: #101a2d; }
+.calendarDayOutside { background: #0c1322; color: #64748b; }
+.calendarDayHeader { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.calendarDayNumber { font-weight: 700; font-size: 0.95rem; }
+.calendarDayBody { display: grid; gap: 8px; align-content: start; }
+.calendarEventChip { width: 100%; text-align: left; display: grid; gap: 4px; background: #172554; color: #eff6ff; border: 1px solid #3b82f6; border-radius: 10px; padding: 9px; cursor: pointer; }
+.calendarEventChip:hover { background: #1d4ed8; }
+.calendarEventChip:focus-visible { outline: 2px solid #93c5fd; outline-offset: 1px; }
+.calendarEventTitle { font-size: 0.84rem; font-weight: 700; line-height: 1.25; }
+.calendarEventMeta, .calendarEventStats { font-size: 0.75rem; color: #dbeafe; }
+.calendarEmpty { font-size: 0.8rem; color: #64748b; border: 1px dashed #23304f; border-radius: 10px; padding: 10px 8px; min-height: 58px; display: flex; align-items: center; justify-content: center; text-align: center; }
+.calendarEmptyMuted { border-style: solid; background: #0b1120; }
+.upcomingListLabel { font-size: 0.88rem; color: #a5b4fc; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
 .upcomingScroller { max-height: 780px; overflow: auto; display: grid; gap: 14px; padding-right: 4px; }
 .upcomingRow { background: #0f172a; border: 1px solid #23304f; border-radius: 14px; padding: 14px; display: grid; gap: 12px; }
 .upcomingRowButton { width: 100%; text-align: left; cursor: pointer; font: inherit; color: inherit; }
@@ -120,11 +159,28 @@ th { color: #a5b4fc; font-weight: 600; }
 .metricBox { background: #111827; border: 1px solid #23304f; border-radius: 12px; padding: 10px; display: grid; gap: 6px; }
 .metricBox span { color: #94a3b8; font-size: 0.85rem; }
 .metricBox strong { font-size: 1rem; }
+.emptyUpcomingState { background: #0f172a; border: 1px dashed #334155; border-radius: 14px; padding: 18px; color: #94a3b8; }
+.economicsRuleGrid { display: grid; gap: 16px; }
+.economicsRuleCard { background: #0f172a; border: 1px solid #23304f; border-radius: 14px; padding: 16px; display: grid; gap: 14px; }
+.economicsRuleHeader { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.economicsRuleHeader h3 { margin: 0 0 6px; }
+.economicsMetricsGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.economicsRuleColumns { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.economicsRuleColumns h4 { margin: 0 0 10px; color: #c7d2fe; font-size: 0.95rem; }
+.economicsRuleList { margin: 0; padding-left: 18px; color: #cbd5e1; display: grid; gap: 8px; }
+.economicsRuleList li { line-height: 1.45; }
 @media (max-width: 1100px) {
-  .cards, .two-up, .metricsGrid, .heroCards3 { grid-template-columns: 1fr 1fr; }
+  .cards, .two-up, .metricsGrid, .heroCards3, .economicsMetricsGrid { grid-template-columns: 1fr 1fr; }
+  .calendarGrid, .calendarWeekdays { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .economicsRuleColumns { grid-template-columns: 1fr; }
 }
 @media (max-width: 900px) {
-  .header, .upcomingSummary, .upcomingTop { flex-direction: column; }
+  .header, .upcomingSummary, .upcomingTop, .economicsRuleHeader, .modalChartTop { flex-direction: column; }
   .stamp, .rowNumbers { text-align: left; }
-  .cards, .two-up, .metricsGrid, .heroCards3 { grid-template-columns: 1fr; }
+  .cards, .two-up, .metricsGrid, .heroCards3, .economicsMetricsGrid, .economicsRuleColumns { grid-template-columns: 1fr; }
+  .calendarGrid, .calendarWeekdays { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .calendarGrid, .calendarWeekdays { grid-template-columns: 1fr; }
+  .calendarDay { min-height: auto; }
 }

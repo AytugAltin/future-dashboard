@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcn-dashboard.local/schemas/ledger_snapshot.schema.json",
+  "title": "BCN Ledger Snapshot",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "generated_at",
+    "base_currency",
+    "currency_scale",
+    "transactions",
+    "import_runs"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "base_currency": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 3
+    },
+    "currency_scale": {
+      "type": "integer",
+      "const": 2,
+      "description": "BCN stores EUR amounts in integer cents."
+    },
+    "transactions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/transaction"
+      }
+    },
+    "import_runs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/importRun"
+      }
+    }
+  },
+  "$defs": {
+    "transaction": {
+      "type": "object",
+      "required": [
+        "transaction_id",
+        "kind",
+        "occurred_at",
+        "provider",
+        "lines",
+        "metadata"
+      ],
+      "properties": {
+        "transaction_id": { "type": "string" },
+        "kind": {
+          "type": "string",
+          "enum": ["revenue", "cost", "internal_transfer", "adjustment"]
+        },
+        "occurred_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "provider": { "type": "string" },
+        "provider_ref": {
+          "type": ["string", "null"]
+        },
+        "occurrence_id": {
+          "type": ["string", "null"],
+          "description": "Shared occurrence key used across dashboard + future finance attribution."
+        },
+        "memo": {
+          "type": ["string", "null"]
+        },
+        "lines": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/line"
+          }
+        },
+        "metadata": {
+          "type": "object"
+        }
+      }
+    },
+    "line": {
+      "type": "object",
+      "required": [
+        "account_code",
+        "account_type",
+        "amount_minor",
+        "currency",
+        "currency_scale"
+      ],
+      "properties": {
+        "account_code": { "type": "string" },
+        "account_type": {
+          "type": "string",
+          "enum": ["asset", "liability", "equity", "revenue", "expense"]
+        },
+        "amount_minor": {
+          "type": "integer",
+          "description": "Signed integer amount in cents. Transactions must balance to zero."
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 3
+        },
+        "currency_scale": {
+          "type": "integer",
+          "const": 2
+        },
+        "occurrence_id": {
+          "type": ["string", "null"]
+        },
+        "description": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "importRun": {
+      "type": "object",
+      "required": [
+        "import_run_id",
+        "provider",
+        "imported_at",
+        "imported_count",
+        "transaction_count",
+        "queued_count",
+        "metadata"
+      ],
+      "properties": {
+        "import_run_id": { "type": "string" },
+        "provider": { "type": "string" },
+        "imported_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "imported_count": { "type": "integer", "minimum": 0 },
+        "transaction_count": { "type": "integer", "minimum": 0 },
+        "queued_count": { "type": "integer", "minimum": 0 },
+        "metadata": { "type": "object" }
+      }
+    }
+  }
+}

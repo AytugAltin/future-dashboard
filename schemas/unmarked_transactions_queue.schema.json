@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bcn-dashboard.local/schemas/unmarked_transactions_queue.schema.json",
+  "title": "BCN Unmarked Transaction Queue",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "items"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unmarkedTransaction"
+      }
+    }
+  },
+  "$defs": {
+    "unmarkedTransaction": {
+      "type": "object",
+      "required": [
+        "queue_id",
+        "provider",
+        "occurred_at",
+        "direction",
+        "gross_minor",
+        "fee_minor",
+        "net_minor",
+        "currency",
+        "currency_scale",
+        "suggested_classification",
+        "reason",
+        "raw_excerpt"
+      ],
+      "properties": {
+        "queue_id": { "type": "string" },
+        "provider": { "type": "string" },
+        "provider_ref": {
+          "type": ["string", "null"]
+        },
+        "occurred_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "direction": {
+          "type": "string",
+          "enum": ["inflow", "outflow"]
+        },
+        "gross_minor": {
+          "type": "integer",
+          "description": "Absolute gross amount in cents."
+        },
+        "fee_minor": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "net_minor": {
+          "type": "integer",
+          "description": "Absolute provider net amount in cents."
+        },
+        "currency": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 3
+        },
+        "currency_scale": {
+          "type": "integer",
+          "const": 2
+        },
+        "suggested_classification": {
+          "type": "string",
+          "enum": ["revenue", "cost", "internal_transfer", "unknown"]
+        },
+        "suggested_occurrence_id": {
+          "type": ["string", "null"]
+        },
+        "memo": {
+          "type": ["string", "null"]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "raw_excerpt": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

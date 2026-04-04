@@ -1,0 +1,513 @@
+{
+  "generated_at": "2026-04-04T14:37:00+02:00",
+  "generator": "OpenClaw BCN website design sprint — workstream 7 (data snapshot)",
+  "snapshot_scope": "Static BCN website concept dataset with verified Eventbrite links and light enrichment from public Eventbrite pages.",
+  "brand": {
+    "name": "Belgian Comedy Network",
+    "short_name": "BCN",
+    "domain": "belgiancomedynetwork.be",
+    "instagram_url": "https://instagram.com/belgiancomedynetwork",
+    "eventbrite_org_url": "https://www.eventbrite.be/o/belgian-comedy-network-66817651253",
+    "contact_emails": [
+      "hello@belgiancomedynetwork.be",
+      "bookings@belgiancomedynetwork.be"
+    ]
+  },
+  "city_accents": {
+    "brussels": "#ff5b5b",
+    "ghent": "#7a5cff",
+    "leuven": "#00b894",
+    "antwerp": "#ff9f43"
+  },
+  "trust_stats": {
+    "venues_count": 14,
+    "shows_produced_min": 164,
+    "tickets_distributed_min": 11900,
+    "active_cities": [
+      "Brussels",
+      "Ghent",
+      "Leuven",
+      "Antwerp"
+    ],
+    "source": "Derived real trust stats from the sprint brief's historical venue table."
+  },
+  "source_audit": {
+    "baseline_source": "Static upcoming-events dataset embedded in BCN-Track/projects/website-job/bcn-website-design-sprint.md",
+    "verified_with": [
+      "Per-event Eventbrite pages fetched via web_fetch on 2026-04-04",
+      "BCN Eventbrite organizer page fetched via web_fetch on 2026-04-04",
+      "Eventbrite search result pages fetched via web_fetch on 2026-04-04 to cross-check recurring-series landing pages and surfaced date counts"
+    ],
+    "eventbrite_org_observations": {
+      "upcoming_activities_count": 4,
+      "past_activities_count": 63,
+      "organizer_id": "66817651253",
+      "notes": [
+        "Readable organizer-page extraction exposed counts but not the full list of titles.",
+        "Accessible Eventbrite search pages clearly surfaced 3 BCN recurring/active listings matching the provided snapshot: Academy Comedy Nights (4 dates), Friday Night Stand-Up Comedy In English For FREE! (1 date), and English Stand-Up Comedy Antwerp: Best of Belgium (3 dates).",
+        "No additional BCN event was added because the accessible public fetches did not expose a fourth title with enough confidence to attribute it safely."
+      ]
+    },
+    "freshness_date": "2026-04-04",
+    "timezone": "Europe/Brussels"
+  },
+  "series": [
+    {
+      "series_key": "academy-comedy-nights-brussels",
+      "series_name": "Academy Comedy Nights – Free English Stand-Up in Brussels",
+      "series_eventbrite_id": "1979661623206",
+      "series_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661623206",
+      "surfaced_occurrence_hint": "Thu, Apr 16, 8:00 PM + 3 more",
+      "dates_in_snapshot": [
+        "2026-04-16",
+        "2026-04-30",
+        "2026-05-14",
+        "2026-05-28"
+      ],
+      "description_summary": "A bi-weekly English stand-up comedy night in Brussels with rising comedians, new material, free entry, and optional crowdfunded contributions.",
+      "lineup_summary": "Fresh lineup of comedians honing their craft; no named acts exposed in the accessible fetch.",
+      "image_url": null,
+      "image_notes": "No reliable Eventbrite image URL extracted via the available tools."
+    },
+    {
+      "series_key": "friday-night-brussels-free",
+      "series_name": "Friday Night Stand-Up Comedy In English For FREE!",
+      "series_eventbrite_id": "1466434758839",
+      "series_url": "https://www.eventbrite.be/e/friday-night-stand-up-comedy-in-english-for-free-tickets-1466434758839",
+      "surfaced_occurrence_hint": "Fri, Apr 24, 8:00 PM",
+      "dates_in_snapshot": [
+        "2026-04-24"
+      ],
+      "description_summary": "English-language showcase at GC Kontakt / Av. Orban 54 featuring six rising Belgian comedy acts.",
+      "lineup_summary": "Eventbrite copy promises six rising stars, but no names were exposed in the accessible fetch.",
+      "image_url": null,
+      "image_notes": "No reliable Eventbrite image URL extracted via the available tools."
+    },
+    {
+      "series_key": "antwerp-best-of-belgium",
+      "series_name": "English Stand-Up Comedy Antwerp: Best of Belgium",
+      "series_eventbrite_id": "1980257423260",
+      "series_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980257423260",
+      "surfaced_occurrence_hint": "Sun, Apr 26, 8:00 PM + 2 more",
+      "dates_in_snapshot": [
+        "2026-04-26",
+        "2026-05-24",
+        "2026-06-28"
+      ],
+      "description_summary": "English-language stand-up in Antwerp at Vertigo with strong Belgian comedians, reservations online, and €5 paid at the door.",
+      "lineup_summary": "Handpicked lineup of Belgium's strongest English-speaking comedians; no named acts exposed in the accessible fetch.",
+      "image_url": null,
+      "image_notes": "No reliable Eventbrite image URL extracted via the available tools."
+    }
+  ],
+  "events": [
+    {
+      "id": "academy-comedy-nights-2026-04-16-1979661782683",
+      "slug": "academy-comedy-nights-free-english-stand-up-in-brussels-2026-04-16",
+      "series_key": "academy-comedy-nights-brussels",
+      "event_name": "Academy Comedy Nights – Free English Stand-Up in Brussels",
+      "event_date": "2026-04-16",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Latroupe Grote Markt",
+      "venue_city": "Brussels",
+      "city": "Brussels",
+      "city_slug": "brussels",
+      "event_capacity": 80,
+      "reservations_snapshot": null,
+      "capacity_fill_ratio_snapshot": null,
+      "ticket_type": "free",
+      "ticket_model": "Free entry; academy-style crowdfunded show with optional contributions at the end.",
+      "eventbrite_id": "1979661782683",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1979661782683",
+      "ticket_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661782683",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661623206",
+      "description_short": "A bi-weekly English stand-up comedy night in Brussels with top comedians, big laughs, and free entry.",
+      "description_long": "Looking for laughs in the heart of Brussels? Welcome to Academy Comedy Night — where rising talent and sharp new material take the stage. Join BCN at Latroupe Grote Markt for a night of free English stand-up comedy featuring a fresh lineup of comedians honing their craft in front of a live audience. This is where jokes are tested, voices are shaped, and tomorrow's headliners are built.",
+      "highlights": [
+        "Fresh lineup of comedians honing sharp, original sets",
+        "Free entry",
+        "International crowd of locals, expats, and travelers",
+        "Relaxed comedy-room atmosphere",
+        "Arrive early; seating is limited and fills up fast"
+      ],
+      "lineup_info": "Eventbrite copy describes a fresh lineup of rising comedians, but no named acts were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": null,
+      "doors_open_time": null,
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "Description appears to be recurring-series copy rather than per-date custom copy.",
+        "No named lineup, poster image, or exact street address was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "friday-night-stand-up-comedy-in-english-for-free-2026-04-24-1892066374459",
+      "slug": "friday-night-stand-up-comedy-in-english-for-free-2026-04-24",
+      "series_key": "friday-night-brussels-free",
+      "event_name": "Friday Night Stand-Up Comedy In English For FREE!",
+      "event_date": "2026-04-24",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Av. Orban 54",
+      "venue_aliases": [
+        "GC Kontakt"
+      ],
+      "venue_city": "Woluwe-Saint-Pierre (Brussels)",
+      "venue_address": "54 Avenue Orban, 1150 Woluwe-Saint-Pierre",
+      "city": "Brussels",
+      "city_slug": "brussels",
+      "event_capacity": 80,
+      "reservations_snapshot": 25,
+      "capacity_fill_ratio_snapshot": 0.3125,
+      "ticket_type": "free",
+      "ticket_model": "Free listing per baseline snapshot and Eventbrite title; reserve online.",
+      "eventbrite_id": "1892066374459",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1892066374459",
+      "ticket_url": "https://www.eventbrite.be/e/friday-night-stand-up-comedy-in-english-for-free-tickets-1892066374459",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/friday-night-stand-up-comedy-in-english-for-free-tickets-1466434758839",
+      "description_short": "An English-language Friday showcase in Brussels spotlighting six rising acts from the Belgian comedy scene.",
+      "description_long": "English Stand-up at GC Kontakt: an evening showcasing emerging comedians delivering hilarious stand-up acts. Eventbrite copy promises an electric night of laughter with six rising stars of the Belgian comedy scene, each bringing sharp wit, bold material, and a distinct style to the stage.",
+      "highlights": [
+        "Six rising Belgian comedy acts promised in the Eventbrite copy",
+        "High-energy showcase format",
+        "Good-vibes room positioning",
+        "2-hour in-person event",
+        "Brussels / Woluwe-Saint-Pierre location"
+      ],
+      "lineup_info": "Eventbrite copy says the show features six rising stars, but no performer names were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": 120,
+      "doors_open_time": null,
+      "collection_name": "Stand-up Comedy In Brussels!",
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "Venue text references GC Kontakt while the baseline venue name is the street address; this likely refers to the same place, but the public fetch did not resolve that explicitly.",
+        "No named lineup or poster image was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "english-stand-up-comedy-antwerp-best-of-belgium-2026-04-26-1980258240705",
+      "slug": "english-stand-up-comedy-antwerp-best-of-belgium-2026-04-26",
+      "series_key": "antwerp-best-of-belgium",
+      "event_name": "English Stand-Up Comedy Antwerp: Best of Belgium",
+      "event_date": "2026-04-26",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Vertigo Antwerpen",
+      "venue_city": "Antwerp",
+      "venue_address": "15 Pelgrimstraat, 2000 Antwerpen",
+      "city": "Antwerp",
+      "city_slug": "antwerp",
+      "event_capacity": 160,
+      "reservations_snapshot": 8,
+      "capacity_fill_ratio_snapshot": 0.05,
+      "ticket_type": "paid",
+      "ticket_model": "Free online reservation; €5 paid at the door.",
+      "eventbrite_id": "1980258240705",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1980258240705",
+      "ticket_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980258240705",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980257423260",
+      "description_short": "BCN's Antwerp night at Vertigo pairs English stand-up with a cozy cocktail-bar setting and a handpicked Belgian lineup.",
+      "description_long": "Join BCN for a night of hilarious stand-up comedy in English, featuring the best comedians from Belgium, in Antwerp. The show is hosted at Vertigo, one of the city's cozier cocktail bars, and Eventbrite describes it as a full stand-up comedy show with a handpicked lineup of strong English-speaking comedians, sharp writing, and a focused comedy crowd in an intimate setting.",
+      "highlights": [
+        "Handpicked lineup of Belgian English-speaking comedians",
+        "Vertigo cocktail-bar setting",
+        "Free reservation online; €5 paid at the door",
+        "2 hours 30 minutes",
+        "Doors open at 7:45 PM",
+        "Limited seating; reservation required"
+      ],
+      "lineup_info": "Eventbrite copy promises a handpicked lineup of some of Belgium's strongest English-speaking comedians, but no names were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": 150,
+      "doors_open_time": "19:45",
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "No named lineup or poster image was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "academy-comedy-nights-2026-04-30-1979661786695",
+      "slug": "academy-comedy-nights-free-english-stand-up-in-brussels-2026-04-30",
+      "series_key": "academy-comedy-nights-brussels",
+      "event_name": "Academy Comedy Nights – Free English Stand-Up in Brussels",
+      "event_date": "2026-04-30",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Latroupe Grote Markt",
+      "venue_city": "Brussels",
+      "city": "Brussels",
+      "city_slug": "brussels",
+      "event_capacity": 80,
+      "reservations_snapshot": null,
+      "capacity_fill_ratio_snapshot": null,
+      "ticket_type": "free",
+      "ticket_model": "Free entry; academy-style crowdfunded show with optional contributions at the end.",
+      "eventbrite_id": "1979661786695",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1979661786695",
+      "ticket_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661786695",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661623206",
+      "description_short": "A bi-weekly English stand-up comedy night in Brussels with top comedians, big laughs, and free entry.",
+      "description_long": "Looking for laughs in the heart of Brussels? Welcome to Academy Comedy Night — where rising talent and sharp new material take the stage. Join BCN at Latroupe Grote Markt for a night of free English stand-up comedy featuring a fresh lineup of comedians honing their craft in front of a live audience. This is where jokes are tested, voices are shaped, and tomorrow's headliners are built.",
+      "highlights": [
+        "Fresh lineup of comedians honing sharp, original sets",
+        "Free entry",
+        "International crowd of locals, expats, and travelers",
+        "Relaxed comedy-room atmosphere",
+        "Arrive early; seating is limited and fills up fast"
+      ],
+      "lineup_info": "Eventbrite copy describes a fresh lineup of rising comedians, but no named acts were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": null,
+      "doors_open_time": null,
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "Description appears to be recurring-series copy rather than per-date custom copy.",
+        "No named lineup, poster image, or exact street address was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "academy-comedy-nights-2026-05-14-1984641303564",
+      "slug": "academy-comedy-nights-free-english-stand-up-in-brussels-2026-05-14",
+      "series_key": "academy-comedy-nights-brussels",
+      "event_name": "Academy Comedy Nights – Free English Stand-Up in Brussels",
+      "event_date": "2026-05-14",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Latroupe Grote Markt",
+      "venue_city": "Brussels",
+      "city": "Brussels",
+      "city_slug": "brussels",
+      "event_capacity": 80,
+      "reservations_snapshot": null,
+      "capacity_fill_ratio_snapshot": null,
+      "ticket_type": "free",
+      "ticket_model": "Free entry; academy-style crowdfunded show with optional contributions at the end.",
+      "eventbrite_id": "1984641303564",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1984641303564",
+      "ticket_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1984641303564",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661623206",
+      "description_short": "A bi-weekly English stand-up comedy night in Brussels with top comedians, big laughs, and free entry.",
+      "description_long": "Looking for laughs in the heart of Brussels? Welcome to Academy Comedy Night — where rising talent and sharp new material take the stage. Join BCN at Latroupe Grote Markt for a night of free English stand-up comedy featuring a fresh lineup of comedians honing their craft in front of a live audience. This is where jokes are tested, voices are shaped, and tomorrow's headliners are built.",
+      "highlights": [
+        "Fresh lineup of comedians honing sharp, original sets",
+        "Free entry",
+        "International crowd of locals, expats, and travelers",
+        "Relaxed comedy-room atmosphere",
+        "Arrive early; seating is limited and fills up fast"
+      ],
+      "lineup_info": "Eventbrite copy describes a fresh lineup of rising comedians, but no named acts were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": null,
+      "doors_open_time": null,
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "Description appears to be recurring-series copy rather than per-date custom copy.",
+        "No named lineup, poster image, or exact street address was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "english-stand-up-comedy-antwerp-best-of-belgium-2026-05-24-1980258241708",
+      "slug": "english-stand-up-comedy-antwerp-best-of-belgium-2026-05-24",
+      "series_key": "antwerp-best-of-belgium",
+      "event_name": "English Stand-Up Comedy Antwerp: Best of Belgium",
+      "event_date": "2026-05-24",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Vertigo Antwerpen",
+      "venue_city": "Antwerp",
+      "venue_address": "15 Pelgrimstraat, 2000 Antwerpen",
+      "city": "Antwerp",
+      "city_slug": "antwerp",
+      "event_capacity": 160,
+      "reservations_snapshot": null,
+      "capacity_fill_ratio_snapshot": null,
+      "ticket_type": "paid",
+      "ticket_model": "Free online reservation; €5 paid at the door.",
+      "eventbrite_id": "1980258241708",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1980258241708",
+      "ticket_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980258241708",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980257423260",
+      "description_short": "BCN's Antwerp night at Vertigo pairs English stand-up with a cozy cocktail-bar setting and a handpicked Belgian lineup.",
+      "description_long": "Join BCN for a night of hilarious stand-up comedy in English, featuring the best comedians from Belgium, in Antwerp. The show is hosted at Vertigo, one of the city's cozier cocktail bars, and Eventbrite describes it as a full stand-up comedy show with a handpicked lineup of strong English-speaking comedians, sharp writing, and a focused comedy crowd in an intimate setting.",
+      "highlights": [
+        "Handpicked lineup of Belgian English-speaking comedians",
+        "Vertigo cocktail-bar setting",
+        "Free reservation online; €5 paid at the door",
+        "2 hours 30 minutes",
+        "Doors open at 7:45 PM",
+        "Limited seating; reservation required"
+      ],
+      "lineup_info": "Eventbrite copy promises a handpicked lineup of some of Belgium's strongest English-speaking comedians, but no names were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": 150,
+      "doors_open_time": "19:45",
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "No named lineup or poster image was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "academy-comedy-nights-2026-05-28-1984641304567",
+      "slug": "academy-comedy-nights-free-english-stand-up-in-brussels-2026-05-28",
+      "series_key": "academy-comedy-nights-brussels",
+      "event_name": "Academy Comedy Nights – Free English Stand-Up in Brussels",
+      "event_date": "2026-05-28",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Latroupe Grote Markt",
+      "venue_city": "Brussels",
+      "city": "Brussels",
+      "city_slug": "brussels",
+      "event_capacity": 80,
+      "reservations_snapshot": null,
+      "capacity_fill_ratio_snapshot": null,
+      "ticket_type": "free",
+      "ticket_model": "Free entry; academy-style crowdfunded show with optional contributions at the end.",
+      "eventbrite_id": "1984641304567",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1984641304567",
+      "ticket_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1984641304567",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/academy-comedy-nights-free-english-stand-up-in-brussels-tickets-1979661623206",
+      "description_short": "A bi-weekly English stand-up comedy night in Brussels with top comedians, big laughs, and free entry.",
+      "description_long": "Looking for laughs in the heart of Brussels? Welcome to Academy Comedy Night — where rising talent and sharp new material take the stage. Join BCN at Latroupe Grote Markt for a night of free English stand-up comedy featuring a fresh lineup of comedians honing their craft in front of a live audience. This is where jokes are tested, voices are shaped, and tomorrow's headliners are built.",
+      "highlights": [
+        "Fresh lineup of comedians honing sharp, original sets",
+        "Free entry",
+        "International crowd of locals, expats, and travelers",
+        "Relaxed comedy-room atmosphere",
+        "Arrive early; seating is limited and fills up fast"
+      ],
+      "lineup_info": "Eventbrite copy describes a fresh lineup of rising comedians, but no named acts were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": null,
+      "doors_open_time": null,
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "Description appears to be recurring-series copy rather than per-date custom copy.",
+        "No named lineup, poster image, or exact street address was exposed in the accessible fetch."
+      ]
+    },
+    {
+      "id": "english-stand-up-comedy-antwerp-best-of-belgium-2026-06-28-1980258242711",
+      "slug": "english-stand-up-comedy-antwerp-best-of-belgium-2026-06-28",
+      "series_key": "antwerp-best-of-belgium",
+      "event_name": "English Stand-Up Comedy Antwerp: Best of Belgium",
+      "event_date": "2026-06-28",
+      "local_time": "20:00",
+      "timezone": "Europe/Brussels",
+      "status": "upcoming",
+      "venue_name": "Vertigo Antwerpen",
+      "venue_city": "Antwerp",
+      "venue_address": "15 Pelgrimstraat, 2000 Antwerpen",
+      "city": "Antwerp",
+      "city_slug": "antwerp",
+      "event_capacity": 160,
+      "reservations_snapshot": null,
+      "capacity_fill_ratio_snapshot": null,
+      "ticket_type": "paid",
+      "ticket_model": "Free online reservation; €5 paid at the door.",
+      "eventbrite_id": "1980258242711",
+      "ticket_url_raw": "https://www.eventbrite.be/e/1980258242711",
+      "ticket_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980258242711",
+      "ticket_url_status": "live_verified_200",
+      "series_url": "https://www.eventbrite.be/e/english-stand-up-comedy-antwerp-best-of-belgium-tickets-1980257423260",
+      "description_short": "BCN's Antwerp night at Vertigo pairs English stand-up with a cozy cocktail-bar setting and a handpicked Belgian lineup.",
+      "description_long": "Join BCN for a night of hilarious stand-up comedy in English, featuring the best comedians from Belgium, in Antwerp. The show is hosted at Vertigo, one of the city's cozier cocktail bars, and Eventbrite describes it as a full stand-up comedy show with a handpicked lineup of strong English-speaking comedians, sharp writing, and a focused comedy crowd in an intimate setting.",
+      "highlights": [
+        "Handpicked lineup of Belgian English-speaking comedians",
+        "Vertigo cocktail-bar setting",
+        "Free reservation online; €5 paid at the door",
+        "2 hours 30 minutes",
+        "Doors open at 7:45 PM",
+        "Limited seating; reservation required"
+      ],
+      "lineup_info": "Eventbrite copy promises a handpicked lineup of some of Belgium's strongest English-speaking comedians, but no names were exposed in the accessible fetch.",
+      "lineup_names": [],
+      "duration_minutes": 150,
+      "doors_open_time": "19:45",
+      "image_url": null,
+      "image_notes": "No reliable image URL retrieved from accessible public Eventbrite fetches.",
+      "source_confidence": {
+        "schedule": "high",
+        "ticket_url": "high",
+        "description": "high",
+        "lineup_specifics": "low",
+        "image": "not_available"
+      },
+      "uncertainty_notes": [
+        "No named lineup or poster image was exposed in the accessible fetch."
+      ]
+    }
+  ]
+}

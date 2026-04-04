@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "currency": "EUR",
+  "source_requirement": "BCN-Track/projects/website-job/bcn-dashboard-ops-requirements-2026-04-04.md#6",
+  "notes": [
+    "Business rules for reporting and margin analysis only.",
+    "Invoice creation, sending, reconciliation, and payment tracking stay backlog only."
+  ],
+  "venues": [
+    {
+      "venue_id": "walliwer",
+      "label": "Walliwer",
+      "summary": "Approx €300 income discount, fallback no-SumUp cash split, and near-zero ad budget guidance.",
+      "match": {
+        "mode": "any",
+        "venue_names": ["Walliwer", "Av. Orban 54"],
+        "venue_aliases": ["walliwer", "av orban 54", "woluwe saint pierre"],
+        "event_name_keywords": ["wall-e", "st pierre is brussels"]
+      },
+      "economics": {
+        "income_adjustments": [
+          {
+            "adjustment_type": "discount",
+            "amount_eur": 300,
+            "frequency": "per_occurrence",
+            "applies_to": "tracked_income",
+            "confidence": "approximate",
+            "notes": "Stakeholder note: ~€300 discount on income."
+          }
+        ],
+        "cash_split_when_no_sumup": {
+          "trigger": "sumup_absent",
+          "currency": "EUR",
+          "splits": [
+            {
+              "party": "comedians",
+              "amount_eur": 150
+            },
+            {
+              "party": "organizer",
+              "amount_eur": 150
+            }
+          ],
+          "notes": "Use only when SumUp is not involved."
+        },
+        "ad_budget_guidance": {
+          "target_eur": 0,
+          "acceptable_max_eur": 50,
+          "notes": "Little or no ad budget; ~€50 is acceptable."
+        }
+      },
+      "ops": {
+        "notes": [
+          "Treat this as a venue/deal rule for reporting rather than a separate invoicing workflow."
+        ]
+      },
+      "assumptions": [
+        "Current dashboard export appears to use 'Av. Orban 54' instead of a literal Walliwer venue label; keep both aliases until raw naming is confirmed."
+      ],
+      "deferred": [
+        "Formal margin formula once occurrence-level ad allocation exists.",
+        "Any payout or invoice automation."
+      ]
+    },
+    {
+      "venue_id": "la-troupe",
+      "label": "La Troupe",
+      "summary": "€100 per-show BCN payable is documented as a backlog invoice cost plus cadence rules for scheduling/admin.",
+      "match": {
+        "mode": "any",
+        "venue_names": ["Latroupe Grote Markt", "La Troupe"],
+        "venue_aliases": ["latroupe", "la troupe", "grote markt"],
+        "event_name_keywords": []
+      },
+      "economics": {
+        "fixed_costs": [
+          {
+            "cost_type": "venue_invoice",
+            "amount_eur": 100,
+            "frequency": "per_occurrence",
+            "payable_by": "BCN",
+            "workflow_status": "backlog_only",
+            "notes": "Invoice handling is explicitly deferred."
+          }
+        ]
+      },
+      "ops": {
+        "cadence": {
+          "typical_occurrences_per_month": 2,
+          "weekday": "Thursday",
+          "dates_may_be_tbd": true
+        },
+        "tasks": [
+          {
+            "task_id": "communicate_dates",
+            "label": "Communicate dates once confirmed",
+            "timing": "as soon as dates are known",
+            "status": "documented_rule"
+          },
+          {
+            "task_id": "prepare_month_end_invoices",
+            "label": "Send invoices at end of month so venue gets paid",
+            "timing": "end_of_month",
+            "status": "backlog_only"
+          }
+        ],
+        "notes": [
+          "Typically two shows per month.",
+          "Shows are usually on Thursdays.",
+          "Dates are sometimes still TBD and need explicit communication."
+        ]
+      },
+      "assumptions": [
+        "Monthly invoice batching is captured as an operational reminder only; no workflow automation is implemented here."
+      ],
+      "deferred": [
+        "Invoice drafting, sending, approval, reconciliation, and payment status tracking.",
+        "Any accounting export or bookkeeping integration."
+      ]
+    }
+  ]
+}
