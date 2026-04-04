@@ -2,7 +2,7 @@
   {
     "venue_name": "Comedy Ket",
     "venue_city": "Bruxelles",
-    "event_count": 63,
+    "event_count": 48,
     "ticket_count": 2425,
     "order_count": 1427,
     "payout_count": 317,
@@ -11,14 +11,14 @@
     "net_amount": 2704.1,
     "gross_per_ticket": 1.13,
     "net_per_ticket": 1.12,
-    "net_per_event": 42.92,
+    "net_per_event": 56.34,
     "high_count": 314,
     "low_count": 3
   },
   {
     "venue_name": "Vertigo Antwerpen",
     "venue_city": "Antwerpen",
-    "event_count": 16,
+    "event_count": 17,
     "ticket_count": 1445,
     "order_count": 795,
     "payout_count": 163,
@@ -27,7 +27,7 @@
     "net_amount": 1617.4,
     "gross_per_ticket": 1.14,
     "net_per_ticket": 1.12,
-    "net_per_event": 101.09,
+    "net_per_event": 95.14,
     "high_count": 163,
     "low_count": 0
   },
@@ -50,7 +50,7 @@
   {
     "venue_name": "Kamea Restaurant Cocktails & Lounge",
     "venue_city": "Bruxelles",
-    "event_count": 20,
+    "event_count": 21,
     "ticket_count": 948,
     "order_count": 515,
     "payout_count": 92,
@@ -59,14 +59,14 @@
     "net_amount": 736.53,
     "gross_per_ticket": 0.79,
     "net_per_ticket": 0.78,
-    "net_per_event": 36.83,
+    "net_per_event": 35.07,
     "high_count": 92,
     "low_count": 0
   },
   {
     "venue_name": "Latroupe Grote Markt",
     "venue_city": "Bruxelles",
-    "event_count": 24,
+    "event_count": 25,
     "ticket_count": 1199,
     "order_count": 638,
     "payout_count": 89,
@@ -75,7 +75,7 @@
     "net_amount": 707.02,
     "gross_per_ticket": 0.6,
     "net_per_ticket": 0.59,
-    "net_per_event": 29.46,
+    "net_per_event": 28.28,
     "high_count": 79,
     "low_count": 10
   },
@@ -146,7 +146,7 @@
   {
     "venue_name": "Le Cheval Marin",
     "venue_city": "Bruxelles",
-    "event_count": 15,
+    "event_count": 10,
     "ticket_count": 643,
     "order_count": 318,
     "payout_count": 38,
@@ -155,7 +155,7 @@
     "net_amount": 373.6,
     "gross_per_ticket": 0.59,
     "net_per_ticket": 0.58,
-    "net_per_event": 24.91,
+    "net_per_event": 37.36,
     "high_count": 38,
     "low_count": 0
   },
